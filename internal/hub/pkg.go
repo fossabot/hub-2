@@ -13,7 +13,7 @@ import (
 const (
 	// PackageMetadataFile represents the name of the file where the Artifact
 	// Hub metadata for a given package is stored.
-	PackageMetadataFile = "artifacthub-pkg"
+	PackageMetadataFile = "khulnasoft-pkg"
 )
 
 // Change represents a change introduced in a package version.

@@ -346,7 +346,7 @@ export const PREDEFINED_POLICIES: AuthorizationPolicy[] = [
   {
     name: 'rbac.v1',
     label: 'rbac.v1',
-    policy: `package artifacthub.authz
+    policy: `package khulnasoft.authz
 
 # Get user allowed actions
 allowed_actions[action] {

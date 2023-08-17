@@ -44,7 +44,7 @@ describe('MoreActionsButton', () => {
     it('opens modal', async () => {
       render(
         <>
-          <meta name="artifacthub:siteName" content="test" />
+          <meta name="khulnasoft:siteName" content="test" />
           <MoreActionsButton />
         </>
       );

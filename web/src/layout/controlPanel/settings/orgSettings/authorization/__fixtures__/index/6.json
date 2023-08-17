@@ -1,5 +1,5 @@
 {
   "authorizationEnabled": true,
-  "customPolicy": "package artifacthub.authz\n\nallow = true\nallowed_actions = [\"all\"]",
+  "customPolicy": "package khulnasoft.authz\n\nallow = true\nallowed_actions = [\"all\"]",
   "policyData": {}
 }

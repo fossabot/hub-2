@@ -11,10 +11,10 @@ import (
 
 	_ "embed" // Used by templates
 
-	"github.com/artifacthub/hub/internal/authz"
-	"github.com/artifacthub/hub/internal/email"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/authz"
+	"github.com/khulnasoft/hub/internal/email"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/open-policy-agent/opa/ast"
 	"github.com/satori/uuid"
 	"github.com/spf13/viper"

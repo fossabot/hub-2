@@ -188,7 +188,7 @@ const ClaimRepositoryOwnerShipModal = (props: Props) => {
             Before claiming a repository ownership, we need to verify that you actually own it. To prove that, you need
             to add a{' '}
             <ExternalLink
-              href="https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-repo.yml"
+              href="https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-repo.yml"
               className="text-primary fw-bold"
               label="Open documentation"
             >

@@ -49,7 +49,7 @@ select is(
     '{
         "data": [{
             "id": "repo1/package1",
-            "artifactHub": {
+            "khulnasoft": {
                 "packageUrl": "https://khulnasoft.com/packages/helm/repo1/package1"
             },
             "attributes": {

@@ -39,12 +39,12 @@ const Dependencies = (props: Props) => {
           <div className="d-flex flex-row align-items-center">
             <FiPackage className={`text-muted me-2 mb-0 ${styles.pkgIcon}`} />
             <div className="text-truncate">
-              {!isUndefined(dependency.artifacthubRepositoryName) ? (
+              {!isUndefined(dependency.khulnasoftRepositoryName) ? (
                 <Link
                   to={{
                     pathname: buildPackageURL(dependency.name, {
                       kind: RepositoryKind.Helm,
-                      name: dependency.artifacthubRepositoryName,
+                      name: dependency.khulnasoftRepositoryName,
                     }),
                   }}
                   className="py-1 py-sm-0 text-primary"
@@ -79,12 +79,12 @@ const Dependencies = (props: Props) => {
           </td>
           <td className="border-start-0">
             <div className={`d-table w-100 h-100 px-1 ${styles.textWrapper}`}>
-              {!isUndefined(dependency.artifacthubRepositoryName) ? (
+              {!isUndefined(dependency.khulnasoftRepositoryName) ? (
                 <Link
                   to={{
                     pathname: buildPackageURL(dependency.name, {
                       kind: RepositoryKind.Helm,
-                      name: dependency.artifacthubRepositoryName,
+                      name: dependency.khulnasoftRepositoryName,
                     }),
                   }}
                   className="py-1 py-sm-0 text-primary"

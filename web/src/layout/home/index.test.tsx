@@ -129,7 +129,7 @@ describe('Home index', () => {
 
       expect(links[2]).toHaveProperty('href', 'https://github.com/khulnasoft/hub');
       expect(links[3]).toHaveProperty('href', 'https://cloud-native.slack.com/channels/artifact-hub');
-      expect(links[4]).toHaveProperty('href', 'https://twitter.com/cncfartifacthub');
+      expect(links[4]).toHaveProperty('href', 'https://twitter.com/cncfkhulnasoft');
 
       // Docs link
       expect(links[5]).toHaveProperty('href', 'http://localhost/docs/topics/repositories');

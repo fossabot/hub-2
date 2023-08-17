@@ -261,7 +261,7 @@ exports[`Home index creates snapshot 1`] = `
         <a
           aria-label="Open Twitter link"
           class="link btn btn-secondary ms-2 ms-md-3 mb-4 mb-md-2 socialBtn"
-          href="https://twitter.com/cncfartifacthub"
+          href="https://twitter.com/cncfkhulnasoft"
           rel="noopener noreferrer"
           role="button"
           tabindex="-1"

@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/authz"
-	"github.com/artifacthub/hub/internal/email"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/tests"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/authz"
+	"github.com/khulnasoft/hub/internal/email"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
@@ -979,7 +979,7 @@ func TestUpdateAuthorizationPolicy(t *testing.T) {
 				"allowed actions rule not found in custom policy",
 				"org1",
 				&hub.AuthorizationPolicy{
-					CustomPolicy: `package artifacthub.authz`,
+					CustomPolicy: `package khulnasoft.authz`,
 				},
 			},
 			{
@@ -987,7 +987,7 @@ func TestUpdateAuthorizationPolicy(t *testing.T) {
 				"org1",
 				&hub.AuthorizationPolicy{
 					CustomPolicy: `
-					package artifacthub.authz
+					package khulnasoft.authz
 
 					allowed_actions[action] { action := "all" }
 					`,
@@ -999,7 +999,7 @@ func TestUpdateAuthorizationPolicy(t *testing.T) {
 				"org1",
 				&hub.AuthorizationPolicy{
 					CustomPolicy: `
-					package artifacthub.authz
+					package khulnasoft.authz
 
 					allowed_actions[action] { action := "all" }
 					`,
@@ -1011,7 +1011,7 @@ func TestUpdateAuthorizationPolicy(t *testing.T) {
 				"org1",
 				&hub.AuthorizationPolicy{
 					CustomPolicy: `
-					package artifacthub.authz
+					package khulnasoft.authz
 
 					allowed_actions = ["all"]
 					`,

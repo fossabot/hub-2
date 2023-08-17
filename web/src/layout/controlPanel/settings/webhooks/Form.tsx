@@ -45,7 +45,7 @@ export const DEFAULT_PAYLOAD_TEMPLATE = `{
     "specversion" : "1.0",
     "id" : "{{ .Event.ID }}",
     "source" : "{{ .BaseURL }}",
-    "type" : "io.artifacthub.{{ .Event.Kind }}",
+    "type" : "io.khulnasoft.{{ .Event.Kind }}",
     "datacontenttype" : "application/json",
     "data" : {
         "package": {
@@ -373,8 +373,8 @@ const WebhookForm = (props: Props) => {
               Secret
             </label>
             <div className="form-text text-muted mb-2 mt-0">
-              If you provide a secret, we'll send it to you in the <span className="fw-bold">X-ArtifactHub-Secret</span>{' '}
-              header on each request. This will allow you to validate that the request comes from ArtifactHub.
+              If you provide a secret, we'll send it to you in the <span className="fw-bold">X-khulnasoft-Secret</span>{' '}
+              header on each request. This will allow you to validate that the request comes from khulnasoft.
             </div>
             <div className="d-flex">
               <div className="col-md-8">
@@ -553,8 +553,8 @@ const WebhookForm = (props: Props) => {
             <div className="lh-base">
               <div className="form-text text-muted mb-3">
                 It's possible to customize the payload used to notify your service. This may help integrating
-                ArtifactHub webhooks with other services without requiring you to write any code. To integrate
-                ArtifactHub webhooks with Slack, for example, you could use a custom payload using the following
+                khulnasoft webhooks with other services without requiring you to write any code. To integrate
+                khulnasoft webhooks with Slack, for example, you could use a custom payload using the following
                 template:
                 <div className="my-3 w-100">
                   <div
@@ -682,7 +682,7 @@ const WebhookForm = (props: Props) => {
                         <th scope="row">
                           <span className="text-nowrap">{`{{ .Package.URL }}`}</span>
                         </th>
-                        <td>ArtifactHub URL of the package.</td>
+                        <td>khulnasoft URL of the package.</td>
                       </tr>
                       <tr>
                         <th scope="row">

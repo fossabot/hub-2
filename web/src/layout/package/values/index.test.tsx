@@ -82,7 +82,7 @@ events:
 dbMigrator:
   job:
     image:
-      repository: artifacthub/db-migrator
+      repository: khulnasoft/db-migrator
   loadSampleData: true
   configDir: "/home/db-migrator/.cfg"
 
@@ -100,7 +100,7 @@ hub:
     readinessGates: []
     replicaCount: 1
     image:
-      repository: artifacthub/hub
+      repository: khulnasoft/hub
     resources: {}
   server:
     allowPrivateRepositories: false
@@ -159,16 +159,16 @@ hub:
     images:
       appleTouchIcon192: "/static/media/logo192_v2.png"
       appleTouchIcon512: "/static/media/logo512_v2.png"
-      openGraphImage: "/static/media/artifactHub_v2.png"
+      openGraphImage: "/static/media/khulnasoft_v2.png"
       shortcutIcon: "/static/media/logo_v2.png"
-      websiteLogo: "/static/media/logo/artifacthub-brand-white.svg"
+      websiteLogo: "/static/media/logo/khulnasoft-brand-white.svg"
     sampleQueries: []
     siteName: "Artifact hub"
 
 scanner:
   cronjob:
     image:
-      repository: artifacthub/scanner
+      repository: khulnasoft/scanner
     resources: {}
   concurrency: 10
   trivyURL: ""
@@ -178,7 +178,7 @@ scanner:
 tracker:
   cronjob:
     image:
-      repository: artifacthub/tracker
+      repository: khulnasoft/tracker
     resources: {}
   cacheDir: ""
   configDir: "/home/tracker/.cfg"

@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/tracker/source/container"
-	"github.com/artifacthub/hub/internal/tracker/source/falco"
-	"github.com/artifacthub/hub/internal/tracker/source/generic"
-	"github.com/artifacthub/hub/internal/tracker/source/helm"
-	"github.com/artifacthub/hub/internal/tracker/source/helmplugin"
-	"github.com/artifacthub/hub/internal/tracker/source/krew"
-	"github.com/artifacthub/hub/internal/tracker/source/olm"
-	"github.com/artifacthub/hub/internal/tracker/source/tekton"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/tracker/source/container"
+	"github.com/khulnasoft/hub/internal/tracker/source/falco"
+	"github.com/khulnasoft/hub/internal/tracker/source/generic"
+	"github.com/khulnasoft/hub/internal/tracker/source/helm"
+	"github.com/khulnasoft/hub/internal/tracker/source/helmplugin"
+	"github.com/khulnasoft/hub/internal/tracker/source/krew"
+	"github.com/khulnasoft/hub/internal/tracker/source/olm"
+	"github.com/khulnasoft/hub/internal/tracker/source/tekton"
 	"github.com/spf13/viper"
 )
 
@@ -97,7 +97,7 @@ func SetupSource(i *hub.TrackerSourceInput) hub.TrackerSource {
 	case hub.Falco:
 		// Temporary solution to maintain backwards compatibility with
 		// the only Falco rules repository registered at the moment in
-		// artifacthub.io using the structure and metadata format used
+		// khulnasoft.com using the structure and metadata format used
 		// by the cloud native security hub.
 		if i.Repository.URL == cloudNativeSecurityHub {
 			source = falco.NewTrackerSource(i)

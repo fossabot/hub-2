@@ -195,7 +195,7 @@ const HomeView = () => {
 
               <ExternalLink
                 className={`btn btn-secondary ms-2 ms-md-3 mb-4 mb-md-2 ${styles.socialBtn}`}
-                href="https://twitter.com/cncfartifacthub"
+                href="https://twitter.com/cncfkhulnasoft"
                 label="Open Twitter link"
               >
                 <div className="d-flex align-items-center justify-content-center">

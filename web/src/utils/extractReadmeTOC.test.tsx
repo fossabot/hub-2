@@ -1891,7 +1891,7 @@ const tests = [
           lang: 'bash',
           meta: null,
           value:
-            '$ helm repo add artifact-hub https://artifacthub.github.io/helm-charts\n$ helm install hub artifact-hub/artifact-hub',
+            '$ helm repo add artifact-hub https://khulnasoft.github.io/helm-charts\n$ helm install hub artifact-hub/artifact-hub',
         },
         {
           type: 'paragraph',

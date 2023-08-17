@@ -2,7 +2,7 @@ package authz
 
 var predefinedPolicies = map[string]string{
 	"rbac.v1": `
-		package artifacthub.authz
+		package khulnasoft.authz
 
 		# Get user allowed actions
 		allowed_actions[action] {

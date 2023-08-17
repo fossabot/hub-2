@@ -9,12 +9,12 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/artifacthub/hub/internal/authz"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/pkg"
-	"github.com/artifacthub/hub/internal/repo"
-	"github.com/artifacthub/hub/internal/scanner"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/authz"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/repo"
+	"github.com/khulnasoft/hub/internal/scanner"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/rs/zerolog/log"
 )
 

@@ -525,7 +525,7 @@ const RepositoryModal = (props: Props) => {
                     </p>
                     <p className="mb-3 ms-3">
                       <code className={`me-2 ${styles.code}`}>oci://registry/[namespace]/repository</code> (example:{' '}
-                      <span className="fst-italic">oci://index.docker.io/artifacthub/ah</span>)
+                      <span className="fst-italic">oci://index.docker.io/khulnasoft/ah</span>)
                     </p>
                     <p>
                       The registry host is required, please use <code className={styles.code}>index.docker.io</code>{' '}

@@ -171,9 +171,9 @@ exports[`WebhookForm creates snapshot 1`] = `
             <span
               class="fw-bold"
             >
-              X-ArtifactHub-Secret
+              X-khulnasoft-Secret
             </span>
-             header on each request. This will allow you to validate that the request comes from ArtifactHub.
+             header on each request. This will allow you to validate that the request comes from khulnasoft.
           </div>
           <div
             class="d-flex"
@@ -599,7 +599,7 @@ exports[`WebhookForm creates snapshot 1`] = `
           <div
             class="form-text text-muted mb-3"
           >
-            It's possible to customize the payload used to notify your service. This may help integrating ArtifactHub webhooks with other services without requiring you to write any code. To integrate ArtifactHub webhooks with Slack, for example, you could use a custom payload using the following template:
+            It's possible to customize the payload used to notify your service. This may help integrating khulnasoft webhooks with other services without requiring you to write any code. To integrate khulnasoft webhooks with Slack, for example, you could use a custom payload using the following template:
             <div
               class="my-3 w-100"
             >
@@ -856,7 +856,7 @@ exports[`WebhookForm creates snapshot 1`] = `
                         </span>
                       </th>
                       <td>
-                        ArtifactHub URL of the package.
+                        khulnasoft URL of the package.
                       </td>
                     </tr>
                     <tr>

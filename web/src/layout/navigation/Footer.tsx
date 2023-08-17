@@ -82,7 +82,7 @@ const Footer = (props: Props) => {
                     </ExternalLink>
                     <ExternalLink
                       className={`mb-1 ${styles.link}`}
-                      href="https://twitter.com/cncfartifacthub"
+                      href="https://twitter.com/cncfkhulnasoft"
                       label="Open Twitter"
                     >
                       <div className="d-flex align-items-center">
@@ -132,7 +132,7 @@ const Footer = (props: Props) => {
                 <small className="mb-2 text-light">Powered by</small>
                 <img
                   className={styles.AHlogo}
-                  src="https://khulnasoft.com/static/media/logo/artifacthub-brand-white.svg"
+                  src="https://khulnasoft.com/static/media/logo/khulnasoft-brand-white.svg"
                   alt="Logo Artifact Hub"
                 />
               </div>

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/log/zerologadapter"
 	"github.com/jackc/pgx/v4/pgxpool"

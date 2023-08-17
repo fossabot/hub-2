@@ -9,12 +9,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/oci"
-	"github.com/artifacthub/hub/internal/pkg"
-	"github.com/artifacthub/hub/internal/repo"
-	"github.com/artifacthub/hub/internal/tests"
-	"github.com/artifacthub/hub/internal/tracker/source"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/oci"
+	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/repo"
+	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/tracker/source"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
@@ -99,13 +99,13 @@ func TestTrackerSource(t *testing.T) {
 		},
 		Recommendations: []*hub.Recommendation{
 			{
-				URL: "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub",
+				URL: "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub",
 			},
 		},
 		Screenshots: []*hub.Screenshot{
 			{
 				Title: "Screenshot 1",
-				URL:   "https://artifacthub.io/screenshot1.jpg",
+				URL:   "https://khulnasoft.com/screenshot1.jpg",
 			},
 		},
 		SignKey: &hub.SignKey{
@@ -556,13 +556,13 @@ func TestExtractContainersImages(t *testing.T) {
 		assert.Equal(t, []string{
 			"postgres:12",
 			"bitnami/kubectl:1.22",
-			"artifacthub/hub:v0.19.0",
+			"khulnasoft/hub:v0.19.0",
 			"aquasec/trivy:0.16.0",
 			"docker.io/bitnami/minideb:stretch",
 			"docker.io/postgres:12",
-			"artifacthub/db-migrator:v0.19.0",
-			"artifacthub/scanner:v0.19.0",
-			"artifacthub/tracker:v0.19.0",
+			"khulnasoft/db-migrator:v0.19.0",
+			"khulnasoft/scanner:v0.19.0",
+			"khulnasoft/tracker:v0.19.0",
 		}, containersImages)
 	})
 
@@ -1027,13 +1027,13 @@ func TestEnrichPackageFromAnnotations(t *testing.T) {
 			&hub.Package{},
 			map[string]string{
 				recommendationsAnnotation: `
-- url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+- url: https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
 `,
 			},
 			&hub.Package{
 				Recommendations: []*hub.Recommendation{
 					{
-						URL: "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub",
+						URL: "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub",
 					},
 				},
 			},
@@ -1045,14 +1045,14 @@ func TestEnrichPackageFromAnnotations(t *testing.T) {
 			map[string]string{
 				screenshotsAnnotation: `
 - title: Screenshot 1
-  url: https://artifacthub.io/screenshot1.jpg
+  url: https://khulnasoft.com/screenshot1.jpg
 `,
 			},
 			&hub.Package{
 				Screenshots: []*hub.Screenshot{
 					{
 						Title: "Screenshot 1",
-						URL:   "https://artifacthub.io/screenshot1.jpg",
+						URL:   "https://khulnasoft.com/screenshot1.jpg",
 					},
 				},
 			},

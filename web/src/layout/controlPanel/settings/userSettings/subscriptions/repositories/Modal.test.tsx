@@ -26,7 +26,7 @@ const mockOptOutList: OptOutItem[] = [
       name: 'artifact-hub',
       displayName: 'Artifact Hub',
       repositoryId: 'a032a436-3568-4970-804a-2780f5e9d231',
-      organizationName: 'artifactHub',
+      organizationName: 'khulnasoft',
       url: 'http://url2.com',
     },
     eventKind: 2,

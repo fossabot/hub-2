@@ -67,14 +67,14 @@ describe('WidgetModal', () => {
       expect(screen.getByText('Display number of stars given to the package.')).toBeInTheDocument();
       expect(screen.getByText('Code')).toBeInTheDocument();
       expect(screen.getByTestId('block-content')).toHaveTextContent(
-        '<div class="artifacthub-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/artifacthub-widget.js"></script>'
+        '<div class="khulnasoft-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
       );
     });
 
     it('when not white label', () => {
       render(
         <Router>
-          <meta name="artifacthub:siteName" content="artifact hub" />
+          <meta name="khulnasoft:siteName" content="artifact hub" />
           <WidgetModal {...defaultProps} />
         </Router>
       );
@@ -92,14 +92,14 @@ describe('WidgetModal', () => {
       );
 
       expect(screen.getByTestId('block-content')).toHaveTextContent(
-        '<div class="artifacthub-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/artifacthub-widget.js"></script>'
+        '<div class="khulnasoft-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
       );
 
       await userEvent.click(screen.getByText('dark'));
       await userEvent.click(screen.getByText('Responsive'));
 
       expect(screen.getByTestId('block-content')).toHaveTextContent(
-        '<div class="artifacthub-widget" data-url="http://localhost/" data-theme="dark" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/artifacthub-widget.js"></script>'
+        '<div class="khulnasoft-widget" data-url="http://localhost/" data-theme="dark" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>pkg</b>: this is the description</p>&mdash; Open in <a href="http://localhost/">null</a></blockquote></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
       );
     });
   });

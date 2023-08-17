@@ -15,9 +15,9 @@ import (
 
 	_ "embed" // Used by templates
 
-	"github.com/artifacthub/hub/internal/email"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/email"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/jackc/pgx/v4"
 	"github.com/pquerna/otp"
 	"github.com/pquerna/otp/totp"

@@ -15,7 +15,7 @@ begin
                     (
                         select jsonb_agg(jsonb_strip_nulls(jsonb_set(
                             dep,
-                            '{artifacthub_repository_name}',
+                            '{khulnasoft_repository_name}',
                             coalesce(
                                 (
                                     select

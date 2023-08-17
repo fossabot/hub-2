@@ -4,7 +4,7 @@ This document describes the infrastructure used to deploy the production and sta
 
 ## Overview
 
-`khulnasoft.com` runs on AWS, using an account owned by the [CNCF](https://www.cncf.io) and managed by the Artifact Hub [maintainers](https://github.com/artifacthub/hub/blob/master/OWNERS). The following services are being used at the moment:
+`khulnasoft.com` runs on AWS, using an account owned by the [CNCF](https://www.cncf.io) and managed by the Artifact Hub [maintainers](https://github.com/khulnasoft/hub/blob/master/OWNERS). The following services are being used at the moment:
 
 - **Route 53:** the `khulnasoft.com` domain and associated DNS entries are managed from Route 53. The most important entry is the `A` record for `khulnasoft.com`, which points to the domain name of a CloudFront distribution.
 
@@ -16,7 +16,7 @@ This document describes the infrastructure used to deploy the production and sta
 
 - **Firewall Manager:** both CloudFront and the load balancer have associated a set of web ACLs rules to rate limit and block certain traffic patterns.
 
-- **Container Registry:** a Docker image for each of the Artifact Hub components is built and pushed to ECR for each commit to the `master` branch via the [CI workflow](https://github.com/artifacthub/hub/blob/master/.github/workflows/ci.yml). These images are the ones used by the `khulnasoft.com` production and staging deployments. These images are *NOT* publicly available. In addition to them, we also [build images for each release version](https://github.com/artifacthub/hub/blob/master/.github/workflows/release.yml), which are published to the Docker Hub and made publicly available.
+- **Container Registry:** a Docker image for each of the Artifact Hub components is built and pushed to ECR for each commit to the `master` branch via the [CI workflow](https://github.com/khulnasoft/hub/blob/master/.github/workflows/ci.yml). These images are the ones used by the `khulnasoft.com` production and staging deployments. These images are *NOT* publicly available. In addition to them, we also [build images for each release version](https://github.com/khulnasoft/hub/blob/master/.github/workflows/release.yml), which are published to the Docker Hub and made publicly available.
 
 - **Elastic Kubernetes Service:** the Artifact Hub components are deployed on a Kubernetes cluster managed by EKS. Each environment (production and staging) runs on a separate cluster. The installation and upgrades are done using the official [Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub) provided by the project.
 
@@ -64,7 +64,7 @@ Before creating a PostgreSQL instance in RDS, we'll setup a security and subnet 
 
 ## Install Artifact Hub chart
 
-The `khulnasoft.com` deployment is installed using the official [Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub) provided by the project. In addition to the [default Chart values](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values.yaml), we provide a file with some specific values for the [staging](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values-staging.yaml) and [production](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values-production.yaml) environments. These are not recommended official values for production deployments, just the ones used by `khulnasoft.com`. On top of those, some extra values containing credentials and other pieces of information are provided using `--set` when running the installation command.
+The `khulnasoft.com` deployment is installed using the official [Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub) provided by the project. In addition to the [default Chart values](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values.yaml), we provide a file with some specific values for the [staging](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values-staging.yaml) and [production](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values-production.yaml) environments. These are not recommended official values for production deployments, just the ones used by `khulnasoft.com`. On top of those, some extra values containing credentials and other pieces of information are provided using `--set` when running the installation command.
 
 ```sh
 helm install \

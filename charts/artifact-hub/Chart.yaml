@@ -89,9 +89,9 @@ annotations:
       image: aquasec/trivy:0.43.1
   artifacthub.io/links: |
     - name: source
-      url: https://github.com/artifacthub/hub
+      url: https://github.com/khulnasoft/hub
     - name: support
-      url: https://github.com/artifacthub/hub/issues
+      url: https://github.com/khulnasoft/hub/issues
   artifacthub.io/screenshots: |
     - title: Home page
       url: https://artifacthub.github.io/hub/screenshots/screenshot1.jpg

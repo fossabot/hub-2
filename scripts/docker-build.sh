@@ -17,7 +17,7 @@ docker build \
     --label org.opencontainers.image.version=$VERSION \
     --label org.opencontainers.image.created=$TS \
     --label org.opencontainers.image.documentation='https://artifacthub.io/docs/topics/cli' \
-    --label org.opencontainers.image.source='https://github.com/artifacthub/hub/tree/${GIT_SHA}/cmd/ah' \
+    --label org.opencontainers.image.source='https://github.com/khulnasoft/hub/tree/${GIT_SHA}/cmd/ah' \
     --label org.opencontainers.image.vendor='Artifact Hub' \
     --label io.artifacthub.package.readme-url='https://raw.githubusercontent.com/artifacthub/hub/${GIT_SHA}/docs/cli.md' \
     --label io.artifacthub.package.maintainers='[{"name":"Artifact Hub maintainers","email":"cncf-artifacthub-maintainers@lists.cncf.io"}]' \

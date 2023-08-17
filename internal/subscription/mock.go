@@ -3,7 +3,7 @@ package subscription
 import (
 	"context"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/stretchr/testify/mock"
 )
 

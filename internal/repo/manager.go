@@ -16,9 +16,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/oci"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/oci"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/config"
 	githttp "github.com/go-git/go-git/v5/plumbing/transport/http"

@@ -53,7 +53,7 @@ dockers:
       - "--label=org.opencontainers.image.version={{ .Version }}"
       - "--label=org.opencontainers.image.created={{ .CommitDate }}"
       - "--label=org.opencontainers.image.documentation=https://artifacthub.io/docs/topics/cli"
-      - "--label=org.opencontainers.image.source=https://github.com/artifacthub/hub/tree/{{ .FullCommit }}/cmd/ah"
+      - "--label=org.opencontainers.image.source=https://github.com/khulnasoft/hub/tree/{{ .FullCommit }}/cmd/ah"
       - "--label=org.opencontainers.image.vendor=Artifact Hub"
       - "--label=io.artifacthub.package.readme-url=https://raw.githubusercontent.com/artifacthub/hub/{{ .FullCommit }}/docs/cli.md"
       - '--label=io.artifacthub.package.maintainers=[{"name":"Artifact Hub maintainers","email":"cncf-artifacthub-maintainers@lists.cncf.io"}]'
@@ -115,7 +115,7 @@ dockers:
 
 brews:
   - description: Artifact Hub command line tool
-    homepage: https://github.com/artifacthub/hub
+    homepage: https://github.com/khulnasoft/hub
     license: Apache-2.0
     tap:
       owner: artifacthub
@@ -126,7 +126,7 @@ brews:
 
 scoop:
   description: Artifact Hub command line tool
-  homepage: https://github.com/artifacthub/hub
+  homepage: https://github.com/khulnasoft/hub
   license: Apache-2.0
   bucket:
     owner: artifacthub

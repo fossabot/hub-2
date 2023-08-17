@@ -5,11 +5,11 @@ ENV LIBTENSORFLOW_TGZ libtensorflow-cpu-linux-x86_64-2.11.0.tar.gz
 RUN wget -q --no-check-certificate https://storage.googleapis.com/tensorflow/libtensorflow/$LIBTENSORFLOW_TGZ
 RUN tar -C /usr/local -xzf $LIBTENSORFLOW_TGZ
 RUN ldconfig /usr/local/lib
-WORKDIR /go/src/github.com/artifacthub/hub
+WORKDIR /go/src/github.com/khulnasoft/hub
 COPY go.* ./
 COPY cmd/tracker cmd/tracker
 COPY internal internal
-WORKDIR /go/src/github.com/artifacthub/hub/cmd/tracker
+WORKDIR /go/src/github.com/khulnasoft/hub/cmd/tracker
 RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o /tracker .
 
 # OPM installer

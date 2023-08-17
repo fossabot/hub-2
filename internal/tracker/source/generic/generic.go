@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/oci"
-	"github.com/artifacthub/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/oci"
+	"github.com/khulnasoft/hub/internal/pkg"
 	gk "github.com/open-policy-agent/gatekeeper/v3/pkg/gator/verify"
 	ignore "github.com/sabhiram/go-gitignore"
 )

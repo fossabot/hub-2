@@ -1,4 +1,4 @@
-module github.com/artifacthub/hub
+module github.com/khulnasoft/hub
 
 go 1.19
 

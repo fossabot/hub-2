@@ -14,9 +14,9 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/pkg"
-	"github.com/artifacthub/hub/internal/tracker/source"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/tracker/source"
 	"github.com/ghodss/yaml"
 	"github.com/hashicorp/go-multierror"
 	"github.com/operator-framework/api/pkg/manifests"

@@ -8,8 +8,8 @@ import (
 
 	_ "embed" // Used by templates
 
-	"github.com/artifacthub/hub/internal/email"
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/email"
+	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/patrickmn/go-cache"
 	"github.com/spf13/viper"
 )

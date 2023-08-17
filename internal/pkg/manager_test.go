@@ -8,8 +8,8 @@ import (
 	"time"
 
 	trivy "github.com/aquasecurity/trivy/pkg/types"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/tests"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

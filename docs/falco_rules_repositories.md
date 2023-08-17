@@ -49,9 +49,9 @@ path/to/packages
 
 In the previous case, even the `package1` directory could be omitted. The reason is that both packages names and versions are read from the `artifacthub-pkg.yml` metadata file, so directories names are not used at all.
 
-Each package version **needs** an `artifacthub-pkg.yml` metadata file. Please see the file [spec](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml) for more details. Rules files **must** have the `-rules.yaml` suffix. If you want to exclude some paths in your package from the indexing, you can do it using the `ignore` field in your [package metadata file](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml), which uses `.gitignore` syntax.
+Each package version **needs** an `artifacthub-pkg.yml` metadata file. Please see the file [spec](https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-pkg.yml) for more details. Rules files **must** have the `-rules.yaml` suffix. If you want to exclude some paths in your package from the indexing, you can do it using the `ignore` field in your [package metadata file](https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-pkg.yml), which uses `.gitignore` syntax.
 
-The [artifacthub-repo.yml](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
+The [artifacthub-repo.yml](https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
 
 Once you have added your repository, you are all set up. As you add new versions of your rules files or even new rules packages to your git repository, they'll be automatically indexed and listed in Artifact Hub.
 

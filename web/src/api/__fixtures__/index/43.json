@@ -274,7 +274,7 @@
         "links": [
           {
             "name": "Trivy migrating to new JSON schema",
-            "url": "https://github.com/artifacthub/hub/pull/1437#issue-689445316"
+            "url": "https://github.com/khulnasoft/hub/pull/1437#issue-689445316"
           }
         ]
       },
@@ -316,7 +316,7 @@
         "links": [
           {
             "name": "GitHub PR",
-            "url": "https://github.com/artifacthub/hub/pull/1386"
+            "url": "https://github.com/khulnasoft/hub/pull/1386"
           }
         ]
       },
@@ -326,7 +326,7 @@
         "links": [
           {
             "name": "GitHub PR",
-            "url": "https://github.com/artifacthub/hub/pull/1382"
+            "url": "https://github.com/khulnasoft/hub/pull/1382"
           }
         ]
       },
@@ -336,7 +336,7 @@
         "links": [
           {
             "name": "GitHub PR",
-            "url": "https://github.com/artifacthub/hub/pull/1379"
+            "url": "https://github.com/khulnasoft/hub/pull/1379"
           }
         ]
       },
@@ -378,7 +378,7 @@
         "links": [
           {
             "name": "Documentation",
-            "url": "https://artifacthub.io/docs/topics/repositories/#coredns-plugins-repositories"
+            "url": "https://khulnasoft.com/docs/topics/repositories/#coredns-plugins-repositories"
           }
         ]
       },
@@ -408,7 +408,7 @@
         "links": [
           {
             "name": "Documentation",
-            "url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=values-schema\u0026path=hub.theme"
+            "url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema\u0026path=hub.theme"
           }
         ]
       },

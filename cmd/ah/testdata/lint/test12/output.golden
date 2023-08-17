@@ -35,7 +35,7 @@ Package lint SUCCEEDED!
   - Kind:  | Description: Added cool feature
   - Kind:  | Description: Fixed minor bug
 ✓ Recommendations:
-  - https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+  - https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
 ! Screenshots: *** NOT PROVIDED ***
 ✓ Operator: false
 

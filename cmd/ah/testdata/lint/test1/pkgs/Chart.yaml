@@ -16,7 +16,7 @@ maintainers:
   - name: User2
     email: user2@testchart.org
 annotations:
-  artifacthub.io/changes: |
+  khulnasoft.com/changes: |
     - kind: added
       description: Test addition
       links:
@@ -24,7 +24,7 @@ annotations:
           url: https://sample.link
     - kind: fixed
       description: Test fix
-  artifacthub.io/containsSecurityUpdates: "true"
-  artifacthub.io/images: |
+  khulnasoft.com/containsSecurityUpdates: "true"
+  khulnasoft.com/images: |
     - name: test-image
       image: test-image/test-image:0.0.1

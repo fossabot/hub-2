@@ -5,26 +5,26 @@ metadata:
   labels:
     app.kubernetes.io/version: "0.1.0"
   annotations:
-    artifacthub.io/changes: |
+    khulnasoft.com/changes: |
       - Added cool feature
       - Fixed minor bug
-    artifacthub.io/license: Apache-2.0
-    artifacthub.io/links: |
+    khulnasoft.com/license: Apache-2.0
+    khulnasoft.com/links: |
       - name: link1
         url: https://link1.url
       - name: link2
         url: https://link2.url
-    artifacthub.io/maintainers: |
+    khulnasoft.com/maintainers: |
       - name: user1
         email: user1@email.com
       - name: user2
         email: user2@email.com
-    artifacthub.io/provider: Some organization
-    artifacthub.io/recommendations: |
-      - url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
-    artifacthub.io/screenshots: |
+    khulnasoft.com/provider: Some organization
+    khulnasoft.com/recommendations: |
+      - url: https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
+    khulnasoft.com/screenshots: |
       - title: Screenshot 1
-        url: https://artifacthub.io/screenshot1.jpg
+        url: https://khulnasoft.com/screenshot1.jpg
     tekton.dev/pipelines.minVersion: "0.12.1"
     tekton.dev/platforms: "linux/amd64,linux/arm64"
     tekton.dev/tags: tag1, tag2

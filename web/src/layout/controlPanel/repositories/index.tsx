@@ -229,7 +229,7 @@ const RepositoriesSection = (props: Props) => {
           If you want your repositories to be labeled as <span className="fw-bold">Verified Publisher</span>, you can
           add a{' '}
           <ExternalLink
-            href="https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml"
+            href="https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-repo.yml"
             className="text-reset"
             label="Open documentation"
           >

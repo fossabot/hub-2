@@ -2,18 +2,18 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
   annotations:
-    artifacthub.io/changes: |
+    khulnasoft.com/changes: |
       - feature 1
       - fix 1
-    artifacthub.io/containsSecurityUpdates: "true"
-    artifacthub.io/imagesWhitelist: |
+    khulnasoft.com/containsSecurityUpdates: "true"
+    khulnasoft.com/imagesWhitelist: |
       - registry.io/image2:1.0.0
-    artifacthub.io/install: |
+    khulnasoft.com/install: |
       Install instructions (markdown)
-    artifacthub.io/license: Apache-2.0
-    artifacthub.io/prerelease: "true"
-    artifacthub.io/recommendations: |
-      - url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+    khulnasoft.com/license: Apache-2.0
+    khulnasoft.com/prerelease: "true"
+    khulnasoft.com/recommendations: |
+      - url: https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
     capabilities: Basic Install
     categories: Application Runtime
     containerImage: repo.url:latest

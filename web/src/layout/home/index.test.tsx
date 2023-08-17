@@ -127,7 +127,7 @@ describe('Home index', () => {
       const links = await screen.findAllByRole('button');
       expect(links).toHaveLength(24);
 
-      expect(links[2]).toHaveProperty('href', 'https://github.com/artifacthub/hub');
+      expect(links[2]).toHaveProperty('href', 'https://github.com/khulnasoft/hub');
       expect(links[3]).toHaveProperty('href', 'https://cloud-native.slack.com/channels/artifact-hub');
       expect(links[4]).toHaveProperty('href', 'https://twitter.com/cncfartifacthub');
 

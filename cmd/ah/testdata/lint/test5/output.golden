@@ -31,7 +31,7 @@ Package lint SUCCEEDED!
   - Kind: added | Description: feature 1
   - Kind: fixed | Description: issue 1
 ✓ Recommendations:
-  - https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+  - https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
 ✓ Screenshots:
       - Title: Sample screenshot 1 | URL: https://example.com/screenshot1.jpg
       - Title: Sample screenshot 2 | URL: https://example.com/screenshot2.jpg

@@ -16,7 +16,7 @@ docker build \
     --label org.opencontainers.image.description='Artifact Hub command line tool' \
     --label org.opencontainers.image.version=$VERSION \
     --label org.opencontainers.image.created=$TS \
-    --label org.opencontainers.image.documentation='https://khulnasoft.io/docs/topics/cli' \
+    --label org.opencontainers.image.documentation='https://khulnasoft.com/docs/topics/cli' \
     --label org.opencontainers.image.source='https://github.com/khulnasoft/hub/tree/${GIT_SHA}/cmd/ah' \
     --label org.opencontainers.image.vendor='Artifact Hub' \
     --label io.khulnasoft.package.readme-url='https://raw.githubusercontent.com/khulnasoft/hub/${GIT_SHA}/docs/cli.md' \

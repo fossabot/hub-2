@@ -75,7 +75,7 @@ select is(
             "name": "pkg2",
             "version": "1.0.0",
             "repository": "https://repo1.url/",
-            "artifacthub_repository_name": "repo1"
+            "khulnasoft_repository_name": "repo1"
         }]
     }',
     'ah repo name expected for dependency pkg2'
@@ -122,7 +122,7 @@ select is(
             "name": "pkg2",
             "version": "1.0.0",
             "repository": "https://repo1.url",
-            "artifacthub_repository_name": "repo1"
+            "khulnasoft_repository_name": "repo1"
         }, {
             "name": "pkg3",
             "version": "1.0.0",
@@ -177,7 +177,7 @@ select is(
             "name": "pkg2",
             "version": "1.0.0",
             "repository": "file://../pkg2",
-            "artifacthub_repository_name": "repo1"
+            "khulnasoft_repository_name": "repo1"
         }]
     }',
     'ah repo name expected for dep pkg2 (using file url)'

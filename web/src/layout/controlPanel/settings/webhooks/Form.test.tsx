@@ -112,7 +112,7 @@ describe('WebhookForm', () => {
       expect(screen.getByText('Url')).toBeInTheDocument();
       expect(screen.getByRole('textbox', { name: /Url/ })).toHaveValue(mockWebhook.url);
 
-      expect(screen.getByText(/X-ArtifactHub-Secret/i)).toBeInTheDocument();
+      expect(screen.getByText(/X-khulnasoft-Secret/i)).toBeInTheDocument();
       expect(screen.getByRole('textbox', { name: 'Secret' })).toBeInTheDocument();
       expect(screen.getByText('Secret')).toBeInTheDocument();
       expect(screen.getByRole('textbox', { name: 'Secret' })).toHaveValue(mockWebhook.secret!);
@@ -152,7 +152,7 @@ describe('WebhookForm', () => {
       expect(screen.getByText('Custom payload')).toBeInTheDocument();
       expect(
         screen.getByText(
-          "It's possible to customize the payload used to notify your service. This may help integrating ArtifactHub webhooks with other services without requiring you to write any code. To integrate ArtifactHub webhooks with Slack, for example, you could use a custom payload using the following template:"
+          "It's possible to customize the payload used to notify your service. This may help integrating khulnasoft webhooks with other services without requiring you to write any code. To integrate khulnasoft webhooks with Slack, for example, you could use a custom payload using the following template:"
         )
       ).toBeInTheDocument();
 
@@ -205,7 +205,7 @@ describe('WebhookForm', () => {
       expect(screen.getByText('Url')).toBeInTheDocument();
       expect(screen.getByTestId('urlInput')).toHaveValue('');
 
-      expect(screen.getByText(/X-ArtifactHub-Secret/i)).toBeInTheDocument();
+      expect(screen.getByText(/X-khulnasoft-Secret/i)).toBeInTheDocument();
       expect(screen.getByRole('textbox', { name: 'Secret' })).toBeInTheDocument();
       expect(screen.getByText('Secret')).toBeInTheDocument();
       expect(screen.getByRole('textbox', { name: 'Secret' })).toHaveValue('');
@@ -245,7 +245,7 @@ describe('WebhookForm', () => {
       expect(screen.getByText('Custom payload')).toBeInTheDocument();
       expect(
         screen.queryByText(
-          "It's possible to customize the payload used to notify your service. This may help integrating ArtifactHub webhooks with other services without requiring you to write any code. To integrate ArtifactHub webhooks with Slack, for example, you could use a custom payload using the following template:"
+          "It's possible to customize the payload used to notify your service. This may help integrating khulnasoft webhooks with other services without requiring you to write any code. To integrate khulnasoft webhooks with Slack, for example, you could use a custom payload using the following template:"
         )
       ).toBeNull();
 
@@ -261,7 +261,7 @@ describe('WebhookForm', () => {
     "specversion" : "1.0",
     "id" : "{{ .Event.ID }}",
     "source" : "{{ .BaseURL }}",
-    "type" : "io.artifacthub.{{ .Event.Kind }}",
+    "type" : "io.khulnasoft.{{ .Event.Kind }}",
     "datacontenttype" : "application/json",
     "data" : {
         "package": {

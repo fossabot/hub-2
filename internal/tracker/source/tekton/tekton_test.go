@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/pkg"
-	"github.com/artifacthub/hub/internal/tracker/source"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/tracker/source"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -122,13 +122,13 @@ func TestTrackerSource(t *testing.T) {
 			},
 			Recommendations: []*hub.Recommendation{
 				{
-					URL: "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub",
+					URL: "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub",
 				},
 			},
 			Screenshots: []*hub.Screenshot{
 				{
 					Title: "Screenshot 1",
-					URL:   "https://artifacthub.io/screenshot1.jpg",
+					URL:   "https://khulnasoft.com/screenshot1.jpg",
 				},
 			},
 			Data: map[string]interface{}{
@@ -222,13 +222,13 @@ func TestTrackerSource(t *testing.T) {
 			},
 			Recommendations: []*hub.Recommendation{
 				{
-					URL: "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub",
+					URL: "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub",
 				},
 			},
 			Screenshots: []*hub.Screenshot{
 				{
 					Title: "Screenshot 1",
-					URL:   "https://artifacthub.io/screenshot1.jpg",
+					URL:   "https://khulnasoft.com/screenshot1.jpg",
 				},
 			},
 			Data: map[string]interface{}{

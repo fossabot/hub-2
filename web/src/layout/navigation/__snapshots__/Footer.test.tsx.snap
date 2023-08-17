@@ -124,7 +124,7 @@ exports[`Footer creates snapshot 1`] = `
               <a
                 aria-label="Open Twitter"
                 class="link mb-1 link"
-                href="https://twitter.com/cncfartifacthub"
+                href="https://twitter.com/cncfkhulnasoft"
                 rel="noopener noreferrer"
                 role="button"
                 tabindex="-1"

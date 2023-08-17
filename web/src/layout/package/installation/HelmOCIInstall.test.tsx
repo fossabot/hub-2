@@ -7,7 +7,7 @@ const repo: Repository = {
   kind: 0,
   name: 'repo',
   displayName: 'Repo',
-  url: 'oci://ghcr.io/artifacthub/artifact-hub',
+  url: 'oci://ghcr.io/khulnasoft/artifact-hub',
   userAlias: 'user',
   private: false,
 };
@@ -26,7 +26,7 @@ describe('HelmOCIInstall', () => {
   it('creates snapshot', async () => {
     const { asFragment } = render(<HelmOCIInstall {...defaultProps} />);
     expect(
-      await screen.findByText('helm install my-packageName oci://ghcr.io/artifacthub/artifact-hub --version 1.0.0')
+      await screen.findByText('helm install my-packageName oci://ghcr.io/khulnasoft/artifact-hub --version 1.0.0')
     ).toBeInTheDocument();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -39,7 +39,7 @@ describe('HelmOCIInstall', () => {
       expect(screen.getByText('my-packageName')).toBeInTheDocument();
       expect(screen.getByText('helm install')).toBeInTheDocument();
       expect(
-        await screen.findByText('helm install my-packageName oci://ghcr.io/artifacthub/artifact-hub --version 1.0.0')
+        await screen.findByText('helm install my-packageName oci://ghcr.io/khulnasoft/artifact-hub --version 1.0.0')
       ).toBeInTheDocument();
       expect(
         screen.getByText(

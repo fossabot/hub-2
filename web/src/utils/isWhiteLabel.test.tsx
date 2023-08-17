@@ -32,7 +32,7 @@ const tests = [
 describe('isWhiteLabel', () => {
   for (let i = 0; i < tests.length; i++) {
     it('check if site is white label', () => {
-      render(<meta name="artifacthub:siteName" content={`${tests[i].input}`} />);
+      render(<meta name="khulnasoft:siteName" content={`${tests[i].input}`} />);
       const actual = isWhiteLabel();
       expect(actual).toEqual(tests[i].output);
     });

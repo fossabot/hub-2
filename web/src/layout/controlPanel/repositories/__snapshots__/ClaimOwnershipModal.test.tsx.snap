@@ -46,7 +46,7 @@ exports[`Claim Repository Modal - repositories section creates snapshot 1`] = `
                   <a
                     aria-label="Open documentation"
                     class="link text-primary fw-bold"
-                    href="https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-repo.yml"
+                    href="https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-repo.yml"
                     rel="noopener noreferrer"
                     role="button"
                     tabindex="-1"

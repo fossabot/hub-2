@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/tests"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -63,12 +63,12 @@ var testsAuthorizationPoliciesJSON = []byte(`{
 	},
 	"org2": {
 		"authorization_enabled": true,
-		"custom_policy": "package artifacthub.authz\ndefault allowed_actions = []\n",
+		"custom_policy": "package khulnasoft.authz\ndefault allowed_actions = []\n",
 		"policy_data": {}
 	},
 	"org3": {
 		"authorization_enabled": false,
-		"custom_policy": "package artifacthub.authz\ndefault allowed_actions = []\n",
+		"custom_policy": "package khulnasoft.authz\ndefault allowed_actions = []\n",
 		"policy_data": {}
 	}
 }`)
@@ -401,7 +401,7 @@ func TestWillUserBeLockedOut(t *testing.T) {
 		{
 			"",
 			`
-			package artifacthub.authz
+			package khulnasoft.authz
 
 			allow = true
 			allowed_actions = ["all"]
@@ -413,7 +413,7 @@ func TestWillUserBeLockedOut(t *testing.T) {
 		{
 			"",
 			`
-			package artifacthub.authz
+			package khulnasoft.authz
 
 			allow = false
 			allowed_actions = []
@@ -425,7 +425,7 @@ func TestWillUserBeLockedOut(t *testing.T) {
 		{
 			"",
 			`
-			package artifacthub.authz
+			package khulnasoft.authz
 
 			allow = true
 			allowed_actions = ["getAuthorizationPolicy"]
@@ -437,7 +437,7 @@ func TestWillUserBeLockedOut(t *testing.T) {
 		{
 			"",
 			`
-			package artifacthub.authz
+			package khulnasoft.authz
 
 			allow = true
 			allowed_actions = ["updateAuthorizationPolicy"]
@@ -449,7 +449,7 @@ func TestWillUserBeLockedOut(t *testing.T) {
 		{
 			"",
 			`
-			package artifacthub.authz
+			package khulnasoft.authz
 
 			allow = true
 			allowed_actions = ["getAuthorizationPolicy", "updateAuthorizationPolicy"]

@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/rs/zerolog/log"
 	"github.com/satori/uuid"
 )

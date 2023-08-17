@@ -15,27 +15,27 @@ const defaultProps = {
   visibleScreenshotsModal: true,
   screenshots: [
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot1.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot1.jpg',
       title: 'Home page',
     },
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot2.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot2.jpg',
       title: 'Packages search',
     },
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot3.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot3.jpg',
       title: 'Package details',
     },
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot4.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot4.jpg',
       title: 'Security report',
     },
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot5.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot5.jpg',
       title: 'Values schema',
     },
     {
-      url: 'https://artifacthub.github.io/hub/screenshots/screenshot6.jpg',
+      url: 'https://khulnasoft.github.io/hub/screenshots/screenshot6.jpg',
       title: 'Changelog',
     },
   ],

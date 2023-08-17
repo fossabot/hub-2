@@ -25,7 +25,7 @@ exports[`HelmOCIInstall creates snapshot 1`] = `
           style="white-space: pre;"
         >
           <span>
-            helm install my-packageName oci://ghcr.io/artifacthub/artifact-hub --version 1.0.0
+            helm install my-packageName oci://ghcr.io/khulnasoft/artifact-hub --version 1.0.0
           </span>
         </code>
       </pre>

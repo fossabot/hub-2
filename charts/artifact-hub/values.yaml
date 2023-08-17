@@ -84,7 +84,7 @@ dbMigrator:
   job:
     image:
       # Database migrator image repository (without the tag)
-      repository: artifacthub/db-migrator
+      repository: khulnasoft/db-migrator
     # Limits the lifetime of the job after it has finished execution
     ttlSecondsAfterFinished: null
     securityContext: {}
@@ -131,7 +131,7 @@ hub:
     replicaCount: 1
     image:
       # Hub image repository (without the tag)
-      repository: artifacthub/hub
+      repository: khulnasoft/hub
     securityContext: {}
     resources: {}
     # If you do want to specify resources, uncomment the following
@@ -275,13 +275,13 @@ hub:
       appleTouchIcon512: "/static/media/logo512_v2.png"
       # URL of the image used in the og:image tag. This image is displayed when an Artifact Hub link is shared in
       # Twitter or Slack, for example. The URL must use `https`
-      openGraphImage: "/static/media/artifactHub_v2.png"
+      openGraphImage: "/static/media/khulnasoft_v2.png"
       # URL of the image used for the shortcut icon (also known as favicon)
       shortcutIcon: "/static/media/logo_v2.png"
       # URL of the logo used in the website header. For an optimal experience, it's better to use a white logo with
       # transparent background, with no margin around it. It'll be displayed using a maximum height of 20px and a
       # maximum width of 185px
-      websiteLogo: "/static/media/logo/artifacthub-brand-white.svg"
+      websiteLogo: "/static/media/logo/khulnasoft-brand-white.svg"
     # Sample search queries used in home and no results found pages
     sampleQueries: []
     # Name of the site. This name is displayed in some places in the website and email templates. When a different
@@ -295,7 +295,7 @@ scanner:
   cronjob:
     image:
       # Scanner image repository (without the tag)
-      repository: artifacthub/scanner
+      repository: khulnasoft/scanner
     securityContext: {}
     resources: {}
     # If you do want to specify resources, uncomment the following
@@ -325,7 +325,7 @@ tracker:
   cronjob:
     image:
       # Tracker image repository (without the tag)
-      repository: artifacthub/tracker
+      repository: khulnasoft/tracker
     securityContext: {}
     resources: {}
     # If you do want to specify resources, uncomment the following
@@ -383,7 +383,7 @@ trivy:
 postgresql:
   enabled: true
   image:
-    repository: artifacthub/postgres
+    repository: khulnasoft/postgres
     tag: latest
   persistence:
     mountPath: /data

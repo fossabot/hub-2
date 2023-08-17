@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/authz"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/oci"
-	"github.com/artifacthub/hub/internal/tests"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/authz"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/oci"
+	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/util"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
@@ -458,8 +458,8 @@ func TestClaimOwnership(t *testing.T) {
 	opaRepoJSON := []byte(`{"kind": 2, "url": "http://repo.url"}`)
 	olmRepoJSON := []byte(`{"kind": 3, "url": "oci://repo.url"}`)
 	ctx := context.WithValue(context.Background(), hub.UserIDKey, userID)
-	mdYmlReq, _ := http.NewRequest("GET", "http://repo.url/artifacthub-repo.yml", nil)
-	mdYamlReq, _ := http.NewRequest("GET", "http://repo.url/artifacthub-repo.yaml", nil)
+	mdYmlReq, _ := http.NewRequest("GET", "http://repo.url/khulnasoft-repo.yml", nil)
+	mdYamlReq, _ := http.NewRequest("GET", "http://repo.url/khulnasoft-repo.yaml", nil)
 
 	t.Run("user id not found in ctx", func(t *testing.T) {
 		t.Parallel()
@@ -528,7 +528,7 @@ func TestClaimOwnership(t *testing.T) {
 		db := &tests.DBMock{}
 		db.On("QueryRow", ctx, getRepoByNameDBQ, "repo1", true).Return(helmRepoJSON, nil)
 		db.On("QueryRow", ctx, getUserEmailDBQ, userID).Return("", tests.ErrFakeDB)
-		mdFile, _ := os.Open("testdata/artifacthub-repo.yml")
+		mdFile, _ := os.Open("testdata/khulnasoft-repo.yml")
 		hc := &tests.HTTPClientMock{}
 		hc.On("Do", mdYmlReq).Return(&http.Response{
 			Body:       mdFile,
@@ -547,7 +547,7 @@ func TestClaimOwnership(t *testing.T) {
 		db := &tests.DBMock{}
 		db.On("QueryRow", ctx, getRepoByNameDBQ, "repo1", true).Return(helmRepoJSON, nil)
 		db.On("QueryRow", ctx, getUserEmailDBQ, userID).Return("user1@email.com", nil)
-		mdFile, _ := os.Open("testdata/artifacthub-repo.yml")
+		mdFile, _ := os.Open("testdata/khulnasoft-repo.yml")
 		hc := &tests.HTTPClientMock{}
 		hc.On("Do", mdYmlReq).Return(&http.Response{
 			Body:       mdFile,
@@ -578,7 +578,7 @@ func TestClaimOwnership(t *testing.T) {
 		db.On("QueryRow", ctx, getRepoByNameDBQ, "repo1", true).Return(helmRepoJSON, nil)
 		db.On("QueryRow", ctx, getUserEmailDBQ, userID).Return("owner1@email.com", nil)
 		db.On("Exec", ctx, transferRepoDBQ, "repo1", userIDP, orgP, true).Return(nil)
-		mdFile, _ := os.Open("testdata/artifacthub-repo.yml")
+		mdFile, _ := os.Open("testdata/khulnasoft-repo.yml")
 		hc := &tests.HTTPClientMock{}
 		hc.On("Do", mdYmlReq).Return(&http.Response{
 			Body:       mdFile,
@@ -872,10 +872,10 @@ func TestGetByName(t *testing.T) {
 
 func TestGetMetadata(t *testing.T) {
 	repoURL := "http://url.test"
-	ymlReq, _ := http.NewRequest("GET", "http://url.test/artifacthub-repo.yml", nil)
-	yamlReq, _ := http.NewRequest("GET", "http://url.test/artifacthub-repo.yaml", nil)
+	ymlReq, _ := http.NewRequest("GET", "http://url.test/khulnasoft-repo.yml", nil)
+	yamlReq, _ := http.NewRequest("GET", "http://url.test/khulnasoft-repo.yaml", nil)
 	ociRepoURL := "oci://registry/namespace/repo"
-	ociRef := fmt.Sprintf("%s:%s", strings.TrimPrefix(ociRepoURL, hub.RepositoryOCIPrefix), artifacthubTag)
+	ociRef := fmt.Sprintf("%s:%s", strings.TrimPrefix(ociRepoURL, hub.RepositoryOCIPrefix), khulnasoftTag)
 	expectedMetadata := &hub.RepositoryMetadata{
 		RepositoryID: "00000000-0000-0000-0000-000000000001",
 		Owners: []*hub.Owner{

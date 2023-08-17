@@ -69,7 +69,7 @@ const WidgetsGroupModal = (props: Props) => {
   };
 
   const buildWidgetsGroupCode = (): string => {
-    const code = `<div class="artifacthub-widget-group" data-url="${
+    const code = `<div class="khulnasoft-widget-group" data-url="${
       window.location.href
     }" data-theme="${theme}" data-header="${!header ? 'false' : 'true'}" data-stars="${
       !stars ? 'false' : 'true'
@@ -77,7 +77,7 @@ const WidgetsGroupModal = (props: Props) => {
       fixedWidth ? `data-width="${fixedWidth}"` : ''
     } data-loading="${loading ? 'true' : 'false'}"></div><script async src="${
       window.location.origin
-    }/artifacthub-widget.js"></script>`;
+    }/khulnasoft-widget.js"></script>`;
 
     return code;
   };

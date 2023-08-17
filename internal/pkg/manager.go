@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/satori/uuid"
 	stripmd "github.com/writeas/go-strip-markdown"
 )

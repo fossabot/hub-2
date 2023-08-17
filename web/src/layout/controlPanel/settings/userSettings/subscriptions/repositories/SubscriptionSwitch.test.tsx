@@ -11,7 +11,7 @@ const defaultProps = {
   repoInfo: {
     repositoryId: 'b4b4973f-08f0-430a-acb3-2c6ec5449495',
     name: 'hub',
-    url: 'https://artifacthub.github.io/helm-charts/',
+    url: 'https://khulnasoft.github.io/helm-charts/',
     private: false,
     kind: 0,
     verifiedPublisher: false,
@@ -27,7 +27,7 @@ const optOutItem = {
   repository: {
     repositoryId: 'b4b4973f-08f0-430a-acb3-2c6ec5449495',
     name: 'hub',
-    url: 'https://artifacthub.github.io/helm-charts/',
+    url: 'https://khulnasoft.github.io/helm-charts/',
     private: false,
     kind: 0,
     verifiedPublisher: false,

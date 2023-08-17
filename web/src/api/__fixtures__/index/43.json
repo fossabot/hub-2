@@ -216,7 +216,7 @@
         "links": [
           {
             "name": "New location",
-            "url": "https://artifacthub.github.io/helm-charts/"
+            "url": "https://khulnasoft.github.io/helm-charts/"
           }
         ]
       },
@@ -627,7 +627,7 @@
         "description": "Add banner to display message of the day"
       },
       {
-        "description": "Allow referencing external logo images in artifacthub-pkg.yaml file"
+        "description": "Allow referencing external logo images in khulnasoft-pkg.yaml file"
       },
       {
         "description": "Allow dynamic resource names in Artifact Hub Helm chart"

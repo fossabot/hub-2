@@ -44,7 +44,7 @@ const WidgetModal = (props: Props) => {
 
   const buildWidgetCode = (): string => {
     const url = `${window.location.origin}${window.location.pathname}`;
-    const code = `<div class="artifacthub-widget" data-url="${url}" data-theme="${theme}" data-header="${
+    const code = `<div class="khulnasoft-widget" data-url="${url}" data-theme="${theme}" data-header="${
       !header ? 'false' : 'true'
     }" data-stars="${!stars ? 'false' : 'true'}" data-responsive="${
       responsive ? 'true' : 'false'
@@ -52,7 +52,7 @@ const WidgetModal = (props: Props) => {
       props.packageDescription ? `: ${props.packageDescription}` : ''
     }</p>&mdash; Open in <a href="${url}">${siteName}</a></blockquote></div><script async src="${
       window.location.origin
-    }/artifacthub-widget.js"></script>`;
+    }/khulnasoft-widget.js"></script>`;
 
     return code;
   };

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/jackc/pgx/v4"
 	"github.com/satori/uuid"
 )

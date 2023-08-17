@@ -19,7 +19,7 @@ const tests: Test[] = [
   { text: '100%', result: '"100%"' },
   { text: 'c&s', result: '"c&s"' },
   { text: '1 + 2 = 3', result: '"1 + 2 = 3"' },
-  { text: '#cncfartifacthub', result: '"#cncfartifacthub"' },
+  { text: '#cncfkhulnasoft', result: '"#cncfkhulnasoft"' },
   { text: '1 - 1', result: '"1 - 1"' },
   { text: 'a|b', result: '"a|b"' },
   { text: '<html>', result: '"<html>"' },

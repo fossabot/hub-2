@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/jackc/pgx/v4"
 	"github.com/open-policy-agent/opa/ast"
 	"github.com/open-policy-agent/opa/rego"
@@ -22,7 +22,7 @@ import (
 const (
 	// AllowedActionsQuery represents the authorization's policy query used to
 	// get the actions a given user is allowed to perform.
-	AllowedActionsQuery = "data.artifacthub.authz.allowed_actions"
+	AllowedActionsQuery = "data.khulnasoft.authz.allowed_actions"
 
 	// Database queries
 	getAuthzPoliciesDBQ = `select get_authorization_policies()`

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StarredPackagesView creates snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex flex-column flex-grow-1 position-relative"
+  >
+    <div
+      class="position-absolute top-0 bottom-0 start-0 end-0 p-5 wrapper"
+    >
+      <div
+        class="d-flex flex-row align-items-center justify-content-center w-100 h-100"
+      >
+        <div
+          class="wave"
+          role="status"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+    <main
+      class="container-lg px-sm-4 px-lg-0 py-5"
+      role="main"
+    >
+      <div
+        class="flex-grow-1 position-relative"
+      >
+        <div
+          class="h3 pb-0"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center"
+          >
+            <div>
+              Your starred packages
+            </div>
+          </div>
+        </div>
+        <div
+          class="row mx-auto mt-4 noFocus wrapper"
+          id="content"
+          role="list"
+          tabindex="-1"
+        />
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

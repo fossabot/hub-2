@@ -999,7 +999,7 @@ paths:
                           name: artifact-hub
                           display_name: Artifact Hub
                           repository_id: a032a436-3568-4970-804a-2780f5e9d231
-                          organization_name: artifacthub
+                          organization_name: khulnasoft
                           organization_display_name: Artifact Hub
                           verified_publisher: true
                           official: true
@@ -1055,7 +1055,7 @@ paths:
                           - id: helm
                             name: Helm
                             total: 53
-                          - id: artifacthub
+                          - id: khulnasoft
                             name: Artifact Hub
                             total: 1
                       - title: kind
@@ -3014,7 +3014,7 @@ paths:
         - Stats
       summary: Get Artifact Hub stats
       description: Get Artifact Hub stats
-      operationId: getArtifactHubStats
+      operationId: getkhulnasoftStats
       responses:
         "200":
           description: ""
@@ -3358,7 +3358,7 @@ paths:
                     version: 1.2.0
                     repository:
                       name: artifact-hub
-                      url: https://artifacthub.github.io/helm-charts/
+                      url: https://khulnasoft.github.io/helm-charts/
                   - name: kube-prometheus-stack
                     version: 18.0.6
                     repository:
@@ -3561,7 +3561,7 @@ components:
           type: string
           nullable: false
           example: |
-            package artifacthub.authz
+            package khulnasoft.authz
 
             # By default, deny requests
             default allow = false
@@ -3743,7 +3743,7 @@ components:
                   items:
                     type: string
                     nullable: false
-                    example: public.ecr.aws/artifacthub/ah
+                    example: public.ecr.aws/khulnasoft/ah
     CoreDNSPackage:
       $ref: "#/components/schemas/Package"
     FalcoPackage:

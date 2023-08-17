@@ -4,7 +4,7 @@ This document will help you setup your development environment so that you can b
 
 The instructions provided in this document rely on a set of [aliases](#aliases) available at the end of this document. These aliases are used by some of the maintainers and are provided only as examples. Please feel free to adapt them to suit your needs. You may want to add them to your shell's configuration file so that they are loaded automatically.
 
-To start, please clone the [Artifact Hub repository](https://github.com/artifacthub/hub). If you plan to use the aliases mentioned above, you should set the `HUB_SOURCE` variable to the path where you cloned the repository.
+To start, please clone the [Artifact Hub repository](https://github.com/khulnasoft/hub). If you plan to use the aliases mentioned above, you should set the `HUB_SOURCE` variable to the path where you cloned the repository.
 
 ## Database
 
@@ -25,7 +25,7 @@ hub_db_create
 
 ### Migrations
 
-[Database migrations](https://github.com/artifacthub/hub/tree/master/database/migrations) are managed using [Tern](https://github.com/jackc/tern). Please [install it](https://github.com/jackc/tern#installation) before proceeding. The database schema and functions are managed with migrations.
+[Database migrations](https://github.com/khulnasoft/hub/tree/master/database/migrations) are managed using [Tern](https://github.com/jackc/tern). Please [install it](https://github.com/jackc/tern#installation) before proceeding. The database schema and functions are managed with migrations.
 
 We need to create a configuration file so that Tern knows how to connect to our database. We'll create a file called `tern.conf` inside `~/.cfg` with the following content (please adjust if needed):
 
@@ -50,7 +50,7 @@ At this point our database is ready to launch our local instance of Artifact Hub
 
 ### Database tests
 
-If you plan to do some work on the database layer, some extra setup is needed to be able to run the database tests. [Schema and database functions are tested](https://github.com/artifacthub/hub/tree/master/database/tests) using the unit testing framework [pgTap](https://pgtap.org), so you need to [install](https://pgtap.org/documentation.html#installation) the pgTap PostgreSQL extension on your machine. To run the tests you will also need to install a perl tool called [pg_prove](https://pgtap.org/pg_prove.html) from CPAN (`cpan TAP::Parser::SourceHandler::pgTAP`).
+If you plan to do some work on the database layer, some extra setup is needed to be able to run the database tests. [Schema and database functions are tested](https://github.com/khulnasoft/hub/tree/master/database/tests) using the unit testing framework [pgTap](https://pgtap.org), so you need to [install](https://pgtap.org/documentation.html#installation) the pgTap PostgreSQL extension on your machine. To run the tests you will also need to install a perl tool called [pg_prove](https://pgtap.org/pg_prove.html) from CPAN (`cpan TAP::Parser::SourceHandler::pgTAP`).
 
 Similarly to what we did during our initial database setup, we'll create a configuration file for Tern for the tests database in the same folder (`~/.cfg`), called `tern-tests.conf` with the following content (please adjust if needed):
 
@@ -73,7 +73,7 @@ hub_db_recreate_tests && hub_db_tests
 
 ### Docker
 
-If you opt for running PostgreSQL locally using Docker, [this Dockerfile](https://github.com/artifacthub/hub/blob/master/database/tests/Dockerfile-postgres-pgtap) used to build the images used by the [CI workflow](https://github.com/artifacthub/hub/blob/master/.github/workflows/ci.yml) can be helpful as a starting point. Image used by the CI workflow can be found in the Docker Hub as [artifacthub/postgres-pgtap](https://hub.docker.com/r/artifacthub/postgres-pgtap).
+If you opt for running PostgreSQL locally using Docker, [this Dockerfile](https://github.com/khulnasoft/hub/blob/master/database/tests/Dockerfile-postgres-pgtap) used to build the images used by the [CI workflow](https://github.com/khulnasoft/hub/blob/master/.github/workflows/ci.yml) can be helpful as a starting point. Image used by the CI workflow can be found in the Docker Hub as [khulnasoft/postgres-pgtap](https://hub.docker.com/r/khulnasoft/postgres-pgtap).
 
 ## Backend
 
@@ -119,9 +119,9 @@ theme:
   images:
     appleTouchIcon192: "/static/media/logo192_v2.png"
     appleTouchIcon512: "/static/media/logo512_v2.png"
-    openGraphImage: "/static/media/artifactHub_v2.png"
+    openGraphImage: "/static/media/khulnasoft_v2.png"
     shortcutIcon: "/static/media/logo_v2.png"
-    websiteLogo: "/static/media/logo/artifacthub-brand-white.svg"
+    websiteLogo: "/static/media/logo/khulnasoft-brand-white.svg"
   siteName: "Artifact Hub"
   sampleQueries:
     - name: Packages from verified publishers
@@ -132,7 +132,7 @@ theme:
       querystring: "kind=0&ts_query=storage"
 ```
 
-This sample configuration does not use all options available. For more information please see [the Chart configuration options](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [the Chart hub secret template file](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/templates/hub_secret.yaml).
+This sample configuration does not use all options available. For more information please see [the Chart configuration options](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [the Chart hub secret template file](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/hub_secret.yaml).
 
 Now you can run the `hub` server:
 
@@ -241,7 +241,7 @@ The following aliases are used by some of the maintainers and are provided only 
 ```sh
 export HUB_SOURCE=~/projects/hub
 export HUB_DATA=~/tmp/data_hub
-export HUB_DB_BACKUP=~/tmp/artifacthub-backup.local.sql
+export HUB_DB_BACKUP=~/tmp/khulnasoft-backup.local.sql
 
 alias hub_db_init="mkdir -p $HUB_DATA && initdb -U postgres $HUB_DATA"
 alias hub_db_create="psql -U postgres -c 'create database hub'"

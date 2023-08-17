@@ -42,7 +42,7 @@ paths:
                       properties:
                         id:
                           type: string
-                        artifactHub:
+                        khulnasoft:
                           type: object
                           properties:
                             packageUrl:
@@ -78,7 +78,7 @@ paths:
                   value:
                     data:
                       - id: adfinis/barman
-                        artifactHub:
+                        khulnasoft:
                           packageUrl: "http://khulnasoft.com/packages/helm/adfinis/barman"
                         attributes:
                           description: >-

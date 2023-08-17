@@ -17,23 +17,23 @@ The structure of a repository with multiple packages and versions could look som
 ```sh
 $ tree path/to/packages
 path/to/packages
-├── artifacthub-repo.yml
+├── khulnasoft-repo.yml
 ├── package1
 │   ├── 1.0.0
 │   │   ├── README.md
-│   │   ├── artifacthub-pkg.yml
+│   │   ├── khulnasoft-pkg.yml
 │   │   ├── more
 │   │   │   └── policies3.rego
 │   │   ├── policies1.rego
 │   │   └── policies2.rego
 │   └── 2.0.0
 │       ├── README.md
-│       ├── artifacthub-pkg.yml
+│       ├── khulnasoft-pkg.yml
 │       └── policies1.rego
 └── package2
     └── 1.0.0
         ├── README.md
-        ├── artifacthub-pkg.yml
+        ├── khulnasoft-pkg.yml
         └── policies1.rego
 ```
 
@@ -44,26 +44,26 @@ In the case of a single package with a single version available at a time (the p
 ```sh
 $ tree path/to/packages
 path/to/packages
-├── artifacthub-repo.yml
+├── khulnasoft-repo.yml
 └── package1
     ├── README.md
-    ├── artifacthub-pkg.yml
+    ├── khulnasoft-pkg.yml
     ├── policies1.rego
     └── policies2.rego
 ```
 
-In the previous case, even the `package1` directory could be omitted. The reason is that both packages names and versions are read from the `artifacthub-pkg.yml` metadata file, so directories names are not used at all.
+In the previous case, even the `package1` directory could be omitted. The reason is that both packages names and versions are read from the `khulnasoft-pkg.yml` metadata file, so directories names are not used at all.
 
-Each package version **needs** an `artifacthub-pkg.yml` metadata file. Please see the file [spec](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml) for more details. Policies files **must** have the `.rego` extension. If you want to exclude some paths in your package from the indexing, you can do it using the `ignore` field in your [package metadata file](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml), which uses `.gitignore` syntax.
+Each package version **needs** an `khulnasoft-pkg.yml` metadata file. Please see the file [spec](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-pkg.yml) for more details. Policies files **must** have the `.rego` extension. If you want to exclude some paths in your package from the indexing, you can do it using the `ignore` field in your [package metadata file](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-pkg.yml), which uses `.gitignore` syntax.
 
-The [artifacthub-repo.yml](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
+The [khulnasoft-repo.yml](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
 
 Once you have added your repository, you are all set up. As you add new versions of your policies or even new policies packages to your git repository, they'll be automatically indexed and listed in Artifact Hub.
 
 ### Example repository: Deprek8ion policies
 
 - Policies source GitHub URL: [https://github.com/swade1987/deprek8ion/tree/master/policies](https://github.com/swade1987/deprek8ion/tree/master/policies)
-- Repository metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-repo.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-repo.yml)
-- Package metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-pkg.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-pkg.yml)
+- Repository metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/khulnasoft-repo.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/khulnasoft-repo.yml)
+- Package metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/khulnasoft-pkg.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/khulnasoft-pkg.yml)
 - Repository URL used in Artifact Hub: `https://github.com/swade1987/deprek8ion/policies` (please note how the *tree/master* part is not used)
 - Policies displayed in Artifact Hub: [https://khulnasoft.com/packages/opa/deprek8ion/deprek8ion](https://khulnasoft.com/packages/opa/deprek8ion/deprek8ion)

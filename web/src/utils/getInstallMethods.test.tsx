@@ -1243,7 +1243,7 @@ const tests: Tests[] = [
         ts: 1624528800,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kedacore/keda',
+            url: 'https://khulnasoft.com/packages/helm/kedacore/keda',
           },
         ],
         repository: {
@@ -1318,7 +1318,7 @@ const tests: Tests[] = [
         ts: 1624528800,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kedacore/keda',
+            url: 'https://khulnasoft.com/packages/helm/kedacore/keda',
           },
         ],
         repository: {
@@ -1408,7 +1408,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1511,7 +1511,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1615,7 +1615,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1736,7 +1736,7 @@ const tests: Tests[] = [
         hasValuesSchema: false,
         hasChangelog: true,
         ts: 1662595200,
-        recommendations: [{ url: 'https://artifacthub.io/packages/helm/gatekeeper/gatekeeper' }],
+        recommendations: [{ url: 'https://khulnasoft.com/packages/helm/gatekeeper/gatekeeper' }],
         repository: {
           repositoryId: 'af2de865-f025-49f3-a873-6d93e7fabb4c',
           name: 'gatekeeper',
@@ -1931,7 +1931,7 @@ const tests: Tests[] = [
         hasValuesSchema: false,
         hasChangelog: true,
         ts: 1662595200,
-        recommendations: [{ url: 'https://artifacthub.io/packages/helm/gatekeeper/gatekeeper' }],
+        recommendations: [{ url: 'https://khulnasoft.com/packages/helm/gatekeeper/gatekeeper' }],
         install: '###Custom install',
         repository: {
           repositoryId: 'af2de865-f025-49f3-a873-6d93e7fabb4c',

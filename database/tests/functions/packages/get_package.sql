@@ -149,11 +149,11 @@ insert into snapshot (
     ]',
     true,
     true,
-    '[{"url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"}]',
+    '[{"url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"}]',
     '[
         {
             "title": "Screenshot 1",
-            "url": "https://artifacthub.io/screenshot1.jpg"
+            "url": "https://khulnasoft.com/screenshot1.jpg"
         }
     ]'::jsonb,
     '{"fingerprint": "0011223344", "url": "https://key.url"}',
@@ -356,13 +356,13 @@ select is(
         ],
         "recommendations": [
             {
-                "url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"
+                "url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"
             }
         ],
         "screenshots": [
             {
                 "title": "Screenshot 1",
-                "url": "https://artifacthub.io/screenshot1.jpg"
+                "url": "https://khulnasoft.com/screenshot1.jpg"
             }
         ],
         "sign_key": {
@@ -505,13 +505,13 @@ select is(
         ],
         "recommendations": [
             {
-                "url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"
+                "url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"
             }
         ],
         "screenshots": [
             {
                 "title": "Screenshot 1",
-                "url": "https://artifacthub.io/screenshot1.jpg"
+                "url": "https://khulnasoft.com/screenshot1.jpg"
             }
         ],
         "sign_key": {

@@ -1,10 +1,10 @@
 # Build scanner
 FROM golang:1.21.0-alpine3.18 AS scanner-builder
-WORKDIR /go/src/github.com/artifacthub/scanner
+WORKDIR /go/src/github.com/khulnasoft/scanner
 COPY go.* ./
 COPY cmd/scanner cmd/scanner
 COPY internal internal
-WORKDIR /go/src/github.com/artifacthub/scanner/cmd/scanner
+WORKDIR /go/src/github.com/khulnasoft/scanner/cmd/scanner
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /scanner .
 
 # Trivy installer

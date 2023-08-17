@@ -50,10 +50,10 @@
   "ts": 1601424000,
   "recommendations": [
     {
-      "url": "https://artifacthub.io/packages/helm/argo/argo-cd"
+      "url": "https://khulnasoft.com/packages/helm/argo/argo-cd"
     },
     {
-      "url": "https://artifacthub.io/packages/helm/argo/argo-workflows"
+      "url": "https://khulnasoft.com/packages/helm/argo/argo-workflows"
     }
   ],
   "repository": {

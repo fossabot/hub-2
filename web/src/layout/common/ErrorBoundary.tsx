@@ -33,7 +33,7 @@ class ErrorBoundary extends Component<Props, State> {
             {props.message}
             <div className="h6 mt-4">
               Please{' '}
-              <ExternalLink href="https://github.com/artifacthub/hub/issues/new/choose" label="GitHub issue">
+              <ExternalLink href="https://github.com/khulnasoft/hub/issues/new/choose" label="GitHub issue">
                 <u>file an issue</u>
               </ExternalLink>{' '}
               in GitHub indicating the URL of the package you are experiencing problems with.

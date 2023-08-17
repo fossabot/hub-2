@@ -1953,7 +1953,7 @@ const tests = [
             },
             {
               type: 'inlineCode',
-              value: 'demo@artifacthub.io',
+              value: 'demo@khulnasoft.com',
             },
             {
               type: 'text',

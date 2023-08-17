@@ -15,10 +15,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/img"
-	"github.com/khulnasoft/hub/internal/oci"
-	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/img"
+	"github.com/artifacthub/hub/internal/oci"
+	"github.com/artifacthub/hub/internal/pkg"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/types"
@@ -42,18 +42,18 @@ const (
 	vendorAnnotation           = "org.opencontainers.image.vendor"
 
 	// Artifact Hub specific annotations
-	alternativeLocationsAnnotation = "io.khulnasoft.package.alternative-locations"
-	categoryAnnotation             = "io.khulnasoft.package.category"
-	deprecatedAnnotation           = "io.khulnasoft.package.deprecated"
-	digestAnnotation               = "io.khulnasoft.package.digest" // Populated internally in getMetadata
-	keywordsAnnotation             = "io.khulnasoft.package.keywords"
-	licenseAnnotation              = "io.khulnasoft.package.license"
-	logoURLAnnotation              = "io.khulnasoft.package.logo-url"
-	maintainersAnnotation          = "io.khulnasoft.package.maintainers"
-	platformsAnnotation            = "io.khulnasoft.package.platforms" // Populated internally in getMetadata
-	prereleaseAnnotation           = "io.khulnasoft.package.prerelease"
-	readmeURLAnnotation            = "io.khulnasoft.package.readme-url"
-	securityUpdatesAnnotation      = "io.khulnasoft.package.contains-security-updates"
+	alternativeLocationsAnnotation = "io.artifacthub.package.alternative-locations"
+	categoryAnnotation             = "io.artifacthub.package.category"
+	deprecatedAnnotation           = "io.artifacthub.package.deprecated"
+	digestAnnotation               = "io.artifacthub.package.digest" // Populated internally in getMetadata
+	keywordsAnnotation             = "io.artifacthub.package.keywords"
+	licenseAnnotation              = "io.artifacthub.package.license"
+	logoURLAnnotation              = "io.artifacthub.package.logo-url"
+	maintainersAnnotation          = "io.artifacthub.package.maintainers"
+	platformsAnnotation            = "io.artifacthub.package.platforms" // Populated internally in getMetadata
+	prereleaseAnnotation           = "io.artifacthub.package.prerelease"
+	readmeURLAnnotation            = "io.artifacthub.package.readme-url"
+	securityUpdatesAnnotation      = "io.artifacthub.package.contains-security-updates"
 )
 
 var (

@@ -16,9 +16,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/oci"
-	"github.com/khulnasoft/hub/internal/util"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/oci"
+	"github.com/artifacthub/hub/internal/util"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/config"
 	githttp "github.com/go-git/go-git/v5/plumbing/transport/http"
@@ -52,9 +52,9 @@ const (
 const (
 	// MetadataLayerMediaType represents the media type used for the layer that
 	// contains the repository metadata in an OCI image.
-	MetadataLayerMediaType = "application/vnd.cncf.khulnasoft.repository-metadata.layer.v1.yaml"
+	MetadataLayerMediaType = "application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml"
 
-	khulnasoftTag        = "khulnasoft.com"
+	artifacthubTag        = "artifacthub.io"
 	maxContainerImageTags = 10
 )
 
@@ -405,7 +405,7 @@ func (m *Manager) GetMetadata(r *hub.Repository, basePath string) (*hub.Reposito
 		// OCI image
 		ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 		defer cancel()
-		ref := fmt.Sprintf("%s:%s", strings.TrimPrefix(mdFile, hub.RepositoryOCIPrefix), khulnasoftTag)
+		ref := fmt.Sprintf("%s:%s", strings.TrimPrefix(mdFile, hub.RepositoryOCIPrefix), artifacthubTag)
 		_, data, err = m.op.PullLayer(ctx, ref, MetadataLayerMediaType, r.AuthUser, r.AuthPass)
 		if errors.Is(err, oci.ErrArtifactNotFound) || errors.Is(err, oci.ErrLayerNotFound) {
 			err = ErrMetadataNotFound

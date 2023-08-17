@@ -8,7 +8,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/hub"
 	"helm.sh/helm/v3/pkg/getter"
 	helmrepo "helm.sh/helm/v3/pkg/repo"
 	"sigs.k8s.io/yaml"

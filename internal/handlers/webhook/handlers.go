@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"text/template"
 
-	"github.com/khulnasoft/hub/internal/handlers/helpers"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/notification"
+	"github.com/artifacthub/hub/internal/handlers/helpers"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/notification"
 	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
@@ -152,7 +152,7 @@ func (h *Handlers) TriggerTest(w http.ResponseWriter, r *http.Request) {
 		contentType = notification.DefaultPayloadContentType
 	}
 	req.Header.Set("Content-Type", contentType)
-	req.Header.Set("X-khulnasoft-Secret", wh.Secret)
+	req.Header.Set("X-ArtifactHub-Secret", wh.Secret)
 	resp, err := h.hc.Do(req)
 	if err != nil {
 		err = fmt.Errorf("error doing request: %w", err)
@@ -197,7 +197,7 @@ var webhookTestTemplateData = &hub.PackageNotificationTemplateData{
 	Package: map[string]interface{}{
 		"Name":    "sample-package",
 		"Version": "1.0.0",
-		"URL":     "https://khulnasoft.com/packages/helm/khulnasoft/sample-package/1.0.0",
+		"URL":     "https://artifacthub.io/packages/helm/artifacthub/sample-package/1.0.0",
 		"Changes": []*hub.Change{
 			{
 				Description: "Cool feature",

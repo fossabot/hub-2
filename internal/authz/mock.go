@@ -3,7 +3,7 @@ package authz
 import (
 	"context"
 
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/hub"
 	"github.com/stretchr/testify/mock"
 )
 

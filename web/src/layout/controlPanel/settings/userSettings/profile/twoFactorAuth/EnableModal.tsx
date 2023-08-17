@@ -189,7 +189,7 @@ const EnableTwoFactorAuthenticationModal = (props: Props) => {
                         </div>
                         <div className={`border border-1 position-relative p-2 p-sm-4 ${styles.codesWrapper}`}>
                           <BlockCodeButtons
-                            filename="khulnasoft-recovery-codes.txt"
+                            filename="artifacthub-recovery-codes.txt"
                             content={setUp.recoveryCodes.join('\n')}
                             hiddenCopyBtn
                           />

@@ -1,12 +1,12 @@
 # Infrastructure
 
-This document describes the infrastructure used to deploy the production and staging environments of `khulnasoft.com`.
+This document describes the infrastructure used to deploy the production and staging environments of `artifacthub.io`.
 
 ## Overview
 
-`khulnasoft.com` runs on AWS, using an account owned by the [CNCF](https://www.cncf.io) and managed by the Artifact Hub [maintainers](https://github.com/khulnasoft/hub/blob/master/OWNERS). The following services are being used at the moment:
+`artifacthub.io` runs on AWS, using an account owned by the [CNCF](https://www.cncf.io) and managed by the Artifact Hub [maintainers](https://github.com/artifacthub/hub/blob/master/OWNERS). The following services are being used at the moment:
 
-- **Route 53:** the `khulnasoft.com` domain and associated DNS entries are managed from Route 53. The most important entry is the `A` record for `khulnasoft.com`, which points to the domain name of a CloudFront distribution.
+- **Route 53:** the `artifacthub.io` domain and associated DNS entries are managed from Route 53. The most important entry is the `A` record for `artifacthub.io`, which points to the domain name of a CloudFront distribution.
 
 - **Certificate Manager:** the SSL/TLS certificates used by other services like CloudFront and Load Balancing are provisioned and managed by the Certificate Manager. Certificates are configured to be renewed automatically.
 
@@ -16,17 +16,17 @@ This document describes the infrastructure used to deploy the production and sta
 
 - **Firewall Manager:** both CloudFront and the load balancer have associated a set of web ACLs rules to rate limit and block certain traffic patterns.
 
-- **Container Registry:** a Docker image for each of the Artifact Hub components is built and pushed to ECR for each commit to the `master` branch via the [CI workflow](https://github.com/khulnasoft/hub/blob/master/.github/workflows/ci.yml). These images are the ones used by the `khulnasoft.com` production and staging deployments. These images are *NOT* publicly available. In addition to them, we also [build images for each release version](https://github.com/khulnasoft/hub/blob/master/.github/workflows/release.yml), which are published to the Docker Hub and made publicly available.
+- **Container Registry:** a Docker image for each of the Artifact Hub components is built and pushed to ECR for each commit to the `master` branch via the [CI workflow](https://github.com/artifacthub/hub/blob/master/.github/workflows/ci.yml). These images are the ones used by the `artifacthub.io` production and staging deployments. These images are *NOT* publicly available. In addition to them, we also [build images for each release version](https://github.com/artifacthub/hub/blob/master/.github/workflows/release.yml), which are published to the Docker Hub and made publicly available.
 
-- **Elastic Kubernetes Service:** the Artifact Hub components are deployed on a Kubernetes cluster managed by EKS. Each environment (production and staging) runs on a separate cluster. The installation and upgrades are done using the official [Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub) provided by the project.
+- **Elastic Kubernetes Service:** the Artifact Hub components are deployed on a Kubernetes cluster managed by EKS. Each environment (production and staging) runs on a separate cluster. The installation and upgrades are done using the official [Helm chart](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub) provided by the project.
 
 - **Relational Database Service (RDS):** the PostgreSQL instance used as the main datastore for Artifact Hub is managed by RDS. Each environment has its own database instance running in a Multi-AZ setup.
 
-- **Simple Email Service:** Artifact Hub needs a SMTP server configured to be able to send emails. In the `khulnasoft.com` deployments this is set up using SES.
+- **Simple Email Service:** Artifact Hub needs a SMTP server configured to be able to send emails. In the `artifacthub.io` deployments this is set up using SES.
 
 ## Installation
 
-This section describes how to bootstrap the `khulnasoft.com` deployment.
+This section describes how to bootstrap the `artifacthub.io` deployment.
 
 ## Setup Kubernetes cluster
 
@@ -64,7 +64,7 @@ Before creating a PostgreSQL instance in RDS, we'll setup a security and subnet 
 
 ## Install Artifact Hub chart
 
-The `khulnasoft.com` deployment is installed using the official [Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub) provided by the project. In addition to the [default Chart values](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values.yaml), we provide a file with some specific values for the [staging](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values-staging.yaml) and [production](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/values-production.yaml) environments. These are not recommended official values for production deployments, just the ones used by `khulnasoft.com`. On top of those, some extra values containing credentials and other pieces of information are provided using `--set` when running the installation command.
+The `artifacthub.io` deployment is installed using the official [Helm chart](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub) provided by the project. In addition to the [default Chart values](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values.yaml), we provide a file with some specific values for the [staging](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values-staging.yaml) and [production](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/values-production.yaml) environments. These are not recommended official values for production deployments, just the ones used by `artifacthub.io`. On top of those, some extra values containing credentials and other pieces of information are provided using `--set` when running the installation command.
 
 ```sh
 helm install \
@@ -77,8 +77,8 @@ helm install \
   --set db.host=<DB_HOST> \
   --set db.password=<DB_PASSWORD> \
   --set email.fromName="Artifact Hub" \
-  --set email.from=hub@khulnasoft.com \
-  --set email.replyTo=no-reply@khulnasoft.com \
+  --set email.from=hub@artifacthub.io \
+  --set email.replyTo=no-reply@artifacthub.io \
   --set email.smtp.host=<SMTP_HOST> \
   --set email.smtp.port=<SMTP_PORT> \
   --set email.smtp.username=<SMTP_USERNAME> \
@@ -102,7 +102,7 @@ helm install \
 <RELEASE_NAME> .
 ```
 
-For more information about any of the values provided, please check the [values schema](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema).
+For more information about any of the values provided, please check the [values schema](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=values-schema).
 
 ## Update CloudFront distribution origin
 

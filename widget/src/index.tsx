@@ -28,7 +28,7 @@ const renderWidget = (element: HTMLElement) => {
   );
 };
 
-const Widgets = document.querySelectorAll('.khulnasoft-widget');
+const Widgets = document.querySelectorAll('.artifacthub-widget');
 Widgets.forEach((div: Element) => {
   const observer = new MutationObserver((mutationsList: MutationRecord[]) => {
     for (const mutation of mutationsList) {
@@ -67,7 +67,7 @@ const renderGroup = (element: HTMLElement) => {
   );
 };
 
-const WidgetsGroups = document.querySelectorAll('.khulnasoft-widget-group');
+const WidgetsGroups = document.querySelectorAll('.artifacthub-widget-group');
 WidgetsGroups.forEach((div: Element) => {
   const observer = new MutationObserver((mutationsList: MutationRecord[]) => {
     for (const mutation of mutationsList) {

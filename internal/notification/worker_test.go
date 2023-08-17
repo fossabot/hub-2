@@ -11,12 +11,12 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/email"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/pkg"
-	"github.com/khulnasoft/hub/internal/repo"
-	"github.com/khulnasoft/hub/internal/subscription"
-	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/artifacthub/hub/internal/email"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/pkg"
+	"github.com/artifacthub/hub/internal/repo"
+	"github.com/artifacthub/hub/internal/subscription"
+	"github.com/artifacthub/hub/internal/tests"
 	"github.com/patrickmn/go-cache"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
@@ -276,7 +276,7 @@ func TestWorker(t *testing.T) {
 	"specversion" : "1.0",
 	"id" : "eventID",
 	"source" : "http://baseURL",
-	"type" : "io.khulnasoft.package.new-release",
+	"type" : "io.artifacthub.package.new-release",
 	"datacontenttype" : "application/json",
 	"data" : {
 		"package": {
@@ -315,7 +315,7 @@ func TestWorker(t *testing.T) {
 					}
 					assert.Equal(t, "POST", r.Method)
 					assert.Equal(t, contentType, r.Header.Get("Content-Type"))
-					assert.Equal(t, tc.secret, r.Header.Get("X-khulnasoft-Secret"))
+					assert.Equal(t, tc.secret, r.Header.Get("X-ArtifactHub-Secret"))
 					payload, _ := io.ReadAll(r.Body)
 					assert.Equal(t, tc.expectedPayload, payload)
 				}))

@@ -9,7 +9,7 @@ select plan(3);
 
 -- No packages at this point
 select is(
-    search_packages_monocular('https://khulnasoft.com', 'package1')::jsonb,
+    search_packages_monocular('https://artifacthub.io', 'package1')::jsonb,
     '{"data": []}'::jsonb,
     'TSQueryWeb: package1 | No packages expected'
 );
@@ -45,12 +45,12 @@ insert into snapshot (
 
 -- Run some tests
 select is(
-    search_packages_monocular('https://khulnasoft.com', 'package1')::jsonb,
+    search_packages_monocular('https://artifacthub.io', 'package1')::jsonb,
     '{
         "data": [{
             "id": "repo1/package1",
-            "khulnasoft": {
-                "packageUrl": "https://khulnasoft.com/packages/helm/repo1/package1"
+            "artifactHub": {
+                "packageUrl": "https://artifacthub.io/packages/helm/repo1/package1"
             },
             "attributes": {
                 "description": "description",
@@ -72,7 +72,7 @@ select is(
     'TSQueryWeb: package1 | Package1 expected'
 );
 select is(
-    search_packages_monocular('https://khulnasoft.com', 'package2')::jsonb,
+    search_packages_monocular('https://artifacthub.io', 'package2')::jsonb,
     '{"data": []}'::jsonb,
     'TSQueryWeb: package2 | No packages expected'
 );

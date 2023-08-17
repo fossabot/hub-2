@@ -412,7 +412,7 @@ describe('Authorization settings index', () => {
           expect(API.updateAuthorizationPolicy).toHaveBeenLastCalledWith('orgTest', {
             authorizationEnabled: false,
             predefinedPolicy: null,
-            customPolicy: 'package khulnasoft.authz\n\nallow = true\nallowed_actions = ["all"]',
+            customPolicy: 'package artifacthub.authz\n\nallow = true\nallowed_actions = ["all"]',
             policyData: '{}',
           });
         });
@@ -457,7 +457,7 @@ describe('Authorization settings index', () => {
           expect(API.updateAuthorizationPolicy).toHaveBeenLastCalledWith('orgTest', {
             authorizationEnabled: false,
             predefinedPolicy: null,
-            customPolicy: 'package khulnasoft.authz\n\nallow = true\nallowed_actions = ["all"]',
+            customPolicy: 'package artifacthub.authz\n\nallow = true\nallowed_actions = ["all"]',
             policyData: '{}',
           });
         });
@@ -507,7 +507,7 @@ describe('Authorization settings index', () => {
           expect(API.updateAuthorizationPolicy).toHaveBeenLastCalledWith('orgTest', {
             authorizationEnabled: false,
             predefinedPolicy: null,
-            customPolicy: 'package khulnasoft.authz\n\nallow = true\nallowed_actions = ["all"]',
+            customPolicy: 'package artifacthub.authz\n\nallow = true\nallowed_actions = ["all"]',
             policyData: '{}',
           });
         });
@@ -556,7 +556,7 @@ describe('Authorization settings index', () => {
           expect(API.updateAuthorizationPolicy).toHaveBeenLastCalledWith('orgTest', {
             authorizationEnabled: false,
             predefinedPolicy: null,
-            customPolicy: 'package khulnasoft.authz\n\nallow = true\nallowed_actions = ["all"]',
+            customPolicy: 'package artifacthub.authz\n\nallow = true\nallowed_actions = ["all"]',
             policyData: '{}',
           });
         });
@@ -594,7 +594,7 @@ describe('Authorization settings index', () => {
         expect(API.triggerTestInRegoPlayground).toHaveBeenCalledTimes(1);
         expect(API.triggerTestInRegoPlayground).toHaveBeenCalledWith({
           rego_modules: {
-            'policy.rego': 'package khulnasoft.authz↵↵allow = true↵allowed_actions = ["all"]',
+            'policy.rego': 'package artifacthub.authz↵↵allow = true↵allowed_actions = ["all"]',
           },
           input: { user: 'test' },
           data: {},
@@ -634,7 +634,7 @@ describe('Authorization settings index', () => {
         expect(API.triggerTestInRegoPlayground).toHaveBeenCalledTimes(1);
         expect(API.triggerTestInRegoPlayground).toHaveBeenCalledWith({
           rego_modules: {
-            'policy.rego': 'package khulnasoft.authz↵↵allow = true↵allowed_actions = ["all"]',
+            'policy.rego': 'package artifacthub.authz↵↵allow = true↵allowed_actions = ["all"]',
           },
           input: { user: 'test' },
           data: {},

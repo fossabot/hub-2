@@ -19,7 +19,7 @@ theme:
   images:
     appleTouchIcon192: "/static/media/logo192_v2.png"
     appleTouchIcon512: "/static/media/logo512_v2.png"
-    openGraphImage: "/static/media/khulnasoft_v2.png"
+    openGraphImage: "/static/media/artifactHub_v2.png"
     shortcutIcon: "/static/media/logo_v2.png"
-    websiteLogo: "/static/media/logo/khulnasoft-brand-white.svg"
+    websiteLogo: "/static/media/logo/artifacthub-brand-white.svg"
   siteName: "Artifact Hub"

@@ -16,14 +16,14 @@
       "allContainersImagesWhitelisted": false,
       "ts": 1622630689,
       "repository": {
-        "url": "https://khulnasoft.github.io/hub/chart/",
+        "url": "https://artifacthub.github.io/hub/chart/",
         "kind": 0,
         "name": "artifact-hub",
         "official": true,
         "displayName": "Artifact Hub",
         "repositoryId": "a032a436-3568-4970-804a-2780f5e9d231",
         "scannerDisabled": false,
-        "organizationName": "khulnasoft",
+        "organizationName": "artifacthub",
         "verifiedPublisher": true,
         "organizationDisplayName": "Artifact Hub"
       }

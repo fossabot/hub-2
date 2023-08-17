@@ -21,7 +21,7 @@ const regoData = {
   },
 };
 
-const policy = `package khulnasoft.authz
+const policy = `package artifacthub.authz
 
 # Get user allowed actions
 allowed_actions[action] {
@@ -63,7 +63,7 @@ const result = {
   },
   input: { user: 'user1' },
   rego_modules: {
-    'policy.rego': `package khulnasoft.authz
+    'policy.rego': `package artifacthub.authz
 
 # Get user allowed actions
 allowed_actions[action] {

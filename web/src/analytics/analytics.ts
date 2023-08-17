@@ -21,7 +21,7 @@ const getPlugins = (): AnalyticsPlugin[] => {
 };
 
 const analytics = Analytics({
-  app: 'khulnasoft',
+  app: 'ArtifactHub',
   plugins: getPlugins(),
 });
 

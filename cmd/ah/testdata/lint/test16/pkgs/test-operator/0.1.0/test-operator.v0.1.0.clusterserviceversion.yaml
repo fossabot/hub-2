@@ -2,17 +2,17 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
   annotations:
-    khulnasoft.com/changes: |
+    artifacthub.io/changes: |
       - feature 1
       - fix 1
-    khulnasoft.com/containsSecurityUpdates: "true"
-    khulnasoft.com/imagesWhitelist: |
+    artifacthub.io/containsSecurityUpdates: "true"
+    artifacthub.io/imagesWhitelist: |
       - registry.io/image2:1.0.0
-    khulnasoft.com/install: |
+    artifacthub.io/install: |
       Install instructions (markdown)
-    khulnasoft.com/license: Apache-2.0
-    khulnasoft.com/prerelease: "true"
-    khulnasoft.com/recommendations: invalid
+    artifacthub.io/license: Apache-2.0
+    artifacthub.io/prerelease: "true"
+    artifacthub.io/recommendations: invalid
     capabilities: Basic Install
     categories: Application Runtime
     containerImage: repo.url:latest

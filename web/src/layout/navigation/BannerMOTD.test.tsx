@@ -13,7 +13,7 @@ describe('BannerMOTD', () => {
     Object.defineProperty(document, 'querySelector', {
       value: (selector: any) => {
         switch (selector) {
-          case `meta[name='khulnasoft:motd']`:
+          case `meta[name='artifacthub:motd']`:
             return {
               getAttribute: () => 'this is a sample',
             };
@@ -33,7 +33,7 @@ describe('BannerMOTD', () => {
       Object.defineProperty(document, 'querySelector', {
         value: (selector: any) => {
           switch (selector) {
-            case `meta[name='khulnasoft:motd']`:
+            case `meta[name='artifacthub:motd']`:
               return {
                 getAttribute: () => 'this is a sample',
               };
@@ -62,11 +62,11 @@ describe('BannerMOTD', () => {
       Object.defineProperty(document, 'querySelector', {
         value: (selector: any) => {
           switch (selector) {
-            case `meta[name='khulnasoft:motd']`:
+            case `meta[name='artifacthub:motd']`:
               return {
                 getAttribute: () => 'this is a sample',
               };
-            case `meta[name='khulnasoft:motdSeverity']`:
+            case `meta[name='artifacthub:motdSeverity']`:
               return {
                 getAttribute: () => 'error',
               };
@@ -87,7 +87,7 @@ describe('BannerMOTD', () => {
       Object.defineProperty(document, 'querySelector', {
         value: (selector: any) => {
           switch (selector) {
-            case `meta[name='khulnasoft:motd']`:
+            case `meta[name='artifacthub:motd']`:
               return {
                 getAttribute: () => 'this is a sample',
               };
@@ -125,7 +125,7 @@ describe('BannerMOTD', () => {
         Object.defineProperty(document, 'querySelector', {
           value: (selector: any) => {
             switch (selector) {
-              case `meta[name='khulnasoft:motd']`:
+              case `meta[name='artifacthub:motd']`:
                 return {
                   getAttribute: () => '',
                 };
@@ -144,7 +144,7 @@ describe('BannerMOTD', () => {
         Object.defineProperty(document, 'querySelector', {
           value: (selector: any) => {
             switch (selector) {
-              case `meta[name='khulnasoft:motd']`:
+              case `meta[name='artifacthub:motd']`:
                 return {
                   // When variable is not updated
                   getAttribute: () => '{{ .motd }}',

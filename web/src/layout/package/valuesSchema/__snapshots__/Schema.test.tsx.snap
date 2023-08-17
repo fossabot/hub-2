@@ -2290,7 +2290,7 @@ exports[`Schema creates snapshot 1`] = `
           data-testid="defaultValue"
         >
           <span>
-            khulnasoft/hub
+            artifacthub/hub
           </span>
         </span>
       </div>
@@ -2373,7 +2373,7 @@ exports[`Schema creates snapshot 1`] = `
                           class="ms-1"
                         >
                           <span>
-                            khulnasoft/hub
+                            artifacthub/hub
                           </span>
                         </span>
                       </span>
@@ -8682,7 +8682,7 @@ exports[`Schema creates snapshot 1`] = `
           data-testid="defaultValue"
         >
           <span>
-            khulnasoft/scanner
+            artifacthub/scanner
           </span>
         </span>
       </div>
@@ -8765,7 +8765,7 @@ exports[`Schema creates snapshot 1`] = `
                           class="ms-1"
                         >
                           <span>
-                            khulnasoft/scanner
+                            artifacthub/scanner
                           </span>
                         </span>
                       </span>
@@ -9743,7 +9743,7 @@ exports[`Schema creates snapshot 1`] = `
           data-testid="defaultValue"
         >
           <span>
-            khulnasoft/tracker
+            artifacthub/tracker
           </span>
         </span>
       </div>
@@ -9826,7 +9826,7 @@ exports[`Schema creates snapshot 1`] = `
                           class="ms-1"
                         >
                           <span>
-                            khulnasoft/tracker
+                            artifacthub/tracker
                           </span>
                         </span>
                       </span>
@@ -11123,7 +11123,7 @@ exports[`Schema creates snapshot 1`] = `
           data-testid="defaultValue"
         >
           <span>
-            "khulnasoft/db-migrator"
+            "artifacthub/db-migrator"
           </span>
         </span>
       </div>
@@ -11206,7 +11206,7 @@ exports[`Schema creates snapshot 1`] = `
                           class="ms-1"
                         >
                           <span>
-                            "khulnasoft/db-migrator"
+                            "artifacthub/db-migrator"
                           </span>
                         </span>
                       </span>

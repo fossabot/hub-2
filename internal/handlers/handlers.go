@@ -9,19 +9,19 @@ import (
 	"strings"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/handlers/apikey"
-	"github.com/khulnasoft/hub/internal/handlers/helpers"
-	"github.com/khulnasoft/hub/internal/handlers/org"
-	"github.com/khulnasoft/hub/internal/handlers/pkg"
-	"github.com/khulnasoft/hub/internal/handlers/repo"
-	"github.com/khulnasoft/hub/internal/handlers/static"
-	"github.com/khulnasoft/hub/internal/handlers/stats"
-	"github.com/khulnasoft/hub/internal/handlers/subscription"
-	"github.com/khulnasoft/hub/internal/handlers/user"
-	"github.com/khulnasoft/hub/internal/handlers/webhook"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/img"
-	"github.com/khulnasoft/hub/internal/util"
+	"github.com/artifacthub/hub/internal/handlers/apikey"
+	"github.com/artifacthub/hub/internal/handlers/helpers"
+	"github.com/artifacthub/hub/internal/handlers/org"
+	"github.com/artifacthub/hub/internal/handlers/pkg"
+	"github.com/artifacthub/hub/internal/handlers/repo"
+	"github.com/artifacthub/hub/internal/handlers/static"
+	"github.com/artifacthub/hub/internal/handlers/stats"
+	"github.com/artifacthub/hub/internal/handlers/subscription"
+	"github.com/artifacthub/hub/internal/handlers/user"
+	"github.com/artifacthub/hub/internal/handlers/webhook"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/img"
+	"github.com/artifacthub/hub/internal/util"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/gorilla/csrf"
@@ -450,9 +450,9 @@ func (h *Handlers) setupRouter() {
 		w.Header().Set("Cache-Control", helpers.BuildCacheControlHeader(5*time.Minute))
 		http.ServeFile(w, r, path.Join(webBuildPath, "manifest.json"))
 	})
-	r.Get("/khulnasoft-widget.js", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/artifacthub-widget.js", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Cache-Control", helpers.BuildCacheControlHeader(5*time.Minute))
-		http.ServeFile(w, r, path.Join(widgetBuildPath, "static/js/khulnasoft-widget.js"))
+		http.ServeFile(w, r, path.Join(widgetBuildPath, "static/js/artifacthub-widget.js"))
 	})
 	r.Get("/", h.Static.Index)
 

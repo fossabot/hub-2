@@ -95,7 +95,7 @@ describe('MoreActionsButton', () => {
         Object.defineProperty(document, 'querySelector', {
           value: (selector: any) => {
             switch (selector) {
-              case `meta[name='khulnasoft:reportURL']`:
+              case `meta[name='artifacthub:reportURL']`:
                 return {
                   getAttribute: () => 'http://test.com',
                 };
@@ -136,7 +136,7 @@ describe('MoreActionsButton', () => {
         Object.defineProperty(document, 'querySelector', {
           value: (selector: any) => {
             switch (selector) {
-              case `meta[name='khulnasoft:reportURL']`:
+              case `meta[name='artifacthub:reportURL']`:
                 return {
                   getAttribute: () => null,
                 };
@@ -171,7 +171,7 @@ describe('MoreActionsButton', () => {
       Object.defineProperty(document, 'querySelector', {
         value: (selector: any) => {
           switch (selector) {
-            case `meta[name='khulnasoft:reportURL']`:
+            case `meta[name='artifacthub:reportURL']`:
               return {
                 getAttribute: () => '',
               };

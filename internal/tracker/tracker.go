@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/pkg"
-	"github.com/khulnasoft/hub/internal/repo"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/pkg"
+	"github.com/artifacthub/hub/internal/repo"
 	"github.com/rs/zerolog"
 )
 

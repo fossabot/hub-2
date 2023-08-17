@@ -324,7 +324,7 @@ describe('RepositoriesSection', () => {
       await userEvent.click(link);
 
       expect(window.location.pathname).toBe('/packages/search');
-      expect(window.location.search).toBe('?org=khulnasoft&sort=relevance&page=1');
+      expect(window.location.search).toBe('?org=artifactHub&sort=relevance&page=1');
     });
 
     it('on repo link click', async () => {

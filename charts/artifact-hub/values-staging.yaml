@@ -43,15 +43,15 @@ hub:
         memory: 1000Mi
   server:
     bannersURL: https://cncf.github.io/banners/banners.yml
-    baseURL: https://staging.khulnasoft.com
+    baseURL: https://staging.artifacthub.io
     shutdownTimeout: 20s
     oauth:
       github:
         enabled: true
-        redirectURL: https://staging.khulnasoft.com/oauth/github/callback
+        redirectURL: https://staging.artifacthub.io/oauth/github/callback
       google:
         enabled: true
-        redirectURL: https://staging.khulnasoft.com/oauth/google/callback
+        redirectURL: https://staging.artifacthub.io/oauth/google/callback
   theme:
     sampleQueries:
       - name: OLM operators for databases

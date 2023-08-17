@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/oci"
-	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/oci"
+	"github.com/artifacthub/hub/internal/pkg"
 	gk "github.com/open-policy-agent/gatekeeper/v3/pkg/gator/verify"
 	ignore "github.com/sabhiram/go-gitignore"
 )
@@ -204,7 +204,7 @@ func PreparePackage(r *hub.Repository, md *hub.PackageMetadata, pkgPath string) 
 	}
 
 	// Include kind specific data into package
-	ignorer := ignore.CompileIgnoreLines(append(md.Ignore, "khulnasoft-*")...)
+	ignorer := ignore.CompileIgnoreLines(append(md.Ignore, "artifacthub-*")...)
 	var kindData map[string]interface{}
 	switch r.Kind {
 	case hub.ArgoTemplate:

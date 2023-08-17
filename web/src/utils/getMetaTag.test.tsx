@@ -30,7 +30,7 @@ const tests: Test[] = [
 describe('getMetaTag', () => {
   for (let i = 0; i < tests.length; i++) {
     it('returns proper value', () => {
-      render(<meta name={`khulnasoft:${tests[i].name}`} content={`${tests[i].value.toString()}`} />);
+      render(<meta name={`artifacthub:${tests[i].name}`} content={`${tests[i].value.toString()}`} />);
       const actual = getMetaTag(tests[i].name, tests[i].isTrue);
       expect(actual).toEqual(tests[i].value);
     });

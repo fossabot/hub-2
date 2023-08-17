@@ -437,9 +437,9 @@ exports[`RepositoriesSection creates snapshot 1`] = `
                     <a
                       class="text-dark"
                       data-testid="orgLink"
-                      href="/packages/search?org=khulnasoft&sort=relevance&page=1"
+                      href="/packages/search?org=artifactHub&sort=relevance&page=1"
                     >
-                      khulnasoft
+                      artifactHub
                     </a>
                   </td>
                   <td

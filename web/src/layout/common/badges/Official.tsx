@@ -42,7 +42,7 @@ const Official = (props: Props) => {
             <ExternalLink
               btnType
               className={`text-decoration-underline text-reset ${styles.btnInBadge}`}
-              href="https://khulnasoft.com/docs/topics/repositories/#official-status"
+              href="https://artifacthub.io/docs/topics/repositories/#official-status"
             >
               repositories guide
             </ExternalLink>

@@ -275,7 +275,7 @@ exports[`WidgetModal creates snapshot 1`] = `
                   data-testid="block-content"
                 >
                   <div>
-                    &lt;div class="khulnasoft-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"&gt;&lt;blockquote&gt;&lt;p lang="en" dir="ltr"&gt;&lt;b&gt;pkg&lt;/b&gt;: this is the description&lt;/p&gt;&mdash; Open in &lt;a href="http://localhost/"&gt;null&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;script async src="http://localhost/khulnasoft-widget.js"&gt;&lt;/script&gt;
+                    &lt;div class="artifacthub-widget" data-url="http://localhost/" data-theme="light" data-header="true" data-stars="true" data-responsive="false"&gt;&lt;blockquote&gt;&lt;p lang="en" dir="ltr"&gt;&lt;b&gt;pkg&lt;/b&gt;: this is the description&lt;/p&gt;&mdash; Open in &lt;a href="http://localhost/"&gt;null&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;script async src="http://localhost/artifacthub-widget.js"&gt;&lt;/script&gt;
                   </div>
                 </div>
                 <div

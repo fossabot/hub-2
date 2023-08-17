@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	trivy "github.com/aquasecurity/trivy/pkg/types"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/repo"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/repo"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -146,7 +146,7 @@ func TestScan(t *testing.T) {
 var sampleReport1Data = []byte(`
 {
   "SchemaVersion": 2,
-  "ArtifactName": "khulnasoft/hub:v1.0.0",
+  "ArtifactName": "artifacthub/hub:v1.0.0",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
@@ -154,10 +154,10 @@ var sampleReport1Data = []byte(`
       "Name": "3.13.5"
     },
     "RepoTags": [
-      "khulnasoft/hub:v1.0.0"
+      "artifacthub/hub:v1.0.0"
     ],
     "RepoDigests": [
-      "khulnasoft/hub@sha256:becb8e06fb01f0324dabac05d700755bcd324071e66ebf4bc10151e356de9c71"
+      "artifacthub/hub@sha256:becb8e06fb01f0324dabac05d700755bcd324071e66ebf4bc10151e356de9c71"
     ]
   }
 }
@@ -166,7 +166,7 @@ var sampleReport1Data = []byte(`
 var sampleReport2Data = []byte(`
 {
   "SchemaVersion": 2,
-  "ArtifactName": "khulnasoft/hub:v1.0.0",
+  "ArtifactName": "artifacthub/hub:v1.0.0",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
@@ -174,15 +174,15 @@ var sampleReport2Data = []byte(`
       "Name": "3.13.5"
     },
     "RepoTags": [
-      "khulnasoft/hub:v1.0.0"
+      "artifacthub/hub:v1.0.0"
     ],
     "RepoDigests": [
-      "khulnasoft/hub@sha256:becb8e06fb01f0324dabac05d700755bcd324071e66ebf4bc10151e356de9c71"
+      "artifacthub/hub@sha256:becb8e06fb01f0324dabac05d700755bcd324071e66ebf4bc10151e356de9c71"
     ]
   },
   "Results": [
     {
-      "Target": "khulnasoft/hub:v1.0.0 (alpine 3.13.5)",
+      "Target": "artifacthub/hub:v1.0.0 (alpine 3.13.5)",
       "Class": "os-pkgs",
       "Type": "alpine"
     },

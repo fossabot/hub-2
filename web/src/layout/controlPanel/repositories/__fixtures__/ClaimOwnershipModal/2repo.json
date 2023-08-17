@@ -13,7 +13,7 @@
     {
       "repositoryId": "ec2d4f36-1941-48d4-8a0f-78a5aab6326f",
       "name": "artifact",
-      "url": "oci://ghcr.io/khulnasoft/artifact-hub",
+      "url": "oci://ghcr.io/artifacthub/artifact-hub",
       "kind": 0,
       "verifiedPublisher": false,
       "official": false,

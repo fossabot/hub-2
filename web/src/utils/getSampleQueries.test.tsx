@@ -84,7 +84,7 @@ const tests = [
 describe('getSampleQueries', () => {
   for (let i = 0; i < tests.length; i++) {
     it('get correct array', () => {
-      render(<meta name="khulnasoft:sampleQueries" content={`${tests[i].input}`} />);
+      render(<meta name="artifacthub:sampleQueries" content={`${tests[i].input}`} />);
       const actual = getSampleQueries();
       expect(actual).toEqual(tests[i].output);
     });

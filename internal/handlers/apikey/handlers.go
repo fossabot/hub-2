@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/khulnasoft/hub/internal/handlers/helpers"
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/handlers/helpers"
+	"github.com/artifacthub/hub/internal/hub"
 	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"

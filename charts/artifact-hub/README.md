@@ -1,6 +1,6 @@
 # Artifact Hub
 
-[Artifact Hub](https://khulnasoft.com) is a web-based application that enables finding, installing, and publishing Kubernetes packages.
+[Artifact Hub](https://artifacthub.io) is a web-based application that enables finding, installing, and publishing Kubernetes packages.
 
 ## Introduction
 
@@ -13,7 +13,7 @@ This chart bootstraps an Artifact Hub deployment on a [Kubernetes](http://kubern
 To install the chart with the release name `hub` run:
 
 ```bash
-$ helm repo add artifact-hub https://khulnasoft.github.io/helm-charts
+$ helm repo add artifact-hub https://artifacthub.github.io/helm-charts
 $ helm install hub artifact-hub/artifact-hub
 ```
 
@@ -27,7 +27,7 @@ NAME   HOSTS   ADDRESS         PORTS   AGE
 hub    *       192.168.64.18   80      6s
 ```
 
-When the parameter `dbMigrator.loadSampleData` is set to true (default) a **demo** user and a couple of sample repositories are registered automatically. The credentials for the demo user are: `demo@khulnasoft.com` / `changeme`. You can change the password from the control panel once you log in.
+When the parameter `dbMigrator.loadSampleData` is set to true (default) a **demo** user and a couple of sample repositories are registered automatically. The credentials for the demo user are: `demo@artifacthub.io` / `changeme`. You can change the password from the control panel once you log in.
 
 ## Populating packages
 
@@ -57,7 +57,7 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-Please see the [values schema reference documentation in Artifact Hub](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema) for a list of the configurable parameters of the chart and their default values.
+Please see the [values schema reference documentation in Artifact Hub](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=values-schema) for a list of the configurable parameters of the chart and their default values.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

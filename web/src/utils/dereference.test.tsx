@@ -1128,7 +1128,7 @@ const tests: Test[] = [
                     websiteLogo: {
                       type: 'string',
                       title: 'Website logo',
-                      default: '/static/media/logo/khulnasoft-brand-white.svg',
+                      default: '/static/media/logo/artifacthub-brand-white.svg',
                       description:
                         "URL of the logo used in the website header. For an optimal experience, it's better to use a white logo with transparent background, with no margin around it. It'll be displayed using a maximum height of 20px and a maximum width of 185px.",
                     },
@@ -1141,7 +1141,7 @@ const tests: Test[] = [
                     openGraphImage: {
                       type: 'string',
                       title: 'Open Graph image',
-                      default: '/static/media/khulnasoft_v2.png',
+                      default: '/static/media/artifactHub_v2.png',
                       description:
                         'URL of the image used in the og:image tag. This image is displayed when an Artifact Hub link is shared in Twitter or Slack, for example. The URL must use `https`.',
                     },
@@ -1186,7 +1186,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Hub image repository (without the tag)',
-                      default: 'khulnasoft/hub',
+                      default: 'artifacthub/hub',
                     },
                   },
                 },
@@ -1331,7 +1331,7 @@ const tests: Test[] = [
                   },
                 },
                 configDir: {
-                  enum: ['/home/hub/.cfg', '/khulnasoft/.cfg'],
+                  enum: ['/home/hub/.cfg', '/artifacthub/.cfg'],
                   type: 'string',
                   title: 'Config directory path',
                   default: '/home/hub/.cfg',
@@ -1515,7 +1515,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Scanner image repository (without the tag)',
-                      default: 'khulnasoft/scanner',
+                      default: 'artifacthub/scanner',
                     },
                   },
                 },
@@ -1541,7 +1541,7 @@ const tests: Test[] = [
               description: "Defaults to the Trivy service's internal URL.",
             },
             configDir: {
-              enum: ['/home/scanner/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/scanner/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/scanner/.cfg',
@@ -1574,7 +1574,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Tracker image repository (without the tag)',
-                      default: 'khulnasoft/tracker',
+                      default: 'artifacthub/tracker',
                     },
                   },
                 },
@@ -1594,7 +1594,7 @@ const tests: Test[] = [
                 'If set, the cache directory for the Helm client will be explicitly set (otherwise defaults to $HOME/.cache), and the directory will be mounted as ephemeral volume (emptyDir).',
             },
             configDir: {
-              enum: ['/home/tracker/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/tracker/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/tracker/.cfg',
@@ -1647,14 +1647,14 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Database migrator image repository (without the tag)',
-                      default: 'khulnasoft/db-migrator',
+                      default: 'artifacthub/db-migrator',
                     },
                   },
                 },
               },
             },
             configDir: {
-              enum: ['/home/db-migrator/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/db-migrator/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/db-migrator/.cfg',
@@ -1774,7 +1774,7 @@ const tests: Test[] = [
                     websiteLogo: {
                       type: 'string',
                       title: 'Website logo',
-                      default: '/static/media/logo/khulnasoft-brand-white.svg',
+                      default: '/static/media/logo/artifacthub-brand-white.svg',
                       description:
                         "URL of the logo used in the website header. For an optimal experience, it's better to use a white logo with transparent background, with no margin around it. It'll be displayed using a maximum height of 20px and a maximum width of 185px.",
                     },
@@ -1787,7 +1787,7 @@ const tests: Test[] = [
                     openGraphImage: {
                       type: 'string',
                       title: 'Open Graph image',
-                      default: '/static/media/khulnasoft_v2.png',
+                      default: '/static/media/artifactHub_v2.png',
                       description:
                         'URL of the image used in the og:image tag. This image is displayed when an Artifact Hub link is shared in Twitter or Slack, for example. The URL must use `https`.',
                     },
@@ -1847,7 +1847,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Hub image repository (without the tag)',
-                      default: 'khulnasoft/hub',
+                      default: 'artifacthub/hub',
                     },
                   },
                 },
@@ -1992,7 +1992,7 @@ const tests: Test[] = [
                   },
                 },
                 configDir: {
-                  enum: ['/home/hub/.cfg', '/khulnasoft/.cfg'],
+                  enum: ['/home/hub/.cfg', '/artifacthub/.cfg'],
                   type: 'string',
                   title: 'Config directory path',
                   default: '/home/hub/.cfg',
@@ -2176,7 +2176,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Scanner image repository (without the tag)',
-                      default: 'khulnasoft/scanner',
+                      default: 'artifacthub/scanner',
                     },
                   },
                 },
@@ -2202,7 +2202,7 @@ const tests: Test[] = [
               description: "Defaults to the Trivy service's internal URL.",
             },
             configDir: {
-              enum: ['/home/scanner/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/scanner/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/scanner/.cfg',
@@ -2235,7 +2235,7 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Tracker image repository (without the tag)',
-                      default: 'khulnasoft/tracker',
+                      default: 'artifacthub/tracker',
                     },
                   },
                 },
@@ -2255,7 +2255,7 @@ const tests: Test[] = [
                 'If set, the cache directory for the Helm client will be explicitly set (otherwise defaults to $HOME/.cache), and the directory will be mounted as ephemeral volume (emptyDir).',
             },
             configDir: {
-              enum: ['/home/tracker/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/tracker/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/tracker/.cfg',
@@ -2308,14 +2308,14 @@ const tests: Test[] = [
                     repository: {
                       type: 'string',
                       title: 'Database migrator image repository (without the tag)',
-                      default: 'khulnasoft/db-migrator',
+                      default: 'artifacthub/db-migrator',
                     },
                   },
                 },
               },
             },
             configDir: {
-              enum: ['/home/db-migrator/.cfg', '/khulnasoft/.cfg'],
+              enum: ['/home/db-migrator/.cfg', '/artifacthub/.cfg'],
               type: 'string',
               title: 'Config directory path',
               default: '/home/db-migrator/.cfg',

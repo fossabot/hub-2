@@ -11,10 +11,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/email"
-	"github.com/khulnasoft/hub/internal/handlers/pkg"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/util"
+	"github.com/artifacthub/hub/internal/email"
+	"github.com/artifacthub/hub/internal/handlers/pkg"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/util"
 	"github.com/jackc/pgx/v4"
 	"github.com/patrickmn/go-cache"
 	"github.com/rs/zerolog/log"
@@ -176,7 +176,7 @@ func (w *Worker) deliverWebhookNotification(ctx context.Context, n *hub.Notifica
 	// Call webhook endpoint
 	req, _ := http.NewRequest("POST", n.Webhook.URL, &payload)
 	req.Header.Set("Content-Type", contentType)
-	req.Header.Set("X-khulnasoft-Secret", n.Webhook.Secret)
+	req.Header.Set("X-ArtifactHub-Secret", n.Webhook.Secret)
 	resp, err := w.svc.HTTPClient.Do(req)
 	if err != nil {
 		return err
@@ -384,7 +384,7 @@ var DefaultWebhookPayloadTmpl = template.Must(template.New("").Parse(`
 	"specversion" : "1.0",
 	"id" : "{{ .Event.ID }}",
 	"source" : "{{ .BaseURL }}",
-	"type" : "io.khulnasoft.{{ .Event.Kind }}",
+	"type" : "io.artifacthub.{{ .Event.Kind }}",
 	"datacontenttype" : "application/json",
 	"data" : {
 		"package": {

@@ -22,12 +22,12 @@ There is an extra Artifact Hub specific metadata file named [artifacthub-repo.ym
 
 ```bash
 oras push \
-  registry/namespace/chart-name:artifacthub.io \
+  registry/namespace/chart-name:khulnasoft.com \
   --config /dev/null:application/vnd.cncf.artifacthub.config.v1+yaml \
   artifacthub-repo.yml:application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml
 ```
 
-The repository metadata file is pushed to the registry using a special tag named `artifacthub.io`. Artifact Hub will pull that artifact looking for the `application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml` layer when the repository metadata is needed.
+The repository metadata file is pushed to the registry using a special tag named `khulnasoft.com`. Artifact Hub will pull that artifact looking for the `application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml` layer when the repository metadata is needed.
 
 Please note that there are some features that are not yet available for Helm repositories stored in OCI registries:
 

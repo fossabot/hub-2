@@ -8,7 +8,7 @@ You can embed an Artifact Hub package on other websites by adding the correspond
 
 Let's go through an example to see how this works.
 
-The first step is to find the package you'd like to embed on <https://artifacthub.io>. For this example, we'll use the [Artifact Hub Helm chart](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub). On the top right corner of the package view you'll see a button with three dots.
+The first step is to find the package you'd like to embed on <https://khulnasoft.com>. For this example, we'll use the [Artifact Hub Helm chart](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub). On the top right corner of the package view you'll see a button with three dots.
 
 ![Embed screenshot](https://artifacthub.github.io/hub/screenshots/embed-screenshot-1.jpg)
 
@@ -21,7 +21,7 @@ The generated code would be something like this:
 ```html
 <div
   class="artifacthub-widget"
-  data-url="https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"
+  data-url="https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"
   data-theme="light"
   data-header="true"
   data-stars="true"
@@ -29,10 +29,10 @@ The generated code would be something like this:
 >
   <blockquote>
      <p lang="en" dir="ltr"><b>artifact-hub</b>: Artifact Hub is a web-based application that enables finding, installing, and publishing Kubernetes packages.</p>
-     &mdash; Open in <a href="https://artifacthub.io/packages/helm/artifact-hub/artifact-hub">Artifact Hub</a>
+     &mdash; Open in <a href="https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub">Artifact Hub</a>
   </blockquote>
 </div>
-<script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+<script async src="https://khulnasoft.com/artifacthub-widget.js"></script>
 ```
 
 To verify it works as expected, you can give it a quick try on JSFiddle if you'd like: <https://jsfiddle.net/r0ox4c9a/>.

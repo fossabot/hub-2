@@ -4412,7 +4412,7 @@ components:
                   url:
                     type: string
                     format: uri
-                    example: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+                    example: https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
                     nullable: false
               nullable: false
             stats:

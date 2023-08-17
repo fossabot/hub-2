@@ -79,7 +79,7 @@ paths:
                     data:
                       - id: adfinis/barman
                         artifactHub:
-                          packageUrl: "http://artifacthub.io/packages/helm/adfinis/barman"
+                          packageUrl: "http://khulnasoft.com/packages/helm/adfinis/barman"
                         attributes:
                           description: >-
                             Chart for Barman PostgreSQL Backup and Recovery

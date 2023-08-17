@@ -106,7 +106,7 @@ username: ""`,
             repository: {
               type: 'string',
               title: 'Hub image repository (without the tag)',
-              default: 'khulnasoft/hub',
+              default: 'artifacthub/hub',
             },
           },
         },
@@ -139,7 +139,7 @@ username: ""`,
 
 image:${' '}
   # Hub image repository (without the tag)
-  repository: khulnasoft/hub
+  repository: artifacthub/hub
 
 # Hub pod resource requirements
 resources: {}

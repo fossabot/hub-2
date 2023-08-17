@@ -863,10 +863,10 @@ describe('API', () => {
           status: 200,
         });
 
-        const response = await API.getOrganization('khulnasoft');
+        const response = await API.getOrganization('artifacthub');
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/khulnasoft');
+        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/artifacthub');
         expect(response).toEqual(API.toCamelCase(org));
       });
     });
@@ -905,10 +905,10 @@ describe('API', () => {
           status: 204,
         });
 
-        const response = await API.updateOrganization(org, 'khulnasoft');
+        const response = await API.updateOrganization(org, 'artifacthub');
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/khulnasoft');
+        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/artifacthub');
         expect(fetchMock.mock.calls[0][1]!.method).toBe('PUT');
         expect(fetchMock.mock.calls[0][1]!.body).toBe(
           JSON.stringify(
@@ -948,10 +948,10 @@ describe('API', () => {
           status: 200,
         });
 
-        const response = await API.getOrganizationMembers({ limit: 10, offset: 0 }, 'khulnasoft');
+        const response = await API.getOrganizationMembers({ limit: 10, offset: 0 }, 'artifacthub');
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/khulnasoft/members?limit=10&offset=0');
+        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/artifacthub/members?limit=10&offset=0');
         expect(response).toEqual(API.toCamelCase(members));
       });
     });
@@ -965,10 +965,10 @@ describe('API', () => {
           status: 201,
         });
 
-        const response = await API.addOrganizationMember('khulnasoft', 'user1');
+        const response = await API.addOrganizationMember('artifacthub', 'user1');
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/khulnasoft/member/user1');
+        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/artifacthub/member/user1');
         expect(fetchMock.mock.calls[0][1]!.method).toBe('POST');
         expect(response).toBe('');
       });
@@ -983,10 +983,10 @@ describe('API', () => {
           status: 204,
         });
 
-        const response = await API.deleteOrganizationMember('khulnasoft', 'user1');
+        const response = await API.deleteOrganizationMember('artifacthub', 'user1');
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/khulnasoft/member/user1');
+        expect(fetchMock.mock.calls[0][0]).toEqual('/api/v1/orgs/artifacthub/member/user1');
         expect(fetchMock.mock.calls[0][1]!.method).toBe('DELETE');
         expect(response).toBe('');
       });
@@ -1764,7 +1764,7 @@ describe('API', () => {
         });
 
         const data: RegoPlaygroundPolicy = {
-          rego_modules: { 'policy.rego': 'package khulnasoft.authz\n\nallow = true\nallowed_actions = ["all"]' },
+          rego_modules: { 'policy.rego': 'package artifacthub.authz\n\nallow = true\nallowed_actions = ["all"]' },
           input: { user: 'cynthiasg', action: 'updateOrganization' },
           data: {},
         };

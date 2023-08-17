@@ -102,13 +102,13 @@ select register_package('
     ],
     "recommendations": [
         {
-            "url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"
+            "url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"
         }
     ],
     "screenshots": [
         {
             "title": "Screenshot 1",
-            "url": "https://khulnasoft.com/screenshot1.jpg"
+            "url": "https://artifacthub.io/screenshot1.jpg"
         }
     ],
     "sign_key": {
@@ -232,11 +232,11 @@ select results_eq(
             ]'::jsonb,
             true,
             true,
-            '[{"url": "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub"}]'::jsonb,
+            '[{"url": "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub"}]'::jsonb,
             '[
                 {
                     "title": "Screenshot 1",
-                    "url": "https://khulnasoft.com/screenshot1.jpg"
+                    "url": "https://artifacthub.io/screenshot1.jpg"
                 }
             ]'::jsonb,
             '{"fingerprint": "0011223344", "url": "https://key.url"}'::jsonb,

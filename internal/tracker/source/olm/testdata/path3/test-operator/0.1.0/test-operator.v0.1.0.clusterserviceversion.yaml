@@ -2,7 +2,7 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
   annotations:
-    khulnasoft.com/changes: single string
+    artifacthub.io/changes: single string
   name: test-operator.v0.1.0
   namespace: placeholder
 spec:

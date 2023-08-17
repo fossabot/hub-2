@@ -35,7 +35,7 @@ begin
         'data', (
             select coalesce(json_agg(json_build_object(
                 'id', format('%s/%s', repository_name, package_name),
-                'khulnasoft', json_build_object(
+                'artifactHub', json_build_object(
                     'packageUrl', format(
                         '%s/packages/helm/%s/%s',
                         p_base_url,

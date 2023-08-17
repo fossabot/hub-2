@@ -12,7 +12,7 @@ For more information about the structure of the plugins repository, please see t
 
 Most of the metadata Artifact Hub needs is extracted from the [plugin's metadata](https://helm.sh/docs/topics/plugins/#building-plugins) file. In addition to that, if a `README.md` file is available in the plugin's directory, it'll be used as the package documentation. In the same way, if a `LICENSE.*` file is available in the plugin's directory, Artifact Hub will try to detect the license used and its [SPDX identifier](https://spdx.org/licenses/) will be stored.
 
-There is an extra metadata file that you can add to your repository named [khulnasoft-repo.yml](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-repo.yml), which can be used to setup features like [Verified publisher](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at the root of the repository.
+There is an extra metadata file that you can add to your repository named [artifacthub-repo.yml](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml), which can be used to setup features like [Verified publisher](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at the root of the repository.
 
 ### Some example repositories
 

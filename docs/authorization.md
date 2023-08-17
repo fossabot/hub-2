@@ -17,7 +17,7 @@ The following block of code is the definition of the `rbac.v1` policy (displayed
 When an organization enables authorization using predefined policies, they'll be offered a list of options. Once one is selected, the policy will be displayed so that it can be inspected (read only) and the authorization administrator will be able to provide a data file for it. At the moment this is the only predefined policy available.
 
 ```rego
-package khulnasoft.authz
+package artifacthub.authz
 
 # Get user allowed actions
 allowed_actions[action] {
@@ -106,9 +106,9 @@ In addition to the actions just listed, there is a special one named `all` that 
 
 ### Queries
 
-When users try to perform certain actions in the control panel, Artifact Hub will query the organizations authorization policy to check if they should be allowed or not. Predefined authorization policies are already prepared to process the required query, but when using custom policies it's important that they are able to handle it as well. At the moment, the only query your authorization policy will receive is `data.khulnasoft.authz.allowed_actions`.
+When users try to perform certain actions in the control panel, Artifact Hub will query the organizations authorization policy to check if they should be allowed or not. Predefined authorization policies are already prepared to process the required query, but when using custom policies it's important that they are able to handle it as well. At the moment, the only query your authorization policy will receive is `data.artifacthub.authz.allowed_actions`.
 
-- **data.khulnasoft.authz.allowed_actions**
+- **data.artifacthub.authz.allowed_actions**
 
 This query is used to get all the actions the user is allowed to perform in the organization. It should return a *list of actions*, and the input used will be:
 

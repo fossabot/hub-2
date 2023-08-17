@@ -29,7 +29,7 @@ const defaultProps = {
         },
         deploy: {
           image: {
-            repository: 'khulnasoft/hub',
+            repository: 'artifacthub/hub',
           },
           readinessGates: [],
           replicaCount: 1,

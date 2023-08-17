@@ -8,9 +8,9 @@ import (
 	"regexp"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/license"
-	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/license"
+	"github.com/artifacthub/hub/internal/pkg"
 	"github.com/hashicorp/go-multierror"
 	"helm.sh/helm/v3/pkg/plugin"
 	"sigs.k8s.io/yaml"

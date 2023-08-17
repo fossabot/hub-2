@@ -173,7 +173,7 @@ const HomeView = () => {
             <div className="d-flex flex-row align-items-center justify-content-center flex-wrap">
               <ExternalLink
                 className={`btn btn-secondary mb-4 mb-md-2 ${styles.socialBtn}`}
-                href="https://github.com/khulnasoft/hub"
+                href="https://github.com/artifacthub/hub"
                 label="Open GitHub link"
               >
                 <div className="d-flex align-items-center justify-content-center">
@@ -195,7 +195,7 @@ const HomeView = () => {
 
               <ExternalLink
                 className={`btn btn-secondary ms-2 ms-md-3 mb-4 mb-md-2 ${styles.socialBtn}`}
-                href="https://twitter.com/cncfkhulnasoft"
+                href="https://twitter.com/cncfartifacthub"
                 label="Open Twitter link"
               >
                 <div className="d-flex align-items-center justify-content-center">

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	trivy "github.com/aquasecurity/trivy/pkg/types"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/tests"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
@@ -1283,7 +1283,7 @@ func TestSearchJSON(t *testing.T) {
 
 func TestSearchMonocularJSON(t *testing.T) {
 	ctx := context.Background()
-	baseURL := "https://khulnasoft.com"
+	baseURL := "https://artifacthub.io"
 	searchTerm := "text"
 
 	t.Run("database query succeeded", func(t *testing.T) {

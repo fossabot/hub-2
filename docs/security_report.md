@@ -12,7 +12,7 @@ To generate a security report of your package, it needs to include the container
 
 ### Helm charts
 
-Artifact Hub will try to extract the containers images used by Helm charts from the manifests generated from a dry-run install using the default values. Alternatively, images used by a Helm chart can be listed including a special annotation called `khulnasoft.com/images` in the `Chart.yaml` file. You can find an example of how this is done in the Artifact Hub Helm chart [here](https://github.com/khulnasoft/hub/blob/a3ffcb7cee0aa3923c3e4cf9bcf8ac0f2f437a2b/charts/artifact-hub/Chart.yaml#L25-L34). For more information please see the Artifact Hub [Helm annotations](https://github.com/khulnasoft/hub/blob/master/docs/helm_annotations.md) documentation.
+Artifact Hub will try to extract the containers images used by Helm charts from the manifests generated from a dry-run install using the default values. Alternatively, images used by a Helm chart can be listed including a special annotation called `artifacthub.io/images` in the `Chart.yaml` file. You can find an example of how this is done in the Artifact Hub Helm chart [here](https://github.com/artifacthub/hub/blob/a3ffcb7cee0aa3923c3e4cf9bcf8ac0f2f437a2b/charts/artifact-hub/Chart.yaml#L25-L34). For more information please see the Artifact Hub [Helm annotations](https://github.com/artifacthub/hub/blob/master/docs/helm_annotations.md) documentation.
 
 ### OLM operators
 
@@ -24,7 +24,7 @@ The images used by Tekton tasks and pipelines are extracted from the [`task.step
 
 ### CoreDNS plugins, KEDA scalers, Keptn integrations, OPA policies and Tinkerbell actions
 
-Images used by these kinds of packages can be listed using the `containersImages` field in the package's `khulnasoft-pkg.yml` [metadata file](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-pkg.yml).
+Images used by these kinds of packages can be listed using the `containersImages` field in the package's `artifacthub-pkg.yml` [metadata file](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml).
 
 ## Application dependencies
 
@@ -36,4 +36,4 @@ If you want your application dependencies scanned, please make sure the relevant
 
 - *I can't see the security report for my package*
 
-Please make sure your images are **publicly available**. If your repository has just been added to Artifact Hub, it may take up to *30 mins* for it to be indexed. Once it has been indexed, it may take up to *15 extra minutes* for the initial security report of your packages to be generated. If you don't see it after **an hour** and the images your package lists meet the requirements, please file an [issue](https://github.com/khulnasoft/hub/issues).
+Please make sure your images are **publicly available**. If your repository has just been added to Artifact Hub, it may take up to *30 mins* for it to be indexed. Once it has been indexed, it may take up to *15 extra minutes* for the initial security report of your packages to be generated. If you don't see it after **an hour** and the images your package lists meet the requirements, please file an [issue](https://github.com/artifacthub/hub/issues).

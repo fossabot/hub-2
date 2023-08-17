@@ -17,7 +17,7 @@ exports[`ErrorBoundary creates error snapshot 1`] = `
         <a
           aria-label="GitHub issue"
           class="link undefined"
-          href="https://github.com/khulnasoft/hub/issues/new/choose"
+          href="https://github.com/artifacthub/hub/issues/new/choose"
           rel="noopener noreferrer"
           role="button"
           tabindex="-1"

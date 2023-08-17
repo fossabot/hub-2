@@ -24,6 +24,6 @@ describe('NoData', () => {
     const link = screen.getByRole('button');
     expect(link).toBeInTheDocument();
     expect(link).toHaveTextContent('here');
-    expect(link).toHaveAttribute('href', 'https://github.com/khulnasoft/hub/issues/new/choose');
+    expect(link).toHaveAttribute('href', 'https://github.com/artifacthub/hub/issues/new/choose');
   });
 });

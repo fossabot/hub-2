@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/hub"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/hashicorp/go-multierror"
 	"gopkg.in/yaml.v2"

@@ -6,8 +6,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/img"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/img"
 	svg "github.com/h2non/go-is-svg"
 	lru "github.com/hashicorp/golang-lru/v2"
 	"github.com/jackc/pgx/v4"

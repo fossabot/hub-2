@@ -34,7 +34,7 @@ Package lint SUCCEEDED!
   - Kind:  | Description: feature 1
   - Kind:  | Description: fix 1
 ✓ Recommendations:
-  - https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
+  - https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
 ! Screenshots: *** NOT PROVIDED ***
 ✓ Operator: true
 ✓ Operator capabilities: Basic Install
@@ -78,7 +78,7 @@ Package lint SUCCEEDED!
   - Kind:  | Description: feature 1
   - Kind:  | Description: fix 1
 ✓ Recommendations:
-  - https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
+  - https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
 ! Screenshots: *** NOT PROVIDED ***
 ✓ Operator: true
 ✓ Operator capabilities: Basic Install

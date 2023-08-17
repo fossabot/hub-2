@@ -32,7 +32,7 @@ maintainers:
 provider:
   name: Provider
 recommendations:
-  - url: https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub
+  - url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
 annotations:
   key1: value1
   key2: value2

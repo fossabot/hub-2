@@ -97,7 +97,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Hub image repository (without the tag)",
-                  "default": "khulnasoft/hub"
+                  "default": "artifacthub/hub"
                 }
               }
             },
@@ -399,7 +399,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Scanner image repository (without the tag)",
-                  "default": "khulnasoft/scanner"
+                  "default": "artifacthub/scanner"
                 }
               }
             },
@@ -458,7 +458,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Tracker image repository (without the tag)",
-                  "default": "khulnasoft/tracker"
+                  "default": "artifacthub/tracker"
                 }
               }
             },
@@ -529,7 +529,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Database migrator image repository (without the tag)",
-                  "default": "khulnasoft/db-migrator"
+                  "default": "artifacthub/db-migrator"
                 }
               }
             }

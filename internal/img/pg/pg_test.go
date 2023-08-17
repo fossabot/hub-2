@@ -10,7 +10,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/artifacthub/hub/internal/tests"
 	"github.com/jackc/pgx/v4"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

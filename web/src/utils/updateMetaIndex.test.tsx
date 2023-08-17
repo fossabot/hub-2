@@ -45,11 +45,11 @@ describe('updateMetaIndex', () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="" />
         <meta property="og:description" content="" />
-        <meta property="og:image" content="{{ .baseURL }}/static/media/khulnasoft_v2.png" />
+        <meta property="og:image" content="{{ .baseURL }}/static/media/artifactHub_v2.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="" />
         <meta name="twitter:description" content="" />
-        <meta name="twitter:image:src" content="{{ .baseURL }}/static/media/khulnasoft_v2.png" />
+        <meta name="twitter:image:src" content="{{ .baseURL }}/static/media/artifactHub_v2.png" />
       </>
     );
 
@@ -74,11 +74,11 @@ describe('updateMetaIndex', () => {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="" />
           <meta property="og:description" content="" />
-          <meta property="og:image" content="{{ .baseURL }}/static/media/khulnasoft_v2.png" />
+          <meta property="og:image" content="{{ .baseURL }}/static/media/artifactHub_v2.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="" />
           <meta name="twitter:description" content="" />
-          <meta name="twitter:image:src" content="{{ .baseURL }}/static/media/khulnasoft_v2.png" />
+          <meta name="twitter:image:src" content="{{ .baseURL }}/static/media/artifactHub_v2.png" />
         </>
       );
 

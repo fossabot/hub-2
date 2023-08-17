@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/hub"
 	"github.com/rs/zerolog/log"
 )
 

@@ -77,7 +77,7 @@
       "configDir": "/home/db-migrator/.cfg",
       "job": {
         "image": {
-          "repository": "khulnasoft/db-migrator"
+          "repository": "artifacthub/db-migrator"
         }
       },
       "loadSampleData": true
@@ -90,7 +90,7 @@
       },
       "deploy": {
         "image": {
-          "repository": "khulnasoft/hub"
+          "repository": "artifacthub/hub"
         },
         "readinessGates": [],
         "replicaCount": 1,
@@ -199,7 +199,7 @@
       "configDir": "/home/scanner/.cfg",
       "cronjob": {
         "image": {
-          "repository": "khulnasoft/scanner"
+          "repository": "artifacthub/scanner"
         },
         "resources": {}
       },
@@ -217,7 +217,7 @@
       "configDir": "/home/tracker/.cfg",
       "cronjob": {
         "image": {
-          "repository": "khulnasoft/tracker"
+          "repository": "artifacthub/tracker"
         },
         "resources": {}
       },

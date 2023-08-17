@@ -3,7 +3,7 @@ package oci
 import (
 	"context"
 
-	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/hub"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/stretchr/testify/mock"
 )

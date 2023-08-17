@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/khulnasoft/hub/internal/handlers/helpers"
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/notification"
-	"github.com/khulnasoft/hub/internal/tests"
-	"github.com/khulnasoft/hub/internal/webhook"
+	"github.com/artifacthub/hub/internal/handlers/helpers"
+	"github.com/artifacthub/hub/internal/hub"
+	"github.com/artifacthub/hub/internal/notification"
+	"github.com/artifacthub/hub/internal/tests"
+	"github.com/artifacthub/hub/internal/webhook"
 	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
@@ -536,13 +536,13 @@ func TestTriggerTest(t *testing.T) {
 	"specversion" : "1.0",
 	"id" : "00000000-0000-0000-0000-000000000001",
 	"source" : "https://baseURL",
-	"type" : "io.khulnasoft.package.new-release",
+	"type" : "io.artifacthub.package.new-release",
 	"datacontenttype" : "application/json",
 	"data" : {
 		"package": {
 			"name": "sample-package",
 			"version": "1.0.0",
-			"url": "https://khulnasoft.com/packages/helm/khulnasoft/sample-package/1.0.0",
+			"url": "https://artifacthub.io/packages/helm/artifacthub/sample-package/1.0.0",
 			"changes": ["Cool feature", "Bug fixed"],
 			"containsSecurityUpdates": true,
 			"prerelease": true,
@@ -575,7 +575,7 @@ func TestTriggerTest(t *testing.T) {
 					}
 					assert.Equal(t, "POST", r.Method)
 					assert.Equal(t, contentType, r.Header.Get("Content-Type"))
-					assert.Equal(t, tc.secret, r.Header.Get("X-khulnasoft-Secret"))
+					assert.Equal(t, tc.secret, r.Header.Get("X-ArtifactHub-Secret"))
 					payload, _ := io.ReadAll(r.Body)
 					assert.Equal(t, tc.expectedPayload, payload)
 				}))

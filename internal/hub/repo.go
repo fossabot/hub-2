@@ -11,7 +11,7 @@ import (
 const (
 	// RepositoryMetadataFile represents the name of the file where the
 	// Artifact Hub metadata for a given repository is stored.
-	RepositoryMetadataFile = "khulnasoft-repo"
+	RepositoryMetadataFile = "artifacthub-repo"
 
 	// RepositoryOCIPrefix represents the prefix expected in the url when the
 	// repository is stored in a OCI registry.

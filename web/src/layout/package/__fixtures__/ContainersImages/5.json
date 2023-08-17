@@ -1,21 +1,21 @@
 [
   {
     "name": "db-migrator",
-    "image": "khulnasoft/db-migrator:v0.7.0",
+    "image": "artifacthub/db-migrator:v0.7.0",
     "platforms": ["linux/amd64"]
   },
   {
     "name": "hub",
-    "image": "khulnasoft/hub:v0.7.0",
+    "image": "artifacthub/hub:v0.7.0",
     "platforms": ["linux/amd64", "linux/arm64"]
   },
   {
     "name": "tracker",
-    "image": "khulnasoft/tracker:v0.7.0"
+    "image": "artifacthub/tracker:v0.7.0"
   },
   {
     "name": "scanner",
-    "image": "khulnasoft/scanner:v0.7.0",
+    "image": "artifacthub/scanner:v0.7.0",
     "platforms": ["linux/s390x"]
   }
 ]

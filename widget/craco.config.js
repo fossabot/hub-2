@@ -9,7 +9,7 @@ module.exports = {
   webpack: {
     configure: {
       output: {
-        filename: 'static/js/khulnasoft-widget.js',
+        filename: 'static/js/artifacthub-widget.js',
       },
       optimization: {
         runtimeChunk: false,

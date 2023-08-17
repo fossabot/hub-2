@@ -17,18 +17,18 @@ The structure of a repository with multiple policies packages and versions could
 ```sh
 $ tree path/to/packages
 path/to/packages
-├── khulnasoft-repo.yml
+├── artifacthub-repo.yml
 ├── package1
 │   ├── 1.0.0
 │   │   ├── README.md
-│   │   └── khulnasoft-pkg.yml
+│   │   └── artifacthub-pkg.yml
 │   └── 2.0.0
 │       ├── README.md
-│       └── khulnasoft-pkg.yml
+│       └── artifacthub-pkg.yml
 └── package2
     └── 1.0.0
         ├── README.md
-        └── khulnasoft-pkg.yml
+        └── artifacthub-pkg.yml
 ```
 
 This structure is flexible, and in some cases it can be greatly simplified. Nested directories are also supported. In the case of a single package with a single version available at a time (the publisher doesn't want to make previous ones available, for example), the structure could look like this:
@@ -36,15 +36,15 @@ This structure is flexible, and in some cases it can be greatly simplified. Nest
 ```sh
 $ tree path/to/packages
 path/to/packages
-├── khulnasoft-repo.yml
+├── artifacthub-repo.yml
 └── package1
     ├── README.md
-    └── khulnasoft-pkg.yml
+    └── artifacthub-pkg.yml
 ```
 
-In the previous case, even the `package1` directory could be omitted. The reason is that both packages names and versions are read from the `khulnasoft-pkg.yml` metadata file, so directories names are not used at all.
+In the previous case, even the `package1` directory could be omitted. The reason is that both packages names and versions are read from the `artifacthub-pkg.yml` metadata file, so directories names are not used at all.
 
-Each package version **needs** an `khulnasoft-pkg.yml` metadata file. Please see the file [spec](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-pkg.yml) for more details. The [khulnasoft-repo.yml](https://github.com/khulnasoft/hub/blob/master/docs/metadata/khulnasoft-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
+Each package version **needs** an `artifacthub-pkg.yml` metadata file. Please see the file [spec](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml) for more details. The [artifacthub-repo.yml](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml) repository metadata file shown above can be used to setup features like [Verified publisher](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#ownership-claim). This file must be located at `/path/to/packages`.
 
 In order to locate the Kyverno policy within a given folder, Artifact Hub assumes the policy is named the same as the folder in which it occurs. For example, a policy YAML file named `require-labels.yaml` is expected to be in a folder named `require-labels`.
 

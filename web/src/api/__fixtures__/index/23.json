@@ -23,7 +23,7 @@
         "kind": 0,
         "name": "artifact-hub",
         "display_name": "Artifact Hub",
-        "organization_name": "khulnasoft",
+        "organization_name": "artifacthub",
         "organization_display_name": "Artifact Hub"
       },
       "event_kinds": [0]

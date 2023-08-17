@@ -49,14 +49,14 @@ describe('WidgetsGroupModal', () => {
       expect(screen.getByText('Display number of stars given to the package.')).toBeInTheDocument();
       expect(screen.getByText('Code')).toBeInTheDocument();
       expect(screen.getByTestId('block-content')).toHaveTextContent(
-        '<div class="khulnasoft-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="true" data-loading="true"></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
+        '<div class="artifacthub-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="true" data-loading="true"></div><script async src="http://localhost/artifacthub-widget.js"></script>'
       );
     });
 
     it('when not header', () => {
       render(
         <>
-          <meta name="khulnasoft:siteName" content="artifact hub" />
+          <meta name="artifacthub:siteName" content="artifact hub" />
           <WidgetsGroupModal {...defaultProps} />
         </>
       );
@@ -83,7 +83,7 @@ describe('WidgetsGroupModal', () => {
       render(<WidgetsGroupModal {...defaultProps} />);
 
       expect(screen.getByTestId('block-content')).toHaveTextContent(
-        '<div class="khulnasoft-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="true" data-loading="true"></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
+        '<div class="artifacthub-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="true" data-loading="true"></div><script async src="http://localhost/artifacthub-widget.js"></script>'
       );
 
       await userEvent.click(screen.getByText('fixed'));
@@ -91,7 +91,7 @@ describe('WidgetsGroupModal', () => {
       await userEvent.type(screen.getByTestId('fixedWidthInput'), '0');
 
       expect(await screen.findByTestId('block-content')).toHaveTextContent(
-        '<div class="khulnasoft-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="false" data-width="7600" data-loading="false"></div><script async src="http://localhost/khulnasoft-widget.js"></script>'
+        '<div class="artifacthub-widget-group" data-url="http://localhost/" data-theme="light" data-header="false" data-stars="true" data-color="#417598" data-responsive="false" data-width="7600" data-loading="false"></div><script async src="http://localhost/artifacthub-widget.js"></script>'
       );
     });
   });

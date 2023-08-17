@@ -76,7 +76,7 @@
                                 "repository": {
                                     "title": "Database migrator image repository (without the tag)",
                                     "type": "string",
-                                    "default": "khulnasoft/db-migrator"
+                                    "default": "artifacthub/db-migrator"
                                 }
                             },
                             "required": [
@@ -120,7 +120,7 @@
                     "type": "string",
                     "enum": [
                         "/home/db-migrator/.cfg",
-                        "/khulnasoft/.cfg"
+                        "/artifacthub/.cfg"
                     ],
                     "default": "/home/db-migrator/.cfg"
                 }
@@ -260,7 +260,7 @@
                                 "repository": {
                                     "title": "Hub image repository (without the tag)",
                                     "type": "string",
-                                    "default": "khulnasoft/hub"
+                                    "default": "artifacthub/hub"
                                 }
                             },
                             "required": [
@@ -456,7 +456,7 @@
                             "type": "string",
                             "enum": [
                                 "/home/hub/.cfg",
-                                "/khulnasoft/.cfg"
+                                "/artifacthub/.cfg"
                             ],
                             "default": "/home/hub/.cfg"
                         },
@@ -784,7 +784,7 @@
                                     "title": "Open Graph image",
                                     "description": "URL of the image used in the og:image tag. This image is displayed when an Artifact Hub link is shared in Twitter or Slack, for example. The URL must use `https`.",
                                     "type": "string",
-                                    "default": "/static/media/khulnasoft_v2.png"
+                                    "default": "/static/media/artifactHub_v2.png"
                                 },
                                 "shortcutIcon": {
                                     "title": "Shortcut icon",
@@ -796,7 +796,7 @@
                                     "title": "Website logo",
                                     "description": "URL of the logo used in the website header. For an optimal experience, it's better to use a white logo with transparent background, with no margin around it. It'll be displayed using a maximum height of 20px and a maximum width of 185px.",
                                     "type": "string",
-                                    "default": "/static/media/logo/khulnasoft-brand-white.svg"
+                                    "default": "/static/media/logo/artifacthub-brand-white.svg"
                                 }
                             },
                             "required": [
@@ -935,7 +935,7 @@
                     "type": "string",
                     "enum": [
                         "/home/scanner/.cfg",
-                        "/khulnasoft/.cfg"
+                        "/artifacthub/.cfg"
                     ],
                     "default": "/home/scanner/.cfg"
                 },
@@ -960,7 +960,7 @@
                                 "repository": {
                                     "title": "Scanner image repository (without the tag)",
                                     "type": "string",
-                                    "default": "khulnasoft/scanner"
+                                    "default": "artifacthub/scanner"
                                 }
                             },
                             "required": [
@@ -1025,7 +1025,7 @@
                     "type": "string",
                     "enum": [
                         "/home/tracker/.cfg",
-                        "/khulnasoft/.cfg"
+                        "/artifacthub/.cfg"
                     ],
                     "default": "/home/tracker/.cfg"
                 },
@@ -1056,7 +1056,7 @@
                                 "repository": {
                                     "title": "Tracker image repository (without the tag)",
                                     "type": "string",
-                                    "default": "khulnasoft/tracker"
+                                    "default": "artifacthub/tracker"
                                 }
                             },
                             "required": [

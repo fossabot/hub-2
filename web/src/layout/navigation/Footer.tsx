@@ -62,7 +62,7 @@ const Footer = (props: Props) => {
                   <div className="d-flex flex-column text-start">
                     <ExternalLink
                       className={`mb-1 ${styles.link}`}
-                      href="https://github.com/artifacthub/hub"
+                      href="https://github.com/khulnasoft/hub"
                       label="Open GitHub"
                     >
                       <div className="d-flex align-items-center">

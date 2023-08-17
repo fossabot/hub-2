@@ -47,7 +47,7 @@ crane mutate \
     --label org.opencontainers.image.version='1.6.0' \
     --label org.opencontainers.image.created='2022-02-08T15:38:15Z' \
     --label org.opencontainers.image.documentation='https://artifacthub.io/docs/topics/cli' \
-    --label org.opencontainers.image.source='https://github.com/artifacthub/hub/tree/c2a6e0866ab13422221f2f458026b4506acd6b53/cmd/ah' \
+    --label org.opencontainers.image.source='https://github.com/khulnasoft/hub/tree/c2a6e0866ab13422221f2f458026b4506acd6b53/cmd/ah' \
     --label org.opencontainers.image.vendor='Artifact Hub' \
     --label io.artifacthub.package.readme-url='https://raw.githubusercontent.com/artifacthub/hub/c2a6e0866ab13422221f2f458026b4506acd6b53/docs/cli.md' \
     --label io.artifacthub.package.maintainers='[{"name":"Artifact Hub maintainers","email":"cncf-artifacthub-maintainers@lists.cncf.io"}]' \
@@ -60,7 +60,7 @@ artifacthub/ah:latest
 
 ### Repository metadata
 
-There is an Artifact Hub repository metadata file named [artifacthub-repo.yml](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-repo.yml), which can be used to setup features like [Verified publisher](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/artifacthub/hub/blob/master/docs/repositories.md#ownership-claim).
+There is an Artifact Hub repository metadata file named [artifacthub-repo.yml](https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-repo.yml), which can be used to setup features like [Verified publisher](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#verified-publisher) or [Ownership claim](https://github.com/khulnasoft/hub/blob/master/docs/repositories.md#ownership-claim).
 
 Once your repository metadata file is ready, you can push it to the OCI registry using [oras](https://oras.land/cli/):
 

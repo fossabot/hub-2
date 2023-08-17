@@ -3,8 +3,8 @@ package source
 import (
 	"errors"
 
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/pkg"
 	"gopkg.in/yaml.v2"
 )
 

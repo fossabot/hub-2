@@ -23,7 +23,7 @@ entries:
           description: Bump Trivy to 0.19.2
           links:
             - name: Trivy migrating to new JSON schema
-              url: https://github.com/artifacthub/hub/pull/1437#issue-689445316
+              url: https://github.com/khulnasoft/hub/pull/1437#issue-689445316
         - kind: changed
           description: Bump OPM to 1.17.5
         - kind: changed
@@ -92,17 +92,17 @@ entries:
           description: Add pagination support to some endpoints
           links:
             - name: GitHub PR
-              url: https://github.com/artifacthub/hub/pull/1386
+              url: https://github.com/khulnasoft/hub/pull/1386
         - kind: changed
           description: Consolidate some repositories API endpoints
           links:
             - name: GitHub PR
-              url: https://github.com/artifacthub/hub/pull/1382
+              url: https://github.com/khulnasoft/hub/pull/1382
         - kind: changed
           description: Refactor packages search API endpoint
           links:
             - name: GitHub PR
-              url: https://github.com/artifacthub/hub/pull/1379
+              url: https://github.com/khulnasoft/hub/pull/1379
         - kind: changed
           description: Update API documentation
         - kind: changed

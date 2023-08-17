@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	trivy "github.com/aquasecurity/trivy/pkg/types"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/repo"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/repo"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 )
 
 const (

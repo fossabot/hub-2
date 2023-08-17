@@ -1,6 +1,6 @@
 # Kyverno annotations
 
-You can provide some extra information about your Kyverno policies by using the `annotations` field in the [Artifact Hub package metadata file](https://github.com/artifacthub/hub/blob/master/docs/metadata/artifacthub-pkg.yml).
+You can provide some extra information about your Kyverno policies by using the `annotations` field in the [Artifact Hub package metadata file](https://github.com/khulnasoft/hub/blob/master/docs/metadata/artifacthub-pkg.yml).
 
 ## Supported annotations
 

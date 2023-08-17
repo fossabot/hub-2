@@ -38,7 +38,7 @@ hub
 
 Artifact Hub is structured in multiple layers, each of them providing a set of services to the adjacent layer.
 
-- **Database:** this is the innermost layer and provides data services to the `Internal APIs` layer. This layer controls the database [schema and its migrations](https://github.com/artifacthub/hub/tree/master/database/migrations/schema). It also provides a set of [functions](https://github.com/artifacthub/hub/tree/master/database/migrations/functions) that will act as an API for outer layers, abstracting them in most cases from the internal database structure. Artifact Hub uses PostgreSQL as datastore. Please see the [database](#database) section for more details.
+- **Database:** this is the innermost layer and provides data services to the `Internal APIs` layer. This layer controls the database [schema and its migrations](https://github.com/khulnasoft/hub/tree/master/database/migrations/schema). It also provides a set of [functions](https://github.com/khulnasoft/hub/tree/master/database/migrations/functions) that will act as an API for outer layers, abstracting them in most cases from the internal database structure. Artifact Hub uses PostgreSQL as datastore. Please see the [database](#database) section for more details.
 
 - **Internal APIs:** this layer represents a set of Go APIs that allow performing all operations supported by Artifact Hub, such as registering a repository or a new package, adding an organization or creating a webhook. This layer communicates with the `Database` layer using the API provided, and exposes a higher level Go API to the different backend applications. Please see the [internal APIs](#internal-apis) section for more details.
 
@@ -46,11 +46,11 @@ Artifact Hub is structured in multiple layers, each of them providing a set of s
 
 - **Web and widget applications:** this layer represents the Artifact Hub's web user interface. It uses the HTTP API exposed from the `hub` to interact with the backend. Please see the [web application](#web-application) section for more details.
 
-- **CLI tool:** Artifact Hub includes a CLI tool named `ah`. Please see its [documentation](https://github.com/artifacthub/hub/blob/master/docs/cli.md) for more details.
+- **CLI tool:** Artifact Hub includes a CLI tool named `ah`. Please see its [documentation](https://github.com/khulnasoft/hub/blob/master/docs/cli.md) for more details.
 
 ## Database
 
-The `database` layer is defined by the database [schema](https://github.com/artifacthub/hub/tree/master/database/migrations/schema) and a set of [functions](https://github.com/artifacthub/hub/tree/master/database/migrations/functions), which are handled using migrations. Migrations use [Tern](https://github.com/jackc/tern), and are automatically applied during the installation and upgrades by a Kubernetes [job](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/templates/db_migrator_install_job.yaml) named `db-migrator`. There are [unit tests](https://github.com/artifacthub/hub/tree/master/database/tests) available for both the schema and the functions.
+The `database` layer is defined by the database [schema](https://github.com/khulnasoft/hub/tree/master/database/migrations/schema) and a set of [functions](https://github.com/khulnasoft/hub/tree/master/database/migrations/functions), which are handled using migrations. Migrations use [Tern](https://github.com/jackc/tern), and are automatically applied during the installation and upgrades by a Kubernetes [job](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/db_migrator_install_job.yaml) named `db-migrator`. There are [unit tests](https://github.com/khulnasoft/hub/tree/master/database/tests) available for both the schema and the functions.
 
 ```sh
 database
@@ -66,7 +66,7 @@ database
         └── ...
 ```
 
-Some of the available functions accept `json` as input and also return `json` data. In some cases, this `json` data prepared in the database is proxied from the `Internal APIs` layer to upper layers to be consumed as is. An example of this would be the [get_package](https://github.com/artifacthub/hub/blob/master/database/migrations/functions/packages/get_package.sql) function.
+Some of the available functions accept `json` as input and also return `json` data. In some cases, this `json` data prepared in the database is proxied from the `Internal APIs` layer to upper layers to be consumed as is. An example of this would be the [get_package](https://github.com/khulnasoft/hub/blob/master/database/migrations/functions/packages/get_package.sql) function.
 
 ## Internal APIs
 
@@ -143,9 +143,9 @@ cmd
 
 - **hub:** this component provides an HTTP API that exposes some of the functionality provided by the `Internal APIs` layer. The documentation for this API can be found [here](https://artifacthub.io/docs/api/). It is also in charge of serving the web application static assets, as well as handling notifications and events.
 
-- **tracker:** this component is in charge of indexing all repositories registered in the database. It's launched periodically from a Kubernetes [cronjob](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/templates/tracker_cronjob.yaml).
+- **tracker:** this component is in charge of indexing all repositories registered in the database. It's launched periodically from a Kubernetes [cronjob](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/tracker_cronjob.yaml).
 
-- **scanner:** this component scans Docker images in registered packages for security vulnerabilities using [Trivy](https://github.com/aquasecurity/trivy). Similarly to the `tracker`, it is launched periodically from a Kubernetes [cronjob](https://github.com/artifacthub/hub/blob/master/charts/artifact-hub/templates/scanner_cronjob.yaml).
+- **scanner:** this component scans Docker images in registered packages for security vulnerabilities using [Trivy](https://github.com/aquasecurity/trivy). Similarly to the `tracker`, it is launched periodically from a Kubernetes [cronjob](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/scanner_cronjob.yaml).
 
 ## Web application
 
@@ -179,4 +179,4 @@ web
 
 ## Development environment setup
 
-For more information about how to setup your development environment, please see [this guide](https://github.com/artifacthub/hub/blob/master/docs/dev.md).
+For more information about how to setup your development environment, please see [this guide](https://github.com/khulnasoft/hub/blob/master/docs/dev.md).

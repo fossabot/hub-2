@@ -8,9 +8,9 @@ import (
 	"sort"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/artifacthub/hub/internal/hub"
-	"github.com/artifacthub/hub/internal/pkg"
-	"github.com/artifacthub/hub/internal/tracker/source"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/pkg"
+	"github.com/khulnasoft/hub/internal/tracker/source"
 	"github.com/hashicorp/go-multierror"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/krew/pkg/index"

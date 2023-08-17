@@ -4,7 +4,7 @@ The Artifact Hub project accepts contributions via [GitHub pull requests](https:
 
 ## Issues
 
-Feature requests, bug reports, and support requests all occur through GitHub issues. If you would like to file an issue, view existing issues, or comment on an issue please engage with issues at <https://github.com/artifacthub/hub/issues>.
+Feature requests, bug reports, and support requests all occur through GitHub issues. If you would like to file an issue, view existing issues, or comment on an issue please engage with issues at <https://github.com/khulnasoft/hub/issues>.
 
 ## Pull Requests
 
@@ -12,7 +12,7 @@ All changes to the source code and documentation are made through [GitHub pull r
 
 If you are unsure if the change will be welcome you may want to file an issue first. The issue can detail the change and you can get feedback from the maintainers prior to starting to make the change.
 
-You can find the existing pull requests at <https://github.com/artifacthub/hub/pulls>. For more details about the project **architecture** and **development setup** please see <https://artifacthub.io/docs/topics/architecture/> and <https://artifacthub.io/docs/topics/dev/>.
+You can find the existing pull requests at <https://github.com/khulnasoft/hub/pulls>. For more details about the project **architecture** and **development setup** please see <https://artifacthub.io/docs/topics/architecture/> and <https://artifacthub.io/docs/topics/dev/>.
 
 ## Developer Certificate of Origin
 

@@ -4,7 +4,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/artifacthub/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/hub"
 	tf "github.com/galeone/tensorflow/tensorflow/go"
 	tg "github.com/galeone/tfgo"
 )

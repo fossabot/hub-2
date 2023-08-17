@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/artifacthub/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/tests"
 	"github.com/stretchr/testify/assert"
 )
 

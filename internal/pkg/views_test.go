@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/artifacthub/hub/internal/tests"
-	"github.com/artifacthub/hub/internal/util"
+	"github.com/khulnasoft/hub/internal/tests"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 )

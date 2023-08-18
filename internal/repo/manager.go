@@ -16,15 +16,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/khulnasoft/hub/internal/hub"
-	"github.com/khulnasoft/hub/internal/oci"
-	"github.com/khulnasoft/hub/internal/util"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/config"
 	githttp "github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/go-git/go-git/v5/storage/memory"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
+	"github.com/khulnasoft/hub/internal/hub"
+	"github.com/khulnasoft/hub/internal/oci"
+	"github.com/khulnasoft/hub/internal/util"
 	"github.com/satori/uuid"
 	"github.com/spf13/viper"
 	"gopkg.in/yaml.v2"
@@ -54,7 +54,7 @@ const (
 	// contains the repository metadata in an OCI image.
 	MetadataLayerMediaType = "application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml"
 
-	artifacthubTag        = "artifacthub.io"
+	artifacthubTag        = "khulnasoft.com"
 	maxContainerImageTags = 10
 )
 

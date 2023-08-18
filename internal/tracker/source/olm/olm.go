@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
+	"github.com/ghodss/yaml"
+	"github.com/hashicorp/go-multierror"
 	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/khulnasoft/hub/internal/pkg"
 	"github.com/khulnasoft/hub/internal/tracker/source"
-	"github.com/ghodss/yaml"
-	"github.com/hashicorp/go-multierror"
 	"github.com/operator-framework/api/pkg/manifests"
 	operatorsv1alpha1 "github.com/operator-framework/api/pkg/operators/v1alpha1"
 )
@@ -31,16 +31,16 @@ const (
 	isGlobalOperatorKey = "isGlobalOperator"
 
 	// Artifact Hub special annotations
-	alternativeNameAnnotation = "artifacthub.io/alternativeName"
-	categoryAnnotation        = "artifacthub.io/category"
-	changesAnnotation         = "artifacthub.io/changes"
-	imagesWhitelistAnnotation = "artifacthub.io/imagesWhitelist"
-	installAnnotation         = "artifacthub.io/install"
-	licenseAnnotation         = "artifacthub.io/license"
-	prereleaseAnnotation      = "artifacthub.io/prerelease"
-	recommendationsAnnotation = "artifacthub.io/recommendations"
-	securityUpdatesAnnotation = "artifacthub.io/containsSecurityUpdates"
-	screenshotsAnnotation     = "artifacthub.io/screenshots"
+	alternativeNameAnnotation = "khulnasoft.com/alternativeName"
+	categoryAnnotation        = "khulnasoft.com/category"
+	changesAnnotation         = "khulnasoft.com/changes"
+	imagesWhitelistAnnotation = "khulnasoft.com/imagesWhitelist"
+	installAnnotation         = "khulnasoft.com/install"
+	licenseAnnotation         = "khulnasoft.com/license"
+	prereleaseAnnotation      = "khulnasoft.com/prerelease"
+	recommendationsAnnotation = "khulnasoft.com/recommendations"
+	securityUpdatesAnnotation = "khulnasoft.com/containsSecurityUpdates"
+	screenshotsAnnotation     = "khulnasoft.com/screenshots"
 )
 
 var (

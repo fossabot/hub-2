@@ -97,7 +97,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Hub image repository (without the tag)",
-                  "default": "artifacthub/hub"
+                  "default": "khulnasoft/hub"
                 }
               }
             },
@@ -458,7 +458,7 @@
                 "repository": {
                   "type": "string",
                   "title": "Tracker image repository (without the tag)",
-                  "default": "artifacthub/tracker"
+                  "default": "khulnasoft/tracker"
                 }
               }
             },

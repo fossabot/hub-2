@@ -132,7 +132,7 @@ theme:
       querystring: "kind=0&ts_query=storage"
 ```
 
-This sample configuration does not use all options available. For more information please see [the Chart configuration options](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [the Chart hub secret template file](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/hub_secret.yaml).
+This sample configuration does not use all options available. For more information please see [the Chart configuration options](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [the Chart hub secret template file](https://github.com/khulnasoft/hub/blob/master/charts/artifact-hub/templates/hub_secret.yaml).
 
 Now you can run the `hub` server:
 

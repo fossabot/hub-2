@@ -1283,7 +1283,7 @@ func TestSearchJSON(t *testing.T) {
 
 func TestSearchMonocularJSON(t *testing.T) {
 	ctx := context.Background()
-	baseURL := "https://artifacthub.io"
+	baseURL := "https://khulnasoft.com"
 	searchTerm := "text"
 
 	t.Run("database query succeeded", func(t *testing.T) {

@@ -260,7 +260,7 @@
                                 "repository": {
                                     "title": "Hub image repository (without the tag)",
                                     "type": "string",
-                                    "default": "artifacthub/hub"
+                                    "default": "khulnasoft/hub"
                                 }
                             },
                             "required": [
@@ -1056,7 +1056,7 @@
                                 "repository": {
                                     "title": "Tracker image repository (without the tag)",
                                     "type": "string",
-                                    "default": "artifacthub/tracker"
+                                    "default": "khulnasoft/tracker"
                                 }
                             },
                             "required": [

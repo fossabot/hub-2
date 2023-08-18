@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"text/template"
 
+	"github.com/go-chi/chi/v5"
 	"github.com/khulnasoft/hub/internal/handlers/helpers"
 	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/khulnasoft/hub/internal/notification"
-	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
@@ -197,7 +197,7 @@ var webhookTestTemplateData = &hub.PackageNotificationTemplateData{
 	Package: map[string]interface{}{
 		"Name":    "sample-package",
 		"Version": "1.0.0",
-		"URL":     "https://artifacthub.io/packages/helm/artifacthub/sample-package/1.0.0",
+		"URL":     "https://khulnasoft.com/packages/helm/artifacthub/sample-package/1.0.0",
 		"Changes": []*hub.Change{
 			{
 				Description: "Cool feature",

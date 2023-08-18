@@ -44,13 +44,13 @@ Publishers can be verified through the [artifacthub-repo.yml](https://github.com
 
 ## Official status
 
-In Artifact Hub, the `official` status means that the publisher **owns the software** a package primarily focuses on. If we consider the *example* of a [chart used to install Consul](https://artifacthub.io/packages/helm/hashicorp/consul), to obtain the `official` status the publisher should be the owner of the Consul software (*HashiCorp* in this case), not just the chart. Similarly, a [Tekton task used to perform operations on Google Cloud](https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/gcloud) would need to be published by *Google* to be marked as `official`. In the case of a MySQL operator, only one published by *MySQL/Oracle* would be considered `official`.
+In Artifact Hub, the `official` status means that the publisher **owns the software** a package primarily focuses on. If we consider the *example* of a [chart used to install Consul](https://khulnasoft.com/packages/helm/hashicorp/consul), to obtain the `official` status the publisher should be the owner of the Consul software (*HashiCorp* in this case), not just the chart. Similarly, a [Tekton task used to perform operations on Google Cloud](https://khulnasoft.com/packages/tekton-task/tekton-catalog-tasks/gcloud) would need to be published by *Google* to be marked as `official`. In the case of a MySQL operator, only one published by *MySQL/Oracle* would be considered `official`.
 
 The `official` status can be granted at the repository or package level. When it is granted for a repository, all packages available on it will display the `official` badge, so all packages in the repository **must** be official. If only some of the packages in your repository are official, please list them in the `Official packages` field when submitting the official status request.
 
 **Before applying for this status, please make sure your repository complies with the following requirements:**
 
-- The repository has already obtained the [Verified publisher](https://artifacthub.io/docs/topics/repositories/#verified-publisher) status.
+- The repository has already obtained the [Verified publisher](https://khulnasoft.com/docs/topics/repositories/#verified-publisher) status.
 - The user requesting the status is the publisher of the repository in Artifact Hub, or belongs to the organization publishing it.
 - All official packages available in the repository provide a `README.md` file with some documentation that can be displayed on Artifact Hub.
 
@@ -70,4 +70,4 @@ Once the repository metadata file has been set up, you can proceed from the Arti
 
 Artifact Hub supports adding private repositories (except OLM OCI based). By default this feature is disabled, but you can enable it in your own Artifact Hub deployment setting the `hub.server.allowPrivateRepositories` configuration setting to `true`. When enabled, you'll be allowed to add the authentication credentials for the repository in the add/update repository modal in the control panel. Credentials are not exposed in the Artifact Hub UI, so users will need to get them separately. The installation instructions modal will display a warning to users when the package displayed belongs to a private repository.
 
-*Please note that this feature is not enabled in `artifacthub.io`.*
+*Please note that this feature is not enabled in `khulnasoft.com`.*

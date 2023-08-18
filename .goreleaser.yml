@@ -3,7 +3,7 @@ project_name: ah
 release:
   name_template: "Artifact Hub {{ .Tag }}"
   header: |
-    Please see the [changelog](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=changelog) for more details.
+    Please see the [changelog](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=changelog) for more details.
 
 changelog:
   skip: true
@@ -42,25 +42,25 @@ archives:
 dockers:
   - dockerfile: cmd/ah/Dockerfile
     image_templates:
-      - "artifacthub/ah:{{ .Tag }}"
-      - "artifacthub/ah:latest"
-      - "public.ecr.aws/artifacthub/ah:{{ .Tag }}"
-      - "public.ecr.aws/artifacthub/ah:latest"
+      - "khulnasoft/ah:{{ .Tag }}"
+      - "khulnasoft/ah:latest"
+      - "public.ecr.aws/khulnasoft/ah:{{ .Tag }}"
+      - "public.ecr.aws/khulnasoft/ah:latest"
     build_flag_templates:
       - "--build-arg=VERSION={{ .Version }}"
       - "--build-arg=GIT_COMMIT={{ .FullCommit }}"
       - "--label=org.opencontainers.image.description=Artifact Hub command line tool"
       - "--label=org.opencontainers.image.version={{ .Version }}"
       - "--label=org.opencontainers.image.created={{ .CommitDate }}"
-      - "--label=org.opencontainers.image.documentation=https://artifacthub.io/docs/topics/cli"
+      - "--label=org.opencontainers.image.documentation=https://khulnasoft.com/docs/topics/cli"
       - "--label=org.opencontainers.image.source=https://github.com/khulnasoft/hub/tree/{{ .FullCommit }}/cmd/ah"
       - "--label=org.opencontainers.image.vendor=Artifact Hub"
-      - "--label=io.artifacthub.package.readme-url=https://raw.githubusercontent.com/artifacthub/hub/{{ .FullCommit }}/docs/cli.md"
+      - "--label=io.artifacthub.package.readme-url=https://raw.githubusercontent.com/khulnasoft/hub/{{ .FullCommit }}/docs/cli.md"
       - '--label=io.artifacthub.package.maintainers=[{"name":"Artifact Hub maintainers","email":"cncf-artifacthub-maintainers@lists.cncf.io"}]'
-      - "--label=io.artifacthub.package.logo-url=https://raw.githubusercontent.com/artifacthub/hub/master/docs/logo/logo.svg"
+      - "--label=io.artifacthub.package.logo-url=https://raw.githubusercontent.com/khulnasoft/hub/master/docs/logo/logo.svg"
       - "--label=io.artifacthub.package.keywords=artifact hub,cli,lint"
       - "--label=io.artifacthub.package.license=Apache-2.0"
-      - "--label=io.artifacthub.package.alternative-locations=public.ecr.aws/artifacthub/ah:{{ .Tag }}"
+      - "--label=io.artifacthub.package.alternative-locations=public.ecr.aws/khulnasoft/ah:{{ .Tag }}"
     extra_files:
       - go.mod
       - go.sum
@@ -76,10 +76,10 @@ dockers:
       - database/migrations
   - dockerfile: cmd/hub/Dockerfile
     image_templates:
-      - "artifacthub/hub:{{ .Tag }}"
-      - "artifacthub/hub:latest"
-      - "public.ecr.aws/artifacthub/hub:{{ .Tag }}"
-      - "public.ecr.aws/artifacthub/hub:latest"
+      - "khulnasoft/hub:{{ .Tag }}"
+      - "khulnasoft/hub:latest"
+      - "public.ecr.aws/khulnasoft/hub:{{ .Tag }}"
+      - "public.ecr.aws/khulnasoft/hub:latest"
     extra_files:
       - go.mod
       - go.sum
@@ -102,10 +102,10 @@ dockers:
       - internal
   - dockerfile: cmd/tracker/Dockerfile
     image_templates:
-      - "artifacthub/tracker:{{ .Tag }}"
-      - "artifacthub/tracker:latest"
-      - "public.ecr.aws/artifacthub/tracker:{{ .Tag }}"
-      - "public.ecr.aws/artifacthub/tracker:latest"
+      - "khulnasoft/tracker:{{ .Tag }}"
+      - "khulnasoft/tracker:latest"
+      - "public.ecr.aws/khulnasoft/tracker:{{ .Tag }}"
+      - "public.ecr.aws/khulnasoft/tracker:latest"
     extra_files:
       - go.mod
       - go.sum
@@ -122,7 +122,7 @@ brews:
       name: homebrew-cmd
     commit_author:
       name: artifacthubio
-      email: hub@artifacthub.io
+      email: hub@khulnasoft.com
 
 scoop:
   description: Artifact Hub command line tool
@@ -133,7 +133,7 @@ scoop:
     name: scoop-cmd
   commit_author:
     name: artifacthubio
-    email: hub@artifacthub.io
+    email: hub@khulnasoft.com
 
 signs:
   - artifacts: checksum

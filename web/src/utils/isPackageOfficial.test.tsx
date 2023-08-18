@@ -21,7 +21,7 @@ const defaultPackage: Package = {
   signed: false,
   ts: 1613115038,
   repository: {
-    url: 'https://artifacthub.github.io/helm-charts',
+    url: 'https://khulnasoft.github.io/helm-charts',
     kind: 0,
     name: 'hub',
     official: false,

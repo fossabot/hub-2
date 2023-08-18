@@ -66,4 +66,4 @@ Once you have added your repository, you are all set up. As you add new versions
 - Repository metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-repo.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-repo.yml)
 - Package metadata file: [https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-pkg.yml](https://github.com/swade1987/deprek8ion/blob/master/policies/artifacthub-pkg.yml)
 - Repository URL used in Artifact Hub: `https://github.com/swade1987/deprek8ion/policies` (please note how the *tree/master* part is not used)
-- Policies displayed in Artifact Hub: [https://artifacthub.io/packages/opa/deprek8ion/deprek8ion](https://artifacthub.io/packages/opa/deprek8ion/deprek8ion)
+- Policies displayed in Artifact Hub: [https://khulnasoft.com/packages/opa/deprek8ion/deprek8ion](https://khulnasoft.com/packages/opa/deprek8ion/deprek8ion)

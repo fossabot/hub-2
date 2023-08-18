@@ -22,12 +22,12 @@ brew install artifacthub/cmd/ah
 
 ```sh
 scoop bucket add artifacthub https://github.com/khulnasoft/scoop-cmd.git
-scoop install artifacthub/ah
+scoop install khulnasoft/ah
 ```
 
 ### Docker
 
-You can run `ah` from a Docker container. The latest Docker image available can be found in the [Docker Hub](https://hub.docker.com/r/artifacthub/ah/tags).
+You can run `ah` from a Docker container. The latest Docker image available can be found in the [Docker Hub](https://hub.docker.com/r/khulnasoft/ah/tags).
 
 ### Compiling from source
 

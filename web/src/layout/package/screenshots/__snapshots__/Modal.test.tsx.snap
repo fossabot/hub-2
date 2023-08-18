@@ -120,7 +120,7 @@ exports[`ScreenshotsModal creates snapshot 1`] = `
                         alt="Screenshot: Home page"
                         aria-hidden="true"
                         class="mh-100 mw-100 border border-3 position-relative top-50 start-50 translate-middle image"
-                        src="https://artifacthub.github.io/hub/screenshots/screenshot1.jpg"
+                        src="https://khulnasoft.github.io/hub/screenshots/screenshot1.jpg"
                       />
                     </div>
                   </div>

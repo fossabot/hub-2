@@ -16,7 +16,7 @@
       "allContainersImagesWhitelisted": false,
       "ts": 1622630689,
       "repository": {
-        "url": "https://artifacthub.github.io/hub/chart/",
+        "url": "https://khulnasoft.github.io/hub/chart/",
         "kind": 0,
         "name": "artifact-hub",
         "official": true,

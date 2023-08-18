@@ -11,12 +11,12 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/go-chi/chi/v5"
 	"github.com/khulnasoft/hub/internal/handlers/helpers"
 	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/khulnasoft/hub/internal/notification"
 	"github.com/khulnasoft/hub/internal/tests"
 	"github.com/khulnasoft/hub/internal/webhook"
-	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
@@ -542,7 +542,7 @@ func TestTriggerTest(t *testing.T) {
 		"package": {
 			"name": "sample-package",
 			"version": "1.0.0",
-			"url": "https://artifacthub.io/packages/helm/artifacthub/sample-package/1.0.0",
+			"url": "https://khulnasoft.com/packages/helm/artifacthub/sample-package/1.0.0",
 			"changes": ["Cool feature", "Bug fixed"],
 			"containsSecurityUpdates": true,
 			"prerelease": true,

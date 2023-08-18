@@ -11,7 +11,7 @@ Anyone can propose a change to Artifact Hub. This includes the code, the documen
 Maintainers are responsible for the development and operation of the project. This includes but is not limited to:
 
 - Reviewing and merging pull requests
-- The operation of artifacthub.io
+- The operation of khulnasoft.com
 - Refining the projects governance
 - Overseeing the resolution and disclosure of security issues
 - Managing financial decision related to the project

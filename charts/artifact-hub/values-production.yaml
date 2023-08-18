@@ -19,7 +19,7 @@ hub:
       alb.ingress.kubernetes.io/target-type: ip
       alb.ingress.kubernetes.io/listen-ports: '[{ "HTTP": 80 }, { "HTTPS": 443 }]'
       alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": {"Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301" }}'
-      alb.ingress.kubernetes.io/actions.artifacthub-redirect: '{"Type":"redirect", "RedirectConfig": {"Host": "artifacthub.io", "Port": "443", "Protocol": "HTTPS", "StatusCode": "HTTP_301"}}'
+      alb.ingress.kubernetes.io/actions.artifacthub-redirect: '{"Type":"redirect", "RedirectConfig": {"Host": "khulnasoft.com", "Port": "443", "Protocol": "HTTPS", "StatusCode": "HTTP_301"}}'
     rules:
       - host: hub.helm.sh
         http:
@@ -58,15 +58,15 @@ hub:
         memory: 8000Mi
   server:
     bannersURL: https://cncf.github.io/banners/banners.yml
-    baseURL: https://artifacthub.io
+    baseURL: https://khulnasoft.com
     shutdownTimeout: 20s
     oauth:
       github:
         enabled: true
-        redirectURL: https://artifacthub.io/oauth/github/callback
+        redirectURL: https://khulnasoft.com/oauth/github/callback
       google:
         enabled: true
-        redirectURL: https://artifacthub.io/oauth/google/callback
+        redirectURL: https://khulnasoft.com/oauth/google/callback
   theme:
     reportURL: "https://github.com/khulnasoft/hub/issues/new?assignees=&labels=abuse+report&template=report-abuse.md&title=%5BABUSE-REPORT%5D+Repository+or+package+name"
     sampleQueries:

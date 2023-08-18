@@ -97,7 +97,7 @@ func SetupSource(i *hub.TrackerSourceInput) hub.TrackerSource {
 	case hub.Falco:
 		// Temporary solution to maintain backwards compatibility with
 		// the only Falco rules repository registered at the moment in
-		// artifacthub.io using the structure and metadata format used
+		// khulnasoft.com using the structure and metadata format used
 		// by the cloud native security hub.
 		if i.Repository.URL == cloudNativeSecurityHub {
 			source = falco.NewTrackerSource(i)

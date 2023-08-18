@@ -35,11 +35,11 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         repository: {
           repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
           name: 'artifact-hub',
-          url: 'https://artifacthub.github.io/helm-charts/',
+          url: 'https://khulnasoft.github.io/helm-charts/',
           private: false,
           kind: 0,
           verifiedPublisher: false,
@@ -60,14 +60,14 @@ const tests: Tests[] = [
             repository: {
               repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
               name: 'artifact-hub',
-              url: 'https://artifacthub.github.io/helm-charts/',
+              url: 'https://khulnasoft.github.io/helm-charts/',
               private: false,
               kind: 0,
               verifiedPublisher: false,
               official: false,
               userAlias: 'user',
             },
-            contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+            contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
           },
         },
         {
@@ -80,14 +80,14 @@ const tests: Tests[] = [
             repository: {
               repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
               name: 'artifact-hub',
-              url: 'https://artifacthub.github.io/helm-charts/',
+              url: 'https://khulnasoft.github.io/helm-charts/',
               private: false,
               kind: 0,
               verifiedPublisher: false,
               official: false,
               userAlias: 'user',
             },
-            contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+            contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
           },
         },
       ],
@@ -113,7 +113,7 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         repository: {
           repositoryId: '70179323-98ba-4923-b80a-284bcf30dbbf',
           name: 'artifact-hub-oci',
@@ -170,7 +170,7 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         install:
           '## Install using Helm\n\n```\nhelm upgrade falco -f https://api.securityhub.dev/resources/falco-rules/apache/custom-rules.yaml stable/falco\n```\n',
         repository: {
@@ -1040,11 +1040,11 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         repository: {
           repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
           name: 'artifact-hub',
-          url: 'https://artifacthub.github.io/helm-charts/',
+          url: 'https://khulnasoft.github.io/helm-charts/',
           private: false,
           kind: 0,
           verifiedPublisher: false,
@@ -1066,14 +1066,14 @@ const tests: Tests[] = [
             repository: {
               repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
               name: 'artifact-hub',
-              url: 'https://artifacthub.github.io/helm-charts/',
+              url: 'https://khulnasoft.github.io/helm-charts/',
               private: false,
               kind: 0,
               verifiedPublisher: false,
               official: false,
               userAlias: 'user',
             },
-            contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+            contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
           },
         },
       ],
@@ -1099,11 +1099,11 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         repository: {
           repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
           name: 'artifact-hub',
-          url: 'https://artifacthub.github.io/helm-charts/',
+          url: 'https://khulnasoft.github.io/helm-charts/',
           private: false,
           kind: 0,
           verifiedPublisher: false,
@@ -1125,14 +1125,14 @@ const tests: Tests[] = [
             repository: {
               repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
               name: 'artifact-hub',
-              url: 'https://artifacthub.github.io/helm-charts/',
+              url: 'https://khulnasoft.github.io/helm-charts/',
               private: false,
               kind: 0,
               verifiedPublisher: false,
               official: false,
               userAlias: 'user',
             },
-            contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+            contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
           },
         },
         {
@@ -1145,14 +1145,14 @@ const tests: Tests[] = [
             repository: {
               repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
               name: 'artifact-hub',
-              url: 'https://artifacthub.github.io/helm-charts/',
+              url: 'https://khulnasoft.github.io/helm-charts/',
               private: false,
               kind: 0,
               verifiedPublisher: false,
               official: false,
               userAlias: 'user',
             },
-            contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+            contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
           },
         },
       ],
@@ -1178,11 +1178,11 @@ const tests: Tests[] = [
           { version: '0.5.0', ts: 1599125273, containsSecurityUpdates: false, prerelease: false },
         ],
         appVersion: '0.11.0',
-        contentUrl: 'https://artifacthub.github.io/helm-charts/artifact-hub-0.11.0.tgz',
+        contentUrl: 'https://khulnasoft.github.io/helm-charts/artifact-hub-0.11.0.tgz',
         repository: {
           repositoryId: 'd2b93c16-4f70-43e7-b50c-0dccb4c82756',
           name: 'artifact-hub',
-          url: 'https://artifacthub.github.io/helm-charts/',
+          url: 'https://khulnasoft.github.io/helm-charts/',
           private: false,
           kind: 0,
           verifiedPublisher: false,
@@ -1243,7 +1243,7 @@ const tests: Tests[] = [
         ts: 1624528800,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kedacore/keda',
+            url: 'https://khulnasoft.com/packages/helm/kedacore/keda',
           },
         ],
         repository: {
@@ -1318,7 +1318,7 @@ const tests: Tests[] = [
         ts: 1624528800,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kedacore/keda',
+            url: 'https://khulnasoft.com/packages/helm/kedacore/keda',
           },
         ],
         repository: {
@@ -1408,7 +1408,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1511,7 +1511,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1615,7 +1615,7 @@ const tests: Tests[] = [
         ts: 1658234781,
         recommendations: [
           {
-            url: 'https://artifacthub.io/packages/helm/kubewarden/kubewarden-controller',
+            url: 'https://khulnasoft.com/packages/helm/kubewarden/kubewarden-controller',
           },
         ],
         repository: {
@@ -1736,7 +1736,7 @@ const tests: Tests[] = [
         hasValuesSchema: false,
         hasChangelog: true,
         ts: 1662595200,
-        recommendations: [{ url: 'https://artifacthub.io/packages/helm/gatekeeper/gatekeeper' }],
+        recommendations: [{ url: 'https://khulnasoft.com/packages/helm/gatekeeper/gatekeeper' }],
         repository: {
           repositoryId: 'af2de865-f025-49f3-a873-6d93e7fabb4c',
           name: 'gatekeeper',
@@ -1931,7 +1931,7 @@ const tests: Tests[] = [
         hasValuesSchema: false,
         hasChangelog: true,
         ts: 1662595200,
-        recommendations: [{ url: 'https://artifacthub.io/packages/helm/gatekeeper/gatekeeper' }],
+        recommendations: [{ url: 'https://khulnasoft.com/packages/helm/gatekeeper/gatekeeper' }],
         install: '###Custom install',
         repository: {
           repositoryId: 'af2de865-f025-49f3-a873-6d93e7fabb4c',

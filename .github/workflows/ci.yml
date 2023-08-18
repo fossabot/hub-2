@@ -40,7 +40,7 @@ jobs:
   linter-artifacthub:
     runs-on: ubuntu-20.04
     container:
-      image: artifacthub/ah
+      image: khulnasoft/ah
       options: --user root
     steps:
       - name: Checkout code

@@ -38,7 +38,7 @@ exports[`Footer creates snapshot 1`] = `
               <a
                 aria-label="Open blog"
                 class="link mb-1 link"
-                href="https://blog.artifacthub.io/blog/"
+                href="https://blog.khulnasoft.com/blog/"
                 rel="noopener noreferrer"
                 role="button"
                 tabindex="-1"

@@ -90,7 +90,7 @@
       },
       "deploy": {
         "image": {
-          "repository": "artifacthub/hub"
+          "repository": "khulnasoft/hub"
         },
         "readinessGates": [],
         "replicaCount": 1,
@@ -217,7 +217,7 @@
       "configDir": "/home/tracker/.cfg",
       "cronjob": {
         "image": {
-          "repository": "artifacthub/tracker"
+          "repository": "khulnasoft/tracker"
         },
         "resources": {}
       },

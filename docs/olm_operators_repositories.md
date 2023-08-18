@@ -37,4 +37,4 @@ Please note that there are some features that are not yet available for OLM repo
 
 - Operators source GitHub URL: [https://github.com/ctron/ditto-operator/tree/master/olm](https://github.com/ctron/ditto-operator/tree/master/olm)
 - Repository URL used in Artifact Hub: `https://github.com/ctron/ditto-operator/olm` (please note how the *tree/master* part is not used)
-- Operator displayed in Artifact Hub: [https://artifacthub.io/packages/olm/ditto-operator/ditto-operator](https://artifacthub.io/packages/olm/ditto-operator/ditto-operator)
+- Operator displayed in Artifact Hub: [https://khulnasoft.com/packages/olm/ditto-operator/ditto-operator](https://khulnasoft.com/packages/olm/ditto-operator/ditto-operator)

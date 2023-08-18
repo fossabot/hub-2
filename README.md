@@ -3,12 +3,12 @@
 [![CI](https://github.com/khulnasoft/hub/workflows/CI/badge.svg)](https://github.com/khulnasoft/hub/actions?query=workflow%3ACI)
 [![Go Report Card](https://goreportcard.com/badge/github.com/khulnasoft/hub)](https://goreportcard.com/report/github.com/khulnasoft/hub)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4106/badge)](https://bestpractices.coreinfrastructure.org/projects/4106)
-[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/artifact-hub)](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub)
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://khulnasoft.com/badge/repository/artifact-hub)](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub)
 [![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/artifact-hub/badge)](https://clomonitor.io/projects/cncf/artifact-hub)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/khulnasoft/hub)
 [![Licenses](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fartifacthub%2Fhub.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fartifacthub%2Fhub?ref=badge_shield)
 
-[Artifact Hub](https://artifacthub.io) is a web-based application that enables finding, installing, and publishing packages and configurations for CNCF projects.
+[Artifact Hub](https://khulnasoft.com) is a web-based application that enables finding, installing, and publishing packages and configurations for CNCF projects.
 
 Discovering artifacts to use with CNCF projects can be difficult. If every CNCF project that needs to share artifacts creates its own Hub this creates a fair amount of repeat work for each project and a fractured experience for those trying to find the artifacts to consume. The Artifact Hub attempts to solve that by providing a single experience for consumers that any CNCF project can leverage.
 
@@ -36,11 +36,11 @@ At the moment, the following artifacts kinds are supported *(with plans to suppo
 
 You can use Artifact Hub to:
 
-- [Discover](https://artifacthub.io/packages/search), [install](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=install) and [publish](https://artifacthub.io/docs/topics/repositories/) packages and configurations
-- Explore content like Helm charts [schemas](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [templates](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub/0.20.0?modal=template&template=db_migrator_install_job.yaml) in an interactive way
+- [Discover](https://khulnasoft.com/packages/search), [install](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=install) and [publish](https://khulnasoft.com/docs/topics/repositories/) packages and configurations
+- Explore content like Helm charts [schemas](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=values-schema) and [templates](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub/0.20.0?modal=template&template=db_migrator_install_job.yaml) in an interactive way
 - Subscribe to packages' new releases and security alerts notifications, via email or webhooks
-- Visualize packages' [security reports](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub/0.19.0?modal=security-report)
-- Inspect packages' [changelog](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=changelog)
+- Visualize packages' [security reports](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub/0.19.0?modal=security-report)
+- Inspect packages' [changelog](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=changelog)
 
 Feel free to ask any questions on the #artifact-hub channel in the CNCF Slack. To get an invite please visit [http://slack.cncf.io/](http://slack.cncf.io/).
 
@@ -49,22 +49,22 @@ Artifact Hub is a [CNCF Sandbox Project](https://www.cncf.io/sandbox-projects/).
 <br/>
 <table>
     <tr>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot1.jpg"></td>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot2.jpg"></td>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot3.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot1.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot2.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot3.jpg"></td>
     </tr>
     <tr>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot4.jpg"></td>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot5.jpg"></td>
-        <td width="33%"><img src="https://artifacthub.github.io/hub/screenshots/screenshot6.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot4.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot5.jpg"></td>
+        <td width="33%"><img src="https://khulnasoft.github.io/hub/screenshots/screenshot6.jpg"></td>
     </tr>
 </table>
 
 ## Getting started
 
-[Artifact Hub](https://artifacthub.io) allows publishers to list their content in an automated way. Please check out the [repositories guide](https://artifacthub.io/docs/topics/repositories/) for more details about how to add your repositories.
+[Artifact Hub](https://khulnasoft.com) allows publishers to list their content in an automated way. Please check out the [repositories guide](https://khulnasoft.com/docs/topics/repositories/) for more details about how to add your repositories.
 
-If you want to run your own Artifact Hub instance in your Kubernetes cluster, the easiest way is by deploying the Helm chart provided. For more details, please see the [Helm chart documentation in Artifact Hub](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub).
+If you want to run your own Artifact Hub instance in your Kubernetes cluster, the easiest way is by deploying the Helm chart provided. For more details, please see the [Helm chart documentation in Artifact Hub](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub).
 
 ## Contributing
 
@@ -79,7 +79,7 @@ The Artifact Hub is an open source project. Aside from contributing code and fea
 
 ## Changelog
 
-The *changelog* is [available on Artifact Hub](https://artifacthub.io/packages/helm/artifact-hub/artifact-hub?modal=changelog).
+The *changelog* is [available on Artifact Hub](https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub?modal=changelog).
 
 ## Code of Conduct
 

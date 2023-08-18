@@ -8,10 +8,10 @@ import (
 	"sort"
 
 	"github.com/Masterminds/semver/v3"
+	"github.com/hashicorp/go-multierror"
 	"github.com/khulnasoft/hub/internal/hub"
 	"github.com/khulnasoft/hub/internal/pkg"
 	"github.com/khulnasoft/hub/internal/tracker/source"
-	"github.com/hashicorp/go-multierror"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/krew/pkg/index"
 	"sigs.k8s.io/yaml"
@@ -19,17 +19,17 @@ import (
 
 const (
 	// Annotations
-	categoryAnnotation        = "artifacthub.io/category"
-	changesAnnotation         = "artifacthub.io/changes"
-	displayNameAnnotation     = "artifacthub.io/displayName"
-	keywordsAnnotation        = "artifacthub.io/keywords"
-	licenseAnnotation         = "artifacthub.io/license"
-	linksAnnotation           = "artifacthub.io/links"
-	maintainersAnnotation     = "artifacthub.io/maintainers"
-	providerAnnotation        = "artifacthub.io/provider"
-	readmeAnnotation          = "artifacthub.io/readme"
-	recommendationsAnnotation = "artifacthub.io/recommendations"
-	screenshotsAnnotation     = "artifacthub.io/screenshots"
+	categoryAnnotation        = "khulnasoft.com/category"
+	changesAnnotation         = "khulnasoft.com/changes"
+	displayNameAnnotation     = "khulnasoft.com/displayName"
+	keywordsAnnotation        = "khulnasoft.com/keywords"
+	licenseAnnotation         = "khulnasoft.com/license"
+	linksAnnotation           = "khulnasoft.com/links"
+	maintainersAnnotation     = "khulnasoft.com/maintainers"
+	providerAnnotation        = "khulnasoft.com/provider"
+	readmeAnnotation          = "khulnasoft.com/readme"
+	recommendationsAnnotation = "khulnasoft.com/recommendations"
+	screenshotsAnnotation     = "khulnasoft.com/screenshots"
 
 	// Platform keys
 	osKey   = "os"

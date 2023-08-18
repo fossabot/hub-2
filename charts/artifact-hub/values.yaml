@@ -131,7 +131,7 @@ hub:
     replicaCount: 1
     image:
       # Hub image repository (without the tag)
-      repository: artifacthub/hub
+      repository: khulnasoft/hub
     securityContext: {}
     resources: {}
     # If you do want to specify resources, uncomment the following
@@ -325,7 +325,7 @@ tracker:
   cronjob:
     image:
       # Tracker image repository (without the tag)
-      repository: artifacthub/tracker
+      repository: khulnasoft/tracker
     securityContext: {}
     resources: {}
     # If you do want to specify resources, uncomment the following

@@ -100,7 +100,7 @@ hub:
     readinessGates: []
     replicaCount: 1
     image:
-      repository: artifacthub/hub
+      repository: khulnasoft/hub
     resources: {}
   server:
     allowPrivateRepositories: false
@@ -178,7 +178,7 @@ scanner:
 tracker:
   cronjob:
     image:
-      repository: artifacthub/tracker
+      repository: khulnasoft/tracker
     resources: {}
   cacheDir: ""
   configDir: "/home/tracker/.cfg"

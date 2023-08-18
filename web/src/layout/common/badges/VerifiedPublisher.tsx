@@ -43,7 +43,7 @@ const VerifiedPublisher = (props: Props) => {
             <ExternalLink
               btnType
               className={`text-decoration-underline text-reset ${styles.btnInBadge}`}
-              href="https://artifacthub.io/docs/topics/repositories/#verified-publisher"
+              href="https://khulnasoft.com/docs/topics/repositories/#verified-publisher"
             >
               repositories guide
             </ExternalLink>

@@ -27,7 +27,7 @@ tasks:
     command: |
       echo -e "\n- Running hub..\n"
       echo -e "\nOnce the hub is ready, you can log in using the following credentials:\n"
-      echo -e "\tEmail: demo@artifacthub.io"
+      echo -e "\tEmail: demo@khulnasoft.com"
       echo -e "\tPassword: changeme\n"
       mkdir ~/.cfg
       cp /workspace/hub/.gitpod/*.yaml ~/.cfg

@@ -19,7 +19,7 @@ describe('ContainerRegistry', () => {
     });
 
     it('renders component', () => {
-      render(<ContainerRegistry url="oci://localhost:5000/artifacthub/ah" />);
+      render(<ContainerRegistry url="oci://localhost:5000/khulnasoft/ah" />);
       expect(screen.getByText('localhost:5000')).toBeInTheDocument();
     });
   });

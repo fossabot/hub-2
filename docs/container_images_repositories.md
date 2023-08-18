@@ -6,7 +6,7 @@ Container images repositories are expected to be hosted in OCI registries. Each 
 
 To add a container image repository, the url used **must** follow the following format:
 
-- `oci://registry/[namespace]/repository` (example: oci://index.docker.io/artifacthub/ah)
+- `oci://registry/[namespace]/repository` (example: oci://index.docker.io/khulnasoft/ah)
 
 The registry host is required, please use `index.docker.io` when referring to repositories hosted in the Docker Hub. The url should not contain any tag.
 
@@ -46,16 +46,16 @@ crane mutate \
     --label org.opencontainers.image.description='Artifact Hub command line tool' \
     --label org.opencontainers.image.version='1.6.0' \
     --label org.opencontainers.image.created='2022-02-08T15:38:15Z' \
-    --label org.opencontainers.image.documentation='https://artifacthub.io/docs/topics/cli' \
+    --label org.opencontainers.image.documentation='https://khulnasoft.com/docs/topics/cli' \
     --label org.opencontainers.image.source='https://github.com/khulnasoft/hub/tree/c2a6e0866ab13422221f2f458026b4506acd6b53/cmd/ah' \
     --label org.opencontainers.image.vendor='Artifact Hub' \
-    --label io.artifacthub.package.readme-url='https://raw.githubusercontent.com/artifacthub/hub/c2a6e0866ab13422221f2f458026b4506acd6b53/docs/cli.md' \
+    --label io.artifacthub.package.readme-url='https://raw.githubusercontent.com/khulnasoft/hub/c2a6e0866ab13422221f2f458026b4506acd6b53/docs/cli.md' \
     --label io.artifacthub.package.maintainers='[{"name":"Artifact Hub maintainers","email":"cncf-artifacthub-maintainers@lists.cncf.io"}]' \
-    --label io.artifacthub.package.logo-url='https://raw.githubusercontent.com/artifacthub/hub/master/docs/logo/logo.svg' \
+    --label io.artifacthub.package.logo-url='https://raw.githubusercontent.com/khulnasoft/hub/master/docs/logo/logo.svg' \
     --label io.artifacthub.package.keywords='artifact hub,cli,lint' \
     --label io.artifacthub.package.license='Apache-2.0' \
-    --label io.artifacthub.package.alternative-locations='public.ecr.aws/artifacthub/ah:v1.6.0' \
-artifacthub/ah:latest
+    --label io.artifacthub.package.alternative-locations='public.ecr.aws/khulnasoft/ah:v1.6.0' \
+khulnasoft/ah:latest
 ```
 
 ### Repository metadata
@@ -66,7 +66,7 @@ Once your repository metadata file is ready, you can push it to the OCI registry
 
 ```bash
 oras push \
-  registry/namespace/repository:artifacthub.io \
+  registry/namespace/repository:khulnasoft.com \
   --config /dev/null:application/vnd.cncf.artifacthub.config.v1+yaml \
   artifacthub-repo.yml:application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml
 ```
@@ -78,16 +78,16 @@ or you can use [regclient](https://github.com/regclient/regclient) to do the sam
                 --artifact-type application/vnd.cncf.artifacthub.config.v1+yaml \
                 -f artifacthub-repo.yml \
                 --file-media-type "application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml" \
-                registry/namespace/repository:artifacthub.io
+                registry/namespace/repository:khulnasoft.com
 ```
 
-The repository metadata file is pushed to the registry using a special tag named `artifacthub.io`. Artifact Hub will pull that artifact looking for the `application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml` layer when the repository metadata is needed.
+The repository metadata file is pushed to the registry using a special tag named `khulnasoft.com`. Artifact Hub will pull that artifact looking for the `application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml` layer when the repository metadata is needed.
 
 The [OCI Artifacts support](https://www.docker.com/blog/announcing-docker-hub-oci-artifacts-support/) has been landed on Docker Hub recently, so you can now start publishing your repository metadata file to the Docker Hub without having any problem. You can use the following command to do so:
 
 ```bash
 oras push \
-  docker.io/repository:artifacthub.io \
+  docker.io/repository:khulnasoft.com \
   --config /dev/null:application/vnd.cncf.artifacthub.config.v1+yaml \
   artifacthub-repo.yml:application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml
 ```
@@ -100,7 +100,7 @@ or you can use [regclient](https://github.com/regclient/regclient) to do the sam
                 --artifact-type application/vnd.cncf.artifacthub.config.v1+yaml \
                 -f artifacthub-repo.yml \
                 --file-media-type "application/vnd.cncf.artifacthub.repository-metadata.layer.v1.yaml" \
-                docker.io/repository:artifacthub.io
+                docker.io/repository:khulnasoft.com
 ```
 
 *Please note that publishing an Artifact Hub repository metadata file requires that the registry supports [OCI artifacts](https://oras.land/implementors/).*

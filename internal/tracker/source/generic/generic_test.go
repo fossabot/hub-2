@@ -50,7 +50,7 @@ func TestTrackerSource(t *testing.T) {
 		},
 		Recommendations: []*hub.Recommendation{
 			{
-				URL: "https://artifacthub.io/packages/helm/artifact-hub/artifact-hub",
+				URL: "https://khulnasoft.com/packages/helm/artifact-hub/artifact-hub",
 			},
 		},
 		ContainsSecurityUpdates: true,

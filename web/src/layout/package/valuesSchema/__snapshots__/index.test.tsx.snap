@@ -2259,7 +2259,7 @@ exports[`ValuesSchema creates snapshot 1`] = `
                       data-testid="defaultValue"
                     >
                       <span>
-                        artifacthub/hub
+                        khulnasoft/hub
                       </span>
                     </span>
                   </div>
@@ -2342,7 +2342,7 @@ exports[`ValuesSchema creates snapshot 1`] = `
                                       class="ms-1"
                                     >
                                       <span>
-                                        artifacthub/hub
+                                        khulnasoft/hub
                                       </span>
                                     </span>
                                   </span>
@@ -9712,7 +9712,7 @@ exports[`ValuesSchema creates snapshot 1`] = `
                       data-testid="defaultValue"
                     >
                       <span>
-                        artifacthub/tracker
+                        khulnasoft/tracker
                       </span>
                     </span>
                   </div>
@@ -9795,7 +9795,7 @@ exports[`ValuesSchema creates snapshot 1`] = `
                                       class="ms-1"
                                     >
                                       <span>
-                                        artifacthub/tracker
+                                        khulnasoft/tracker
                                       </span>
                                     </span>
                                   </span>

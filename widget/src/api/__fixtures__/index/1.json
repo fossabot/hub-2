@@ -23,7 +23,7 @@
     "repository_id": "a032a436-3568-4970-804a-2780f5e9d231",
     "name": "artifact-hub",
     "display_name": "Artifact Hub",
-    "url": "https://artifacthub.github.io/hub/chart/",
+    "url": "https://khulnasoft.github.io/hub/chart/",
     "private": false,
     "kind": 0,
     "verified_publisher": true,
